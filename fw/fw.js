@@ -50,7 +50,7 @@ var fw = {
     
     init: function() {
         var options = {
-            maxAge: 24 * 60 * 60 * 1000
+            maxAge: 30 * 24 * 60 * 60 * 1000
         };
         
         // Set up jade
