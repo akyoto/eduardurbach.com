@@ -9,6 +9,7 @@ var jade = require("jade");
 var events = require("events");
 var stylus = require("stylus");
 var express = require("express");
+var compress = require("compression");
 var objectAssign = require("object-assign");
 
 // Init
@@ -44,6 +45,7 @@ var fw = {
         app.locals.basedir = path.join(__dirname, "pages");
 
         // Static files
+        app.use(compress());
         app.use("/fw/css", express.static("./fw/css", options));
         app.use("/fw/js", express.static("./fw/js", options));
         app.use("/js", express.static("./js", options));
@@ -167,6 +169,8 @@ var fw = {
             eventEmitter.emit("newPage", pageName);
         });
         
+        var pagesJS = fw.makePages();
+        
         // Compile jade files
         pages.forEach(function(file) {
             var key = file.name;
@@ -179,7 +183,8 @@ var fw = {
                 page: page,
                 pages: fw.config.pages,
                 siteName: fw.config.siteName,
-                css: fw.css
+                css: fw.css,
+                js: pagesJS
             };
             
             // Render Jade file to HTML
@@ -209,24 +214,19 @@ var fw = {
             });
         });
         
-        fw.makePages();
         fw.startServer();
     },
     
     makePages: function() {
-        app.get("/fw/js/pages.js", function(request, response) {
-            response.setHeader("Content-Type", "application/javascript");
+        var makePages = [];
+        
+        Object.keys(fw.config.pages).forEach(function(key) {
+            var page = fw.config.pages[key];
             
-            var makePages = [];
-            
-            Object.keys(fw.config.pages).forEach(function(key) {
-                var page = fw.config.pages[key];
-                
-                makePages.push('makePage("' + page.title + '", "' + key + '", "' + page.url + '");');
-            });
-            
-            response.end("$(document).ready(function(){" + makePages.join('') + "});");
+            makePages.push('makePage("' + page.title + '", "' + key + '", "' + page.url + '");');
         });
+        
+        return "$(document).ready(function(){" + makePages.join('') + "});";
     },
     
     // Start server

@@ -1,12 +1,14 @@
 {
-    "name": "eduard-urbach-website",
-    "version": "0.0.1",
+    "name": "blitzprog.org",
+    "repository": "blitzprog/blitzprog.org",
+    "version": "0.0.2",
     "dependencies": {
         "express": "*",
         "jade": "*",
         "stylus": "*",
         "nib": "*",
-        "object-assign": "*"
+        "object-assign": "*",
+        "compression": "*"
     },
     "author": {
         "name": "Eduard Urbach",
