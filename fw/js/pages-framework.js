@@ -178,7 +178,7 @@ function loadPage(page, publicURL, params) {
 		$loadingAnimation.stop().fadeIn(fadeSpeed);
 		$content.stop().fadeOut(fadeSpeed, function() {
 			$loadingAnimation.stop().fadeOut(fadeSpeed);
-			console.log("Cache: " + url);
+			
 			$content.stop().html(data).fadeIn(fadeSpeed, function() {
 				// Ajaxify links
 				ajaxifyLinks();
@@ -211,7 +211,7 @@ function loadPage(page, publicURL, params) {
 		});
 
 		$content.promise().done(function() {
-			console.log(data);
+			
 			$content.html(data).fadeIn(fadeSpeed, function() {
 				// Cache the page
 				cache[url] = data;
