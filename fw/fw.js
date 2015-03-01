@@ -34,17 +34,28 @@ var fw = {
     },
     
     init: function() {
+        var options = {
+            maxAge: 60 * 60 * 1000
+        };
+        
         // Set up jade
         app.set("views", fw.config.pagesPath);
         app.set("view engine", "jade");
         app.locals.basedir = path.join(__dirname, "pages");
 
         // Static files
-        app.use("/fw/css", express.static("./fw/css"));
-        app.use("/fw/js", express.static("./fw/js"));
-        app.use("/js", express.static("./js"));
-        app.use("/images", express.static("./images"));
-
+        app.use("/fw/css", express.static("./fw/css", options));
+        app.use("/fw/js", express.static("./fw/js", options));
+        app.use("/js", express.static("./js", options));
+        app.use("/images", express.static("./images", options));
+        
+        /*app.use(function(req, res, next) {
+            if(req.url.match(/^\/(css|js|img|font)\/.+/)) {
+                res.setHeader('Cache-Control', 'public, max-age=3600'))
+            }
+            next();
+        });*/
+        
         // Favicon
         app.get("/favicon.ico", function(request, response) {
             response.sendFile("favicon.ico", {root: "./"});
