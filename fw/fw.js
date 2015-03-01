@@ -4,6 +4,7 @@
 
 var fs = require("fs");
 var nib = require("nib");
+var http = require("http");
 var path = require("path");
 var jade = require("jade");
 var events = require("events");
@@ -37,8 +38,12 @@ var fw = {
         this.init();
         this.loadStyles(this.config.stylesPath);
         
-        this.loadScript("./fw/scripts/jquery.js");
+        this.loadScript("./fw/cache/scripts/jquery.js");
         this.loadScript("./fw/scripts/pages.js");
+        
+        // Download latest version of Google Analytics
+        this.download("http://www.google-analytics.com/analytics.js", "fw/cache/scripts/analytics.js");
+        this.download("http://www.google-analytics.com/plugins/ua/linkid.js", "fw/cache/scripts/linkid.js");
         
         this.config.scripts.forEach(function(scriptName) {
             var scriptPath = path.join(fw.config.scriptsPath, scriptName + ".js");
@@ -46,6 +51,15 @@ var fw = {
         });
         
         this.loadPages(this.config.pagesPath);
+    },
+    
+    createDirectory: function(dirPath) {
+        try {
+            fs.mkdirSync(dirPath);
+        } catch(e) {
+            if(e.code != "EEXIST")
+                throw e;
+        }
     },
     
     init: function() {
@@ -61,7 +75,7 @@ var fw = {
         // Static files
         app.use(compress());
         app.use("/fw/css", express.static("./fw/css", options));
-        app.use("/fw/js", express.static("./fw/js", options));
+        app.use("/fw/cache", express.static("./fw/cache", options));
         app.use("/js", express.static("./js", options));
         app.use("/images", express.static("./images", options));
         
@@ -72,6 +86,16 @@ var fw = {
 
         eventEmitter.on("newPage", function(pageName) {
             console.log("Installing page: " + pageName);
+        });
+    },
+    
+    download: function(from, to, func) {
+        return http.get(from, function(response) {
+            var file = fs.createWriteStream(to);
+            response.pipe(file);
+            
+            if(typeof func != "undefined")
+                func();
         });
     },
     
