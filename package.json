@@ -8,7 +8,8 @@
         "stylus": "*",
         "nib": "*",
         "object-assign": "*",
-        "compression": "*"
+        "compression": "*",
+        "uglify-js": "*"
     },
     "author": {
         "name": "Eduard Urbach",

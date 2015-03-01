@@ -1,4 +1,9 @@
 {
     "siteName": "Eduard Urbach",
+    "scripts": [
+        "webfont",
+        "init",
+        "analytics"
+    ],
     "port": 1991
 }

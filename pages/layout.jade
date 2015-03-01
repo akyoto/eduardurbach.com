@@ -31,20 +31,6 @@ html(lang="en")
                 .cube2
                 
             #status-message Loading...
-        
-        script
-            include ../js/webfont.js
-        
-        script
-            include ../fw/js/jquery.js
             
-        script
-            include ../fw/js/pages-framework.js
-            
-        script
-            include ../js/init.js
-        
         script!= js
         script $(document).ready(function() {setTitle("#{siteName}");$(window).trigger('resize');});
-        script
-            include ../js/analytics.js

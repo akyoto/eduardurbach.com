@@ -37,7 +37,7 @@ function recalculateContentSize() {
 }
 
 // Page handler
-setPageHandler(function(pageId) {
+setPageHandler(function() {
 	recalculateContentSize();
 })
 

@@ -9,6 +9,7 @@ var jade = require("jade");
 var events = require("events");
 var stylus = require("stylus");
 var express = require("express");
+var UglifyJS = require("uglify-js");
 var compress = require("compression");
 var objectAssign = require("object-assign");
 
@@ -18,20 +19,33 @@ var eventEmitter = new events.EventEmitter();
 
 var fw = {
     config: {
-        "siteName": "Untitled",
-        "pagesPath": "./pages",
-        "stylesPath": "./styles",
+        siteName: "Untitled",
+        pagesPath: "./pages",
+        stylesPath: "./styles",
+        scriptsPath: "./scripts",
+        scripts: [],
         port: 80
     },
+    js: "",
     css: "",
+    compressor: UglifyJS.Compressor(),
     
     start: function(configFile) {
         // Merge
         this.config = objectAssign(this.config, JSON.parse(fs.readFileSync(configFile, "utf8")));
         
         this.init();
-        this.loadStyles();
-        this.loadPages();
+        this.loadStyles(this.config.stylesPath);
+        
+        this.loadScript("./fw/scripts/jquery.js");
+        this.loadScript("./fw/scripts/pages.js");
+        
+        this.config.scripts.forEach(function(scriptName) {
+            var scriptPath = path.join(fw.config.scriptsPath, scriptName + ".js");
+            fw.loadScript(scriptPath);
+        });
+        
+        this.loadPages(this.config.pagesPath);
     },
     
     init: function() {
@@ -61,14 +75,14 @@ var fw = {
         });
     },
     
-    loadStyles: function() {
-        var files = fs.readdirSync(fw.config.stylesPath);
+    loadStyles: function(stylesPath) {
+        var files = fs.readdirSync(stylesPath);
         
         // Combine everything into a single CSS string
         var fileObjects = files.map(function(file) {
             return {
                 name: file,
-                fullPath: path.join(fw.config.stylesPath, file)
+                fullPath: path.join(stylesPath, file)
             };
         });
         
@@ -103,14 +117,38 @@ var fw = {
         });
     },
     
-    loadPages: function() {
-        var files = fs.readdirSync(fw.config.pagesPath);
+    loadScripts: function(scriptsPath) {
+        var files = fs.readdirSync(scriptsPath);
+        
+        // Filter files
+        this.js += files.map(function(file) {
+            return {
+                name: file,
+                fullPath: path.join(scriptsPath, file)
+            };
+        }).filter(function(file) {
+            return fs.statSync(file.fullPath).isFile();
+        }).map(function(file) {
+            console.log("Compiling script: " + path.basename(file.name, ".js"));
+            
+            return fw.compressJSFile(file.fullPath);
+        }).reduce(function(total, style) {
+            return total + style;
+        });
+    },
+    
+    loadScript: function(scriptPath) {
+        this.js += this.compressJSFile(scriptPath);
+    },
+    
+    loadPages: function(pagesPath) {
+        var files = fs.readdirSync(pagesPath);
         
         // Filter directories
         var pages = files.map(function(file) {
             return {
                 name: file,
-                fullPath: path.join(fw.config.pagesPath, file)
+                fullPath: path.join(pagesPath, file)
             };
         }).filter(function(file) {
             return fs.statSync(file.fullPath).isDirectory();
@@ -169,7 +207,7 @@ var fw = {
             eventEmitter.emit("newPage", pageName);
         });
         
-        var pagesJS = fw.makePages();
+        fw.js += this.compressJS(fw.makePages());
         
         // Compile jade files
         pages.forEach(function(file) {
@@ -184,7 +222,7 @@ var fw = {
                 pages: fw.config.pages,
                 siteName: fw.config.siteName,
                 css: fw.css,
-                js: pagesJS
+                js: fw.js
             };
             
             // Render Jade file to HTML
@@ -215,6 +253,17 @@ var fw = {
         });
         
         fw.startServer();
+    },
+    
+    compressJS: function(code) {
+        var ast = UglifyJS.parse(code);
+        ast.figure_out_scope();
+        return ast.transform(this.compressor).print_to_string();
+    },
+    
+    compressJSFile: function(filePath) {
+        var data = fs.readFileSync(filePath, "utf8");
+        return this.compressJS(data);
     },
     
     makePages: function() {
