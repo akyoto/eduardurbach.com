@@ -1,0 +1,15 @@
+for language in gb de ru jp fr
+    .{language}
+        list-style-image url("/images/icons/countries/" + language + ".png")
+
+for engine in unity3d
+    .{engine}
+        list-style-image url("/images/icons/gamedev/" + engine + ".png")
+
+for database in aerospike riak sql
+    .{database}
+        list-style-image url("/images/icons/databases/" + database + ".png")
+        
+for os in windows linux mac android iphone
+    .{os}
+        list-style-image url("/images/icons/os/" + os + ".png")

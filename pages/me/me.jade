@@ -1,0 +1,15 @@
+style(scoped)!= page.css
+
+header
+    h2 About myself
+
+.vcard.profile(itemscope, itemtype="http://schema.org/Person")
+    img.photo.profile-image(
+        itemprop="image",
+        alt="Eduard Urbach",
+        src="/images/profile/avatar.png"
+        width="300",
+        height="300"
+    )
+    span.fn.name(itemprop="name") Eduard Urbach
+    span.category.job-title(itemprop="jobTitle") Developer

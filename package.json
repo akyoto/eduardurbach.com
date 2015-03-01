@@ -1,0 +1,16 @@
+{
+    "name": "eduard-urbach-website",
+    "version": "0.0.1",
+    "dependencies": {
+        "express": "*",
+        "jade": "*",
+        "stylus": "*",
+        "nib": "*",
+        "object-assign": "*"
+    },
+    "author": {
+        "name": "Eduard Urbach",
+        "email": "e.urbach@gmail.com",
+        "url": "http://blitzprog.org"
+    }
+}

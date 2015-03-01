@@ -1,0 +1,177 @@
+html, body
+	font-family "Julius Sans One"
+	font-size 1.1em
+	tab-size 4
+	-webkit-font-smoothing antialiased
+	text-rendering optimizeLegibility
+	height 100%
+	color rgb(254, 254, 254)
+	background-color rgb(32, 32, 32)
+	overflow-x hidden
+	overflow-y hidden
+	background url(/images/backgrounds/coast-dark.jpg) no-repeat center center fixed
+	background-size cover
+
+a
+	text-decoration none
+	color rgb(161, 212, 230)
+	transition all 270ms ease
+	
+	&:hover
+		color rgb(187, 238, 255)
+		text-shadow 0px 0px 8px rgba(187, 238, 255, 0.3)
+
+h2
+	a
+		&:hover
+			text-decoration none
+
+li
+	margin-top 1px
+	margin-bottom 1px
+
+#content
+	img
+		border none
+		box-shadow 0px 0px 8px rgba(0, 0, 0, 0.6)
+
+.logo
+	float left
+	vertical-align baseline
+	margin-left 0.1em
+	margin-right 0.3em
+	width 54px
+	height 54px
+
+h1
+	display inline-block
+	font-size 3em
+	line-height 3em
+
+h3
+	font-size 2.5em
+	line-height 1.5em
+	font-weight bold
+	width 100%
+	letter-spacing 1px
+
+h4
+	line-height 1.5em
+	font-size 1.5em
+	font-weight bold
+	text-align left
+
+small
+	font-size 70%
+
+p, ul, ol, h4, blockquote
+	line-height 1.7em
+	float left
+	width 100%
+
+p, ul, ol, pre, h3, blockquote
+	text-align left
+	margin-top 0.4em
+	margin-bottom 0.4em
+	float left
+
+table
+	float left
+
+td
+	border-bottom-width 1px
+	border-bottom-style solid
+	padding 0.5em
+	text-align left
+	vertical-align top
+
+iframe
+	padding 0.5em
+	float left
+	display block
+	margin 0 auto
+
+pre
+	border 1px solid rgb(128, 128, 128)
+	padding 1em
+	width calc(100% - 2em)
+	box-shadow 1px 1px 16px rgba(0, 0, 0, 0.6)
+	color rgb(224, 224, 224)
+	background-color rgb(32, 32, 32)
+	border none
+	border-radius 3px
+
+pre, code
+	font-family 'Ubuntu Mono', Consolas, monospace
+	tab-size 4
+
+ul
+	list-style-type square
+
+ol
+	list-style-type decimal
+
+ul, ol
+	list-style-position outside
+	padding 0
+	margin-left 1.7em
+	width calc(100% - 1.7em)
+
+strong
+	font-weight bold
+
+em
+	font-style italic
+
+th
+	font-size 120%
+	padding 5px 0
+	text-align left
+
+hr
+	clear both
+	height 4px
+	border-bottom 1px dotted #ccc
+	border-left none
+	border-right none
+	border-top none
+
+.center
+	width auto
+	margin 0 auto
+	text-align center
+
+.copyright
+	float left
+	width 100%
+	text-align center
+	margin-top 0.25em
+	padding 0.25em 0
+	color rgba(32, 32, 32, 0.9)
+
+.clear
+	clear both
+
+.kanji
+	font-size 8em
+	&:hover
+		text-decoration none
+
+.anime-character
+	img
+		box-shadow none !important
+		vertical-align middle
+		margin 0
+		padding 0
+		width 16px
+		font-size 0
+	&:hover
+		text-decoration none
+		img
+			-webkit-transform translate(52px, -80px) scale(5)
+			transform translate(52px, -80px) scale(5)
+			transition all 200ms ease
+
+::selection
+	text-shadow none
+	background rgba(255, 255, 255, 0.1)

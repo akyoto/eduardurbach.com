@@ -1,0 +1,50 @@
+doctype html
+html(lang="en")
+    head
+        block title
+            title= siteName
+            
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        
+        style!= css
+        
+    body
+        #container
+            #header-container
+                #header
+                    #title
+                        h1= siteName
+                        
+                    nav#navigation
+                        header
+                            h2 Navigation
+                        
+                        each page in pages
+                            a.navigation-link.ajax(href="/#{page.url}")
+                                .navigation-button= page.title
+            
+            #content-container
+                section#content!= content
+                    
+            #loading-animation.spinner
+                .cube1
+                .cube2
+                
+            #status-message Loading...
+        
+        script
+            include ../js/webfont.js
+        
+        script
+            include ../fw/js/jquery.js
+            
+        script
+            include ../fw/js/pages-framework.js
+            
+        script
+            include ../js/init.js
+        
+        script(src="/fw/js/pages.js")
+        script $(document).ready(function() {setTitle("#{siteName}");$(window).trigger('resize');});
+        script
+            include ../js/analytics.js
