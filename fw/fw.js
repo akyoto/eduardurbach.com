@@ -49,13 +49,6 @@ var fw = {
         app.use("/js", express.static("./js", options));
         app.use("/images", express.static("./images", options));
         
-        /*app.use(function(req, res, next) {
-            if(req.url.match(/^\/(css|js|img|font)\/.+/)) {
-                res.setHeader('Cache-Control', 'public, max-age=3600'))
-            }
-            next();
-        });*/
-        
         // Favicon
         app.get("/favicon.ico", function(request, response) {
             response.sendFile("favicon.ico", {root: "./"});
