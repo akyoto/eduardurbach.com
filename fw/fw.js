@@ -45,6 +45,8 @@ var fw = {
         this.download("http://www.google-analytics.com/analytics.js", "fw/cache/scripts/analytics.js");
         this.download("http://www.google-analytics.com/plugins/ua/linkid.js", "fw/cache/scripts/linkid.js");
         
+        fw.loadScript("./fw/cache/scripts/analytics.js");
+        
         this.config.scripts.forEach(function(scriptName) {
             var scriptPath = path.join(fw.config.scriptsPath, scriptName + ".js");
             fw.loadScript(scriptPath);

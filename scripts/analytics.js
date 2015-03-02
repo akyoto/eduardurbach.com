@@ -1,9 +1,11 @@
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','/fw/cache/scripts/analytics.js','ga');
+(function(window, document, variableName, scriptElement, firstScript) {
+    window['GoogleAnalyticsObject'] = variableName;
+    window[variableName] || (window[variableName] = function() {
+      (window[variableName].q = window[variableName].q || []).push(arguments);
+    });
+    window[variableName].l = +new Date;
+  }(window, document, 'ga'));
 
 ga('create', 'UA-22786508-1', 'blitzprog.org');
 ga('require', 'displayfeatures');
-//ga('require', 'linkid', '/fw/cache/scripts/linkid.js');
 ga('send', 'pageview');
