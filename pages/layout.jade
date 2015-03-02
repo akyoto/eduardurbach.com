@@ -20,8 +20,9 @@ html(lang="en")
                             h2 Navigation
                         
                         each page in pages
-                            a.navigation-link.ajax(href="/#{page.url}")
-                                .navigation-button= page.title
+                            if page.visible
+                                a.navigation-link.ajax(href="/#{page.url}")
+                                    .navigation-button= page.title
             
             #content-container
                 section#content!= content

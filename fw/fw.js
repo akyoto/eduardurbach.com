@@ -195,7 +195,8 @@ var fw = {
             
             var page = {
                 title: pageName.capitalize(),
-                url: pageName
+                url: pageName,
+                visible: true
             };
             
             // Merge
