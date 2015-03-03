@@ -1,15 +1,9 @@
 {
     "name": "blitzprog.org",
     "repository": "blitzprog/blitzprog.org",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "dependencies": {
-        "express": "*",
-        "jade": "*",
-        "stylus": "*",
-        "nib": "*",
-        "object-assign": "*",
-        "compression": "*",
-        "uglify-js": "*"
+        "aero-cms": "*"
     },
     "author": {
         "name": "Eduard Urbach",

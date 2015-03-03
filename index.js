@@ -1,4 +1,4 @@
-var app = require("./fw/fw");
+var aero = require("aero-cms");
 
 // Config
-app.start("config.json");
+aero.start("config.json");
