@@ -5,5 +5,13 @@
         "init",
         "analytics"
     ],
+    "styles": [
+        "base",
+        "layout",
+        "meter",
+        "others",
+        "loading-animation",
+        "mobile"
+    ],
     "port": 1991
 }
