@@ -1,3 +1,6 @@
+// Elements
+var $navigationContainer = $('#navigation-container');
+var $contentContainer = $('#content-container');
 var $statusMessage = $('#status-message');
 
 // Load fonts
@@ -12,9 +15,9 @@ function loadFonts() {
 		active: function() {
 			$statusMessage.fadeOut(500);
 
-			$container.animate({
+			aero.$container.animate({
 				'opacity' : '1'
-			}, fadeSpeed, 'linear');
+			}, aero.fadeSpeed, 'linear');
 		}
 	});
 }
@@ -22,22 +25,17 @@ function loadFonts() {
 // Just load 'em now
 loadFonts();
 
-// Elements
-var $container = $('#container');
-var $navigationContainer = $('#navigation-container');
-var $contentContainer = $('#content-container');
-
 // Recalculate size
 function recalculateContentSize() {
 	var minContentHeight =
-		$container.outerHeight(true)
+		aero.$container.outerHeight(true)
 		- $navigationContainer.outerHeight(true);
 	
 	$contentContainer.css("min-height", minContentHeight + "px");
 }
 
 // Page handler
-setPageHandler(function() {
+aero.setPageHandler(function() {
 	recalculateContentSize();
 })
 
@@ -53,32 +51,32 @@ $(window).load(function() {
 		switch(event.which) {
 			// m
 			case 77:
-				loadURL("/");
+				aero.loadURL("/");
 				break;
 
 			// p
 			case 80:
-				loadURL("/projects");
+				aero.loadURL("/projects");
 				break;
 
 			// s
 			case 83:
-				loadURL("/skills");
+				aero.loadURL("/skills");
 				break;
 
 			// w
 			case 87:
-				loadURL("/web");
+				aero.loadURL("/web");
 				break;
 
 			// Left
 			case 37:
-				navigateLeft();
+				aero.navigateLeft();
 				break;
 
 			// Right
 			case 39:
-				navigateRight();
+				aero.navigateRight();
 				break;
 
 			default:
