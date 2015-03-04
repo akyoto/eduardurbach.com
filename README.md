@@ -1,7 +1,2 @@
 # blitzprog.org
-Code for my own [website](http://blitzprog.org). Based on:
-
-- node.js
-- Express
-- Jade
-- Stylus
+Code for my own [website](http://blitzprog.org). Based on [Aero](https://github.com/blitzprog/aero).

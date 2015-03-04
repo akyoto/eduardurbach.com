@@ -1,9 +1,8 @@
 doctype html
 html(lang="en")
     head
-        block title
-            title= siteName
-            
+        title= siteName
+        
         meta(name="viewport", content="width=device-width, initial-scale=1")
         
         style!= css
@@ -34,4 +33,3 @@ html(lang="en")
             #status-message Loading...
             
         script!= js
-        script $(document).ready(function(){aero.setTitle("#{siteName}");$(window).trigger('resize');});
