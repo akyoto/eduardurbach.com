@@ -1,4 +1,4 @@
-(function(window, document, variableName, scriptElement, firstScript) {
+(function(window, document, variableName) {
     window['GoogleAnalyticsObject'] = variableName;
     window[variableName] || (window[variableName] = function() {
       (window[variableName].q = window[variableName].q || []).push(arguments);
