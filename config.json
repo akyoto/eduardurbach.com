@@ -1,5 +1,11 @@
 {
     "siteName": "Eduard Urbach",
+    "pages": [
+        "me",
+        "projects",
+        "skills",
+        "web"
+    ],
     "scripts": [
         "init",
         "analytics"
