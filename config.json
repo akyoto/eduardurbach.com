@@ -13,5 +13,8 @@
         "loading-animation",
         "mobile"
     ],
+    "static": [
+        "images"
+    ],
     "port": 1991
 }
