@@ -1,29 +1,6 @@
 // Elements
 var $navigationContainer = $('#navigation-container');
 var $contentContainer = $('#content-container');
-var $statusMessage = $('#status-message');
-
-// Load fonts
-function loadFonts() {
-	$statusMessage.text("Loading fonts...");
-
-	// Font
-	WebFont.load({
-		google: {
-			families: ['Lato', 'Lato:bold', 'Julius Sans One', 'Julius Sans One:bold']
-		},
-		active: function() {
-			$statusMessage.fadeOut(500);
-
-			aero.$container.animate({
-				'opacity' : '1'
-			}, aero.fadeSpeed, 'linear');
-		}
-	});
-}
-
-// Just load 'em now
-loadFonts();
 
 // Recalculate size
 function recalculateContentSize() {
