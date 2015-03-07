@@ -3,7 +3,7 @@
     "repository": "blitzprog/blitzprog.org",
     "version": "0.0.3",
     "dependencies": {
-        "aero-cms": "*"
+        "aero": "*"
     },
     "author": {
         "name": "Eduard Urbach",
