@@ -1,27 +1,3 @@
-// Elements
-var $navigationContainer = $('#navigation-container');
-var $contentContainer = $('#content-container');
-
-// Recalculate size
-function recalculateContentSize() {
-	var minContentHeight =
-		aero.$container.outerHeight(true)
-		- $navigationContainer.outerHeight(true);
-	
-	$contentContainer.css("min-height", minContentHeight + "px");
-}
-
-// Page handler
-aero.setPageHandler(function() {
-	recalculateContentSize();
-})
-
-// Resize
-$(window).resize(function() {
-	// Calculate content size
-	recalculateContentSize();
-});
-
 // Load
 $(window).load(function() {
 	$(document).keydown(function(event) {
