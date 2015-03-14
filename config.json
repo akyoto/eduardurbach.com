@@ -1,29 +1,30 @@
 {
-    "siteName": "Eduard Urbach",
-    "pages": [
-        "me",
-        "projects",
-        "skills",
-        "web"
-    ],
-    "scripts": [
-        "init",
-        "analytics"
-    ],
-    "styles": [
-        "base",
-        "layout",
-        "meter",
-        "others",
-        "loading-animation",
-        "mobile"
-    ],
-    "static": [
-        "images"
-    ],
-    "fonts": [
-        "Lato", "Lato:bold",
-        "Julius Sans One", "Julius Sans One:bold"
-    ],
-    "port": 1991
+	"siteName": "Eduard Urbach",
+	"pages": [
+		"me",
+		"projects",
+		"skills",
+		"web"
+	],
+	"scripts": [
+		"init",
+		"analytics"
+	],
+	"styles": [
+		"base",
+		"sliding-underline",
+		"layout",
+		"meter",
+		"others",
+		"loading-animation",
+		"mobile"
+	],
+	"static": [
+		"images"
+	],
+	"fonts": [
+		"Lato", "Lato:bold",
+		"Julius Sans One", "Julius Sans One:bold"
+	],
+	"port": 1991
 }

@@ -1,6 +1,14 @@
-.links a:after
-	content " | "
+.links
+	list-style-type none
+	margin 0
+	
+.links li
+	display inline-block
+
+.links li:after
+	content "|"
+	margin 0 0.25em
 	color rgba(255, 255, 255, 0.5)
 
-.links a:last-child:after
+.links li:last-child:after
 	content ""
