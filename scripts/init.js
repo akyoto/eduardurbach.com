@@ -16,6 +16,11 @@ $(window).load(function() {
 			case 83:
 				aero.loadURL("/skills");
 				break;
+				
+			// h
+			case 72:
+				aero.loadURL("/hire");
+				break;
 
 			// w
 			case 87:
