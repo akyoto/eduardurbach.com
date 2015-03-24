@@ -20,8 +20,12 @@ html(lang="en")
 						
 						each nav in pages
 							if nav.visible
-								a.navigation-link.ajax(href="/#{nav.url}")
+								a.navigation-link.ajax(href="/#{nav.url}", onmouseover="document.getElementById('#{nav.url}-menu-hover-audio').play();", onclick="document.getElementById('#{nav.url}-menu-click-audio').play();")
 									.navigation-button.sliding-middle-out= nav.title
+								audio(id="#{nav.url}-menu-hover-audio")
+									source(src="/sounds/menu-hover.ogg", type="audio/ogg")
+								audio(id="#{nav.url}-menu-click-audio")
+									source(src="/sounds/menu-click.ogg", type="audio/ogg")
 			
 			#content-container
 				section#content!= content
@@ -29,5 +33,5 @@ html(lang="en")
 			#loading-animation.spinner
 				.cube1
 				.cube2
-			
+		
 		script!= js

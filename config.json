@@ -21,7 +21,8 @@
 		"mobile"
 	],
 	"static": [
-		"images"
+		"images",
+		"sounds"
 	],
 	"fonts": [
 		"Lato", "Lato:bold",
