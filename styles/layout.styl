@@ -1,3 +1,5 @@
+@require "styles/config.styl"
+
 #container
 	width 100%
 	height 100%
@@ -69,7 +71,8 @@
 	opacity 0.15
 	text-transform uppercase
 	letter-spacing 2px
-	transition all 200ms ease
+	transition all transitionSpeed ease
+	
 	&::first-letter
 		color rgb(255, 255, 255)
 		opacity 1
@@ -99,6 +102,8 @@
 	min-height 100%
 	background-color transparent
 	margin 1em auto
+	transition width transitionSpeed ease;
+	
 	img
 		margin 0.5em auto
 		max-width 100%
