@@ -1,6 +1,11 @@
 .website-info
 	float right
 	opacity 0.5
-
+	transition opacity 200ms ease;
+	
 li:hover > .website-info
 	opacity 1.0
+
+@media only screen and (max-width: 480px)
+	.website-info
+		display none
