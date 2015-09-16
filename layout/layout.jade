@@ -2,10 +2,8 @@ doctype html
 html(lang="en")
 	head
 		title= siteName
-		
-		meta(name="viewport", content="width=device-width, initial-scale=1")
-		
 		style!= css
+		meta(name="viewport", content="width=device-width, initial-scale=1")
 	
 	body
 		#container
@@ -14,14 +12,14 @@ html(lang="en")
 					#title
 						h1= siteName
 					
-					nav#navigation
-						header
-							h2 Navigation
-						
-						each nav in pages
-							if nav.visible
-								a.navigation-link.ajax(href="/#{nav.url}")
-									.navigation-button.sliding-middle-out= nav.title
+					if nav
+						nav#navigation
+							header
+								h2 Navigation
+							
+							each link in nav
+								a.navigation-link.ajax(href="/#{link.url}")
+									.navigation-button.sliding-middle-out= link.title
 			
 			#content-container
 				section#content!= content

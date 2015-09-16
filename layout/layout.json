@@ -1,0 +1,20 @@
+{
+    "nav": [
+		{
+            "title": "Me",
+            "url": ""
+        },
+        {
+            "title": "Projects",
+            "url": "projects"
+        },
+        {
+            "title": "Skills",
+            "url": "skills"
+        },
+        {
+            "title": "Web",
+            "url": "web"
+        }
+	]
+}

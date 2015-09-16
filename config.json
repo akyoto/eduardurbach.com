@@ -1,12 +1,5 @@
 {
 	"siteName": "Eduard Urbach",
-	"pages": [
-		"me",
-		"projects",
-		"skills",
-		"hire",
-		"web"
-	],
 	"scripts": [
 		"init",
 		"analytics"
@@ -21,12 +14,15 @@
 		"mobile"
 	],
 	"static": [
-		"images",
-		"sounds"
+		"images"
 	],
 	"fonts": [
 		"Lato", "Lato:bold",
 		"Julius Sans One", "Julius Sans One:bold"
 	],
+	"security": {
+		"key": "",
+		"cert": ""
+	},
 	"port": 1991
 }
