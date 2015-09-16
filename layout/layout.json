@@ -5,16 +5,16 @@
             "url": ""
         },
         {
-            "title": "Projects",
-            "url": "projects"
-        },
-        {
             "title": "Skills",
             "url": "skills"
         },
         {
-            "title": "Web",
-            "url": "web"
+            "title": "Contact",
+            "url": "contact"
         }
+	],
+    "fonts": [
+		"Lato",
+		"Julius Sans One"
 	]
 }
