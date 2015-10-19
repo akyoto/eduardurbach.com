@@ -6,8 +6,10 @@
 		"analytics"
 	],
 	"styles": [
+		"reset",
 		"base",
 		"sliding-underline",
+		"navigation",
 		"layout",
 		"meter",
 		"others",

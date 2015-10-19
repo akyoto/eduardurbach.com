@@ -1,8 +1,10 @@
 @require "styles/config.styl"
 
-html, body
+html
+	height 100%
+
+body
 	font-family "Julius Sans One"
-	font-size 1em
 	tab-size 4
 	-webkit-font-smoothing antialiased
 	text-rendering optimizeLegibility
@@ -10,10 +12,13 @@ html, body
 	color mainColor
 	background-color rgb(32, 32, 32)
 	overflow-x hidden
-	overflow-y hidden
-	background url(/images/backgrounds/coast-dark.jpg) no-repeat center bottom fixed
+	overflow-y scroll
+	background-image url("/images/backgrounds/self.jpg")
+	background-repeat no-repeat
+	background-position left 11%
 	background-size cover
-	margin 0
+	background-attachment fixed
+	transform-style preserve-3d
 
 a
 	text-decoration none
@@ -37,14 +42,6 @@ li
 	img
 		border none
 		box-shadow 0px 0px 8px rgba(0, 0, 0, 0.6)
-
-.logo
-	float left
-	vertical-align baseline
-	margin-left 0.1em
-	margin-right 0.3em
-	width 54px
-	height 54px
 
 h1
 	display inline-block
@@ -138,42 +135,6 @@ hr
 	border-left none
 	border-right none
 	border-top none
-
-.center
-	width auto
-	margin 0 auto
-	text-align center
-
-.copyright
-	float left
-	width 100%
-	text-align center
-	margin-top 0.25em
-	padding 0.25em 0
-	color rgba(32, 32, 32, 0.9)
-
-.clear
-	clear both
-
-.kanji
-	font-size 8em
-	&:hover
-		text-decoration none
-
-.anime-character
-	img
-		box-shadow none !important
-		vertical-align middle
-		margin 0
-		padding 0
-		width 16px
-		font-size 0
-	&:hover
-		text-decoration none
-		img
-			-webkit-transform translate(52px, -80px) scale(5)
-			transform translate(52px, -80px) scale(5)
-			transition all 200ms ease
 
 ::selection
 	text-shadow none

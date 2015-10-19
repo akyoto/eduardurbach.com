@@ -1,0 +1,56 @@
+@require "styles/config.styl"
+
+.navigation
+	position fixed
+	left 0
+	top 50%
+	transform translateY(-50%)
+	//transition all transitionSpeed ease
+
+	header
+		display none
+
+	a
+		text-decoration none
+
+		&:hover
+			cursor pointer
+			text-decoration none
+
+.navigation-item
+	display block
+	padding 0.65em 1em
+	font-size 1.9em
+	opacity 0
+	margin-left -50px
+	transform rotateY(-90deg)
+	transition all 1000ms ease
+
+.navigation-item-ready
+	opacity 1
+	margin-left 0
+	transform rotateY(0deg)
+
+.navigation-item-text
+	text-transform uppercase
+	letter-spacing 2px
+	line-height 1em
+	color rgb(255, 255, 255)
+	opacity 0.8
+	text-shadow 1px 1px 4px rgba(0, 0, 0, 0.9)
+	transition all transitionSpeed ease
+
+	&::first-letter
+		color rgb(255, 255, 255)
+		opacity 1 !important
+		font-size 1.3em
+		font-weight bold
+
+	&:hover
+		color rgb(255, 255, 255) !important
+		text-shadow 0 0 8px rgba(255, 255, 255, 0.9) !important
+		opacity 1 !important
+
+.active
+	opacity 1
+	text-shadow 0 0 8px rgba(255, 255, 255, 0.5)

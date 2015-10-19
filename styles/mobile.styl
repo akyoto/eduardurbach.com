@@ -1,30 +1,33 @@
 @media only screen and (max-width: 1600px)
-	#content, #footer
+	#content
 		width calc(60% - 1em)
 
 @media only screen and (max-width: 1300px)
-	#content, #footer
+	#content
 		width calc(75% - 1em)
 
-@media only screen and (max-width: 800px)
-	#header
-		width calc(100% - 1em)
-
-	#title, #tagline
-		display none
+@media only screen and (max-width: 800px) and (orientation: portrait)
+	.navigation
+		top 33%
+		font-size 65%
 
 	#content
 		margin 0.5em auto
-
-	#content, #footer
 		width calc(100% - 1em)
 
-	.media-box
-		width 100%
-		padding-bottom 56.25%
-		margin-left 0
-		margin-right 0
-		opacity 1.0
+@media only screen and (max-height: 600px)
+	.navigation-item
+		padding-top 0.4em
+		padding-bottom 0.4em
 
-	.soundcloud-track
-		padding-bottom 100%
+@media only screen and (max-height: 500px) and (orientation: landscape)
+	.navigation
+		top 50%
+		font-size 80%
+
+	.navigation-item
+		padding-top 0.3em
+		padding-bottom 0.3em
+
+	.profile
+		display none !important

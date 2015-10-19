@@ -8,26 +8,20 @@ html(lang="en")
 			link(rel="stylesheet", type="text/css", href="http://fonts.googleapis.com/css?family=" + font)
 	
 	body
-		#container
-			#header-container
-				#header
-					#title
-						h1= siteName
-					
-					if nav
-						nav#navigation
-							header
-								h2 Navigation
-							
-							each link in nav
-								a.navigation-link.ajax(href="/#{link.url}")
-									.navigation-button.sliding-middle-out= link.title
+		h1.title= siteName
+		
+		section#content!= content
+		
+		nav.navigation
+			header
+				h2 Navigation
 			
-			#content-container
-				section#content!= content
-			
-			#loading-animation.spinner
-				.cube1
-				.cube2
+			each link in nav
+				.navigation-item
+					a.navigation-item-text.sliding-middle-out.ajax(href="/#{link.url}")= link.title
+				
+		#loading-animation.spinner
+			.cube1
+			.cube2
 		
 		script!= js

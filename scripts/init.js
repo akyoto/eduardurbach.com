@@ -1,6 +1,18 @@
 // Load
 $(window).load(function() {
-	$(document).keydown(function(event) {
+	$(".profile").animate({
+		opacity: 1.0
+	}, 2500);
+
+	$(".navigation-item").each(function(index, item) {
+		var $item = $(item);
+
+		window.setTimeout(function() {
+			$item.addClass("navigation-item-ready");
+		}, (index + 1) * 250);
+	});
+
+	/*$(document).keydown(function(event) {
 		switch(event.which) {
 			// Left
 			case 37:
@@ -17,5 +29,5 @@ $(window).load(function() {
 		}
 
 		event.preventDefault();
-	});
+	});*/
 });
