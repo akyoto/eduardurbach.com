@@ -1,7 +1,6 @@
 {
 	"siteName": "Eduard Urbach",
 	"scripts": [
-		"jquery",
 		"init",
 		"analytics"
 	],
@@ -17,6 +16,14 @@
 	"static": [
 		"images"
 	],
+	"fonts": [
+		"Lato",
+		"Julius Sans One"
+	],
+	"plugins": {
+		"jquery": {},
+		"kaze": {}
+	},
 	"security": {
 		"key": "",
 		"cert": ""

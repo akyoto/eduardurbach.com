@@ -63,30 +63,43 @@
 			cursor pointer
 			text-decoration none
 
-.navigation-button
-	padding 0.75em 1em
-	font-size 2em
-	line-height 1em
-	color rgb(255, 255, 255)
-	opacity 0.15
+.navigation-item
+	display inline-block
+	padding 0.65em 1em
+	font-size 1.9em
+	opacity 0
+	margin-left -50px
+	transform rotateY(-90deg)
+	transition all 1000ms ease
+
+.navigation-item-ready
+	opacity 1
+	margin-left 0
+	transform rotateY(0deg)
+
+.navigation-item-text
 	text-transform uppercase
 	letter-spacing 2px
+	line-height 1em
+	color rgb(255, 255, 255)
+	opacity 0.2
+	text-shadow 1px 1px 4px rgba(0, 0, 0, 0.9)
 	transition all transitionSpeed ease
 
 	&::first-letter
 		color rgb(255, 255, 255)
-		opacity 1
+		opacity 1 !important
 		font-size 1.3em
 		font-weight bold
+
 	&:hover
 		color rgb(255, 255, 255) !important
-		text-shadow 0 0 8px rgba(255, 255, 255, 0.9)
-		opacity 1
+		text-shadow 0 0 8px rgba(255, 255, 255, 0.9) !important
+		opacity 1 !important
 
 .active
-	.navigation-button
-		opacity 1
-		text-shadow 0 0 8px rgba(255, 255, 255, 0.5)
+	opacity 1
+	text-shadow 0 0 8px rgba(255, 255, 255, 0.5)
 
 #content-container
 	display block
@@ -97,7 +110,7 @@
 
 #content
 	display block
-	width 50%
+	width 40%
 	height 100%
 	min-height 100%
 	background-color transparent

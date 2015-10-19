@@ -1,0 +1,22 @@
+header
+	h2 About myself
+
+.vcard.profile(itemscope, itemtype="http://schema.org/Person")
+	img.photo.profile-image(
+		src="/images/profile/avatar.webp"
+		width="300",
+		height="300",
+		alt="Eduard Urbach",
+		onerror="this.onerror=null; this.src='/images/profile/avatar.png'",
+		itemprop="image"
+	)
+	span.fn.name(itemprop="name") Eduard Urbach
+	span.category.job-title(itemprop="jobTitle") Developer
+
+//-
+	.navigation-info
+		.navigation-info-text Use 
+		.keys M, P, S, H, W
+		.navigation-info-text or
+		.keys Arrow keys
+		.navigation-info-text to navigate.

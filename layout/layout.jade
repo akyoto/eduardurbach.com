@@ -4,8 +4,6 @@ html(lang="en")
 		title= siteName
 		style!= css
 		meta(name="viewport", content="width=device-width, initial-scale=1")
-		each font in fonts
-			link(rel="stylesheet", type="text/css", href="http://fonts.googleapis.com/css?family=" + font)
 	
 	body
 		#container
@@ -20,8 +18,8 @@ html(lang="en")
 								h2 Navigation
 							
 							each link in nav
-								a.navigation-link.ajax(href="/#{link.url}")
-									.navigation-button.sliding-middle-out= link.title
+								.navigation-item
+									a.navigation-item-text.sliding-middle-out.ajax(href="/#{link.url}")= link.title
 			
 			#content-container
 				section#content!= content

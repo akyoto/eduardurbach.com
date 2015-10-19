@@ -1,20 +1,24 @@
 {
-    "nav": [
+	"nav": [
 		{
-            "title": "Me",
-            "url": ""
-        },
-        {
-            "title": "Skills",
-            "url": "skills"
-        },
-        {
-            "title": "Contact",
-            "url": "contact"
-        }
-	],
-    "fonts": [
-		"Lato",
-		"Julius Sans One"
+			"title": "Me",
+			"url": "about"
+		},
+		{
+			"title": "Skills",
+			"url": "skills"
+		},
+		{
+			"title": "Projects",
+			"url": "projects"
+		},
+		{
+			"title": "Websites",
+			"url": "websites"
+		},
+		{
+			"title": "Contact",
+			"url": "contact"
+		}
 	]
 }
