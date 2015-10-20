@@ -1,0 +1,54 @@
+{
+	"websites": {
+		"nihongo-center.com": {
+			"title": "Online application system, responsive design & SEO for Nihongo Center",
+			"image": true,
+			"date": "2015"
+		},
+		"increasedvoices.com": {
+			"title": "Website for a music album",
+			"image": true,
+			"date": "2015"
+		},
+		"blitzprog.org": {
+			"title": "Inception?",
+			"image": true,
+			"date": "2015"
+		},
+		"animereleasenotifier.com": {
+			"title": "Anime Release Notifier",
+			"image": false,
+			"date": "2015"
+		},
+		"freezingwind.com": {
+			"title": "Team website",
+			"image": false,
+			"date": "2015"
+		},
+		"gekkabijin.jp": {
+			"title": "Website for French/Japanese singer Senya and her group Gekka Bijin",
+			"image": true,
+			"date": "2014"
+		},
+		"battleofmages.com": {
+			"title": "Game website with Riak integration and player profiles",
+			"image": false,
+			"date": "2013"
+		},
+		"hersa.de": {
+			"title": "Freelance work for CONIMAGE",
+			"image": true,
+			"date": "2007"
+		},
+		"uro-praxis-garbsen.de": {
+			"title": "Freelance work for CONIMAGE",
+			"image": true,
+			"date": "2007"
+		},
+		"reha-kirchrode.de": {
+			"title": "Freelance work for CONIMAGE",
+			"image": true,
+			"date": "2007"
+		}
+	}
+}

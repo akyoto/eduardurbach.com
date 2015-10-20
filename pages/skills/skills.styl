@@ -1,15 +1,49 @@
+@include styles/config.styl
+
+.level
+	display inline-block
+	float right
+	letter-spacing 5px
+	font-size 110%
+
+.level-0
+	opacity 0.7
+
+.level-1
+	opacity 0.8
+
+.level-2
+	opacity 0.9
+
+.level-3
+	opacity 0.9
+	color rgb(255, 255, 32)
+	text-shadow 0 0 8px rgba(255, 255, 32, 0.4)
+
 for language in gb de ru jp fr
 	.{language}
 		list-style-image url("/images/icons/countries/" + language + ".png")
 
-for engine in unity3d
+for engine in unity3d blitzmax blitz3d unrealengine ogre3d
 	.{engine}
 		list-style-image url("/images/icons/gamedev/" + engine + ".png")
 
 for database in aerospike riak sql
 	.{database}
 		list-style-image url("/images/icons/databases/" + database + ".png")
-		
+
 for os in windows linux mac android iphone
 	.{os}
 		list-style-image url("/images/icons/os/" + os + ".png")
+
+for web in html5
+	.{web}
+		list-style-image url("/images/icons/web/" + web + ".png")
+
+for server in nodejs
+	.{server}
+		list-style-image url("/images/icons/servers/" + server + ".png")
+
+for editor in atom sublime
+	.{editor}
+		list-style-image url("/images/icons/editors/" + editor + ".png")

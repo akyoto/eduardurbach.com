@@ -5,34 +5,10 @@ section
 	header
 		h3 Websites
 	
-	ul.no-list-image
-		li
-			a(href='https://nihongo-center.com/', target='_blank', title='Responsive Design & SEO for Nihongo Center') nihongo-center.com
-			time.website-info(datetime='2015') 2015
-		li
-			a(href='http://increasedvoices.com/', target='_blank', title='Website for a music album') increasedvoices.com
-			time.website-info(datetime='2015') 2015
-		li
-			a(href='https://animereleasenotifier.com/', target='_blank', title='Anime Release Notifier') animereleasenotifier.com
-			time.website-info(datetime='2015') 2015
-		li
-			a(href='http://freezingwind.com/', target='_blank', title='Team website') freezingwind.com
-			time.website-info(datetime='2015') 2015
-		li
-			a(href='http://gekkabijin.jp/', target='_blank', title='Website for French/Japanese singer Senya and her group Gekka Bijin') gekkabijin.jp
-			time.website-info(datetime='2014') 2014
-		li
-			a(href='https://battleofmages.com/', target='_blank', title='Game website with Riak integration and player profiles') battleofmages.com
-			time.website-info(datetime='2013') 2013
-		li
-			a(href='http://blitzprog.org/', target='_blank', title='My blog') blitzprog.org
-			time.website-info(datetime='2011') 2011
-		li
-			a(href='http://hersa.de/', target='_blank', title='Freelance work for CONIMAGE') hersa.de
-			time.website-info(datetime='2007') 2007
-		li
-			a(href='http://uro-praxis-garbsen.de/', target='_blank', title='Freelance work for CONIMAGE') uro-praxis-garbsen.de
-			time.website-info(datetime='2007') 2007
-		li
-			a(href='http://reha-kirchrode.de/', target='_blank', title='Freelance work for CONIMAGE') reha-kirchrode.de
-			time.website-info(datetime='2007') 2007
+	ul.websites
+		each website, url in websites
+			if website.image
+				li.website
+					a.website-link(href='http://' + url, target='_blank')
+						img.website-image(src='/images/websites/' + url + ".png", title=website.title + ' (' + website.date + ')', alt=website.title)
+				//time.website-date(datetime=website.date)= website.date

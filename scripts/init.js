@@ -7,7 +7,7 @@ $(window).load(function() {
 
 		window.setTimeout(function() {
 			$item.addClass("navigation-item-ready");
-		}, (index + 1) * 200);
+		}, (index) * 150);
 	});
 
 	/*$(document).keydown(function(event) {
