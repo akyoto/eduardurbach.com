@@ -1,3 +1,25 @@
+// prevOrLast
+jQuery.fn.prevOrLast = function(selector) {
+	var prev = this.prev(selector);
+	return (prev.length) ? prev : this.nextAll(selector).last();
+};
+
+// nextOrFirst
+jQuery.fn.nextOrFirst = function(selector) {
+	var next = this.next(selector);
+	return (next.length) ? next : this.prevAll(selector).last();
+};
+
+// Navigate left
+kaze.navigateLeft = function() {
+	kaze.loadURL($('.active').parent().prevOrLast('.navigation-item').children('.navigation-item-text').attr('href'));
+};
+
+// Navigate right
+kaze.navigateRight = function() {
+	kaze.loadURL($('.active').parent().nextOrFirst('.navigation-item').children('.navigation-item-text').attr('href'));
+};
+
 // Load
 $(window).load(function() {
 	kaze.fadeSpeed = 300;
@@ -10,37 +32,15 @@ $(window).load(function() {
 		}, (index) * 150);
 	});
 
-	// prevOrLast
-	jQuery.fn.prevOrLast = function(selector) {
-		var prev = this.prev(selector);
-		return (prev.length) ? prev : this.nextAll(selector).last();
-	};
-
-	// nextOrFirst
-	jQuery.fn.nextOrFirst = function(selector) {
-		var next = this.next(selector);
-		return (next.length) ? next : this.prevAll(selector).last();
-	};
-
-	// Navigate left
-	navigateLeft = function() {
-		kaze.loadURL($('.active').parent().prevOrLast('.navigation-item').children('.navigation-item-text').attr('href'));
-	};
-
-	// Navigate right
-	navigateRight = function() {
-		kaze.loadURL($('.active').parent().nextOrFirst('.navigation-item').children('.navigation-item-text').attr('href'));
-	};
-
 	$(document).keydown(function(event) {
 		switch(event.which) {
 			// Left
 			case 37:
-				navigateLeft();
+				kaze.navigateLeft();
 				break;
 			// Right
 			case 39:
-				navigateRight();
+				kaze.navigateRight();
 				break;
 
 			case 77:
