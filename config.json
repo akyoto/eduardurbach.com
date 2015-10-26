@@ -22,6 +22,7 @@
 		"Julius Sans One"
 	],
 	"plugins": {
+		"reset": {},
 		"jquery": {},
 		"kaze": {}
 	},
