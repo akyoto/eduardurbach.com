@@ -11,7 +11,8 @@
 		"meter",
 		"others",
 		"loading-animation",
-		"mobile"
+		"mobile",
+		"projects"
 	],
 	"static": [
 		"images"
@@ -28,5 +29,6 @@
 		"key": "",
 		"cert": ""
 	},
-	"port": 1991
+	"port": 1991,
+	"liveReloadPort": 9009
 }

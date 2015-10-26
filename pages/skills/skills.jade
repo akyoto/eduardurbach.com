@@ -1,25 +1,19 @@
 header
 	h2 Skills
 
-mixin level(mastery)
-	if mastery > 7
-		.level.level-3 ★★★
-	else if mastery > 4
-		.level.level-2 ★★☆
-	else if mastery > 0
-		.level.level-1 ★☆☆
-	else
-		.level.level-0 ☆☆☆
+//
+	a(onclick='collapse()') - Collapse
+	a(onclick='expand()') + Expand
 
-include languages.jade
-include coding.jade
-include gamedev.jade
-include web.jade
-include server.jade
-include databases.jade
-include mobile.jade
-include os.jade
-include vcs.jade
-//include formats.jade
-include editors.jade
-include others.jade
+include languages/languages.jade
+include coding/coding.jade
+include gamedev/gamedev.jade
+include web/web.jade
+include server/server.jade
+include databases/databases.jade
+include mobile/mobile.jade
+include os/os.jade
+include vcs/vcs.jade
+//include formats/formats.jade
+include editors/editors.jade
+include others/others.jade

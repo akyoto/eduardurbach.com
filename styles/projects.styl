@@ -1,5 +1,13 @@
+@require "styles/config.styl"
+
 .project
 	position relative
+
+.title
+	width auto
+
+.title a
+	color mainColor
 
 .tags
 	float right
@@ -8,20 +16,17 @@
 	right 0
 	bottom 0
 	margin 1.5em
-	transition all 500ms ease;
-	
+	transition all 500ms ease
+
 .tags:hover
 	opacity 1
 	color rgb(112, 174, 255)
 	letter-spacing 2px
 
-.title
-	width auto
-	
 .links
 	list-style-type none
 	margin 0
-	
+
 .links li
 	display inline-block
 
@@ -32,7 +37,7 @@
 
 .links li:last-child:after
 	content ""
-	
+
 @media only screen and (max-width: 640px)
 	.tags
 		display none
