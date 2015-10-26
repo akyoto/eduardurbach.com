@@ -1,38 +1,43 @@
-duration = 1.0s
+duration = 1.3s
+size = 16px
 
 #loading-animation
 	display none
 	position fixed
-	bottom 30px
-	right 48px
+	bottom 16px
+	right 32px
 
-.spinner
-	width 30px
-	height 30px
-	position relative
+.sk-cube-grid
+	width size
+	height size
+	.sk-cube
+		width 33%
+		height 33%
+		background-color white
+		box-shadow 0 0 8px white
+		float left
+		animation sk-cubeGridScaleDelay duration infinite ease-in-out
+	.sk-cube1
+		animation-delay 0.2s
+	.sk-cube2
+		animation-delay 0.3s
+	.sk-cube3
+		animation-delay 0.4s
+	.sk-cube4
+		animation-delay 0.1s
+	.sk-cube5
+		animation-delay 0.2s
+	.sk-cube6
+		animation-delay 0.3s
+	.sk-cube7
+		animation-delay 0s
+	.sk-cube8
+		animation-delay 0.1s
+	.sk-cube9
+		animation-delay 0.2s
 
-.cube1, .cube2
-	background-color rgba(255, 255, 255, 0.5)
-	width 10px
-	height 10px
-	position absolute
-	top 0
-	left 0
-	animation cubemove duration infinite ease-in-out
-	-webkit-animation cubemove duration infinite ease-in-out
-
-.cube2
-	animation-delay -(duration / 2)
-	-webkit-animation-delay -(duration / 2)
-
-@keyframes cubemove
-	25%
-		transform translateX(42px) rotate(-90deg) scale(0.5)
-	50%
-		transform translateX(42px) translateY(42px) rotate(-179deg)
-	50.1%
-		transform translateX(42px) translateY(42px) rotate(-180deg)
-	75%
-		transform translateX(0px) translateY(42px) rotate(-270deg) scale(0.5)
-	100%
-		transform rotate(-360deg)
+@keyframes sk-cubeGridScaleDelay
+	0%, 70%, 100%
+		transform scale3D(1, 1, 1)
+	35%
+		transform scale3D(0, 0, 1)

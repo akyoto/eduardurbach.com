@@ -1,6 +1,6 @@
 // Load
 $(window).load(function() {
-	kaze.fadeSpeed = 290;
+	kaze.fadeSpeed = 300;
 
 	$(".navigation-item").each(function(index, item) {
 		var $item = $(item);

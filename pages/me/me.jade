@@ -1,35 +1,14 @@
 header
-	h2 About me
+	h2 About myself
 
-section
-	header
-		h3 About me
-	
-	p
-		| Thank you for taking the time to check out my portfolio.
-		
-	p
-		| My name is Eduard Urbach and I'm currently living in Kyoto, a lovely city in Japan.
-		| Locals usually call me by my nickname Edo (エド) which is easier to pronounce for Japanese people.
-		| The temples and shrines of Kyoto are truly inspiring and visiting them makes me feel at peace.
-		| I really love this city.
-		
-	p
-		| I started with game development when I was a kid, around 11 years old.
-		| I remember I read almost all of the IT related books that my mother had because of her work at Hanover University.
-		| There was also a German book called "Game programming with Blitz Basic" (translated) by René Meyer which was really great for beginners at that time.
-	
-	p
-		| Thanks to the early start I can now look back on 13 years of programming experience which usually helps me track down or even avoid bugs from the start.
-		| Nowadays I'm focusing on web, game and software development.
-		
-	p
-		| I have a love & hate relationship with technology.
-		| You might have already noticed it: "Why is a computer freak living in a place like Kyoto instead of a more modern city like Tokyo?"
-		| Don't get me wrong, I love many things that technology made possible. Being able to communicate with people over the globe thanks to the internet is just great.
-		| However technology has also stolen things from our lives. When I look at all the people staring down on their smartphones I can't help but feel that this is just wrong.
-		| I do own a Nexus 5 from Google which I bought last year but I can't understand why people would take pictures of what they ate and post it to Facebook, Instagram or whatever is currently "in".
-		| Some people have redefined their self worth by how many likes they get on a social network. We let technology invade our lives. Physically and mentally.
-		| When is it going to be "too much"? Did we already cross the point? Of course there are no absolute answers, this a topic where everyone has a different opinion it.
-		| I am not quick to judge things, so I refrain from saying something possibly stupid here. However I want people to look at it critically.
-		| Take some time to ask yourself "Do I really need that?". If your personal answer is yes then you're doing nothing wrong.
+.vcard.profile(itemscope, itemtype="http://schema.org/Person")
+	img.photo.profile-image(
+		src="/images/profile/avatar.webp"
+		width="300",
+		height="300",
+		alt="Eduard Urbach",
+		onerror="this.onerror=null; this.src='/images/profile/avatar.png'",
+		itemprop="image"
+	)
+	span.fn.name(itemprop="name") Eduard Urbach
+	span.category.job-title(itemprop="jobTitle") Developer
