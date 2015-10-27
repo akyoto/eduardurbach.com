@@ -1,14 +1,10 @@
 header
-	h2 Web Development
+	h2 Websites
 
-section
-	header
-		h3 Websites
-	
-	ul.websites
-		each website, url in websites
-			if website.image
-				li.website
-					a.website-link(href='http://' + url, target='_blank')
-						img.website-image(src='/images/websites/' + url + ".png", title=website.title + ' (' + website.date + ')', alt=website.title)
-				//time.website-date(datetime=website.date)= website.date
+ul.websites
+	each website, url in websites
+		if website.image
+			li.website
+				a.website-link(href='http://' + url, target='_blank')
+					img.website-image(src='/images/websites/' + url + ".png", title=website.title + ' (' + website.date + ')', alt=website.title)
+			//time.website-date(datetime=website.date)= website.date

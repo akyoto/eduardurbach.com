@@ -1,3 +1,13 @@
+// blurFilter(strength)
+// 	-webkit-filter blur(strength)
+// 	-moz-filter blur(strength)
+// 	-o-filter blur(strength)
+// 	-ms-filter blur(strength)
+// 	filter blur(strength)
+
+.website
+	margin 1.5rem 0
+
 .websites
 	list-style-type none
 
@@ -18,10 +28,12 @@
 	border-radius 3px
 
 .website-link
-	opacity 0.5
+	opacity 1
+	transform rotateZ(0)
 
 	&:hover
 		opacity 1.0
+		transform rotateZ(-1deg)
 
 	&:after
 		width 0 !important

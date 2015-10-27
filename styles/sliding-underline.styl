@@ -1,10 +1,10 @@
 @require "styles/config.styl"
 
-sliding-underline(selector, thickness, distance)
+sliding-underline(selector, slideColor, thickness, distance)
 	{selector}
 		display inline-block
 		position relative
-		
+
 	{selector}:after
 		content ""
 		display block
@@ -14,14 +14,14 @@ sliding-underline(selector, thickness, distance)
 		width 0px
 		background transparent
 		transition all transitionSpeed ease
-		
+
 	{selector}:hover:after
 		width 100%
-		background-color rgba(161, 212, 230, 1)
+		background-color slideColor
 
 // Thickness
 thickness = 1px
 
 // Build the classes
-sliding-underline(".sliding-middle-out", thickness, 10px)
-sliding-underline("#content a", thickness, 0)
+sliding-underline(".navigation-item", navLinkHoverColor, thickness, 5px)
+sliding-underline("#content a", subColor, thickness, 0)

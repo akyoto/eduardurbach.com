@@ -1,0 +1,35 @@
+@require "styles/config.styl"
+
+#content
+	display block
+	width 40%
+	background-color transparent
+	margin 3rem auto
+	transition width transitionSpeed ease
+
+	img
+		margin 0.5em auto
+		max-width 100%
+		height auto
+	& > div
+		float left
+		width 100%
+		text-align center
+
+#content > section,
+#content > article
+	font-family "Lato"
+	float left
+	width calc(100% - 3em)
+	display block
+	margin 0.5em auto
+	padding 1.5em
+	line-height 1.7em
+	overflow hidden
+	text-align center
+	text-shadow textShadow
+	box-shadow 0 0 8px rgba(0, 0, 0, 0.5)
+	background-color bgColor
+	border 1px dotted alpha(mainColor, 15%)
+	border-radius 5px
+	transition all 270ms ease

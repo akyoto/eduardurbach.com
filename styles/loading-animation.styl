@@ -1,11 +1,13 @@
+@require "styles/config.styl"
+
 duration = 1.3s
 size = 16px
 
 #loading-animation
 	display none
 	position fixed
-	bottom 16px
-	right 32px
+	bottom 1rem
+	right 1rem
 
 .sk-cube-grid
 	width size
@@ -13,8 +15,8 @@ size = 16px
 	.sk-cube
 		width 33%
 		height 33%
-		background-color white
-		box-shadow 0 0 8px white
+		background-color subColor
+		box-shadow 0 0 size alpha(subColor, 90%)
 		float left
 		animation sk-cubeGridScaleDelay duration infinite ease-in-out
 	.sk-cube1

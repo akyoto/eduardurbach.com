@@ -7,32 +7,27 @@ html(lang="en")
 	
 	body
 		#container
-			#header-container
-				#header
-					#title
-						h1= siteName
+			h1#title= siteName
+			
+			section#content!= content
+		
+		#navigation-container
+			nav#navigation
+				header
+					h2 Navigation
 					
-					if nav
-						nav#navigation
-							header
-								h2 Navigation
-							
-							each link in nav
-								.navigation-item
-									a.navigation-item-text.sliding-middle-out.ajax(href="/#{link.url}")= link.title
-			
-			#content-container
-				section#content!= content
-			
-			#loading-animation.sk-cube-grid
-				.sk-cube.sk-cube1
-				.sk-cube.sk-cube2
-				.sk-cube.sk-cube3
-				.sk-cube.sk-cube4
-				.sk-cube.sk-cube5
-				.sk-cube.sk-cube6
-				.sk-cube.sk-cube7
-				.sk-cube.sk-cube8
-				.sk-cube.sk-cube9
+				each link in nav
+					a.navigation-item.sliding-middle-out.ajax(href="/#{link.url}")= link.title
+		
+		#loading-animation.sk-cube-grid
+			.sk-cube.sk-cube1
+			.sk-cube.sk-cube2
+			.sk-cube.sk-cube3
+			.sk-cube.sk-cube4
+			.sk-cube.sk-cube5
+			.sk-cube.sk-cube6
+			.sk-cube.sk-cube7
+			.sk-cube.sk-cube8
+			.sk-cube.sk-cube9
 
 		script!= js

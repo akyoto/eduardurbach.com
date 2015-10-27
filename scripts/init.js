@@ -29,10 +29,10 @@ $(window).load(function() {
 
 		window.setTimeout(function() {
 			$item.addClass("navigation-item-ready");
-		}, (index) * 150);
+		}, (index) * 50);
 	});
 
-	$(document).keydown(function(event) {
+	/*$(document).keydown(function(event) {
 		switch(event.which) {
 			// Left
 			case 37:
@@ -67,5 +67,5 @@ $(window).load(function() {
 				return;
 		}
 		event.preventDefault();
-	});
+	});*/
 });

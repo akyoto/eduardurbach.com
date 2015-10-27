@@ -5,6 +5,10 @@
 			"url": ""
 		},
 		{
+			"title": "Blog",
+			"url": "blog"
+		},
+		{
 			"title": "Skills",
 			"url": "skills"
 		},
@@ -15,6 +19,10 @@
 		{
 			"title": "Websites",
 			"url": "websites"
+		},
+		{
+			"title": "Sitemap",
+			"url": "sitemap"
 		},
 		{
 			"title": "Contact",

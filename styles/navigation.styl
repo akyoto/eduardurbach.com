@@ -1,0 +1,36 @@
+@require "styles/config.styl"
+
+#navigation-container
+	float left
+	width 100%
+	height navigationHeight
+	opacity 1
+	text-align center
+	background linear-gradient(to top, navColor 0%, lighten(navColor, 1%) 100%)
+	border-top 1px solid rgba(255, 255, 255, 0.02)
+
+#navigation
+	padding-top 1rem
+
+.navigation-item
+	color navLinkColor
+	font-size 1rem
+	letter-spacing 1px
+	padding 0 1rem
+	opacity 0
+	margin-left -50px
+	transform rotateY(-90deg)
+	transition all 1000ms ease
+
+	&:hover
+		color navLinkHoverColor
+
+.navigation-item-ready
+	opacity 1
+	margin-left 0
+	transform rotateY(0deg)
+
+.active
+	color navLinkHoverColor
+	opacity 1
+	text-shadow 0 0 8px alpha(navLinkHoverColor, 75%)

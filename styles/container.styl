@@ -1,0 +1,15 @@
+@require "styles/config.styl"
+
+#container
+	background-color rgb(16, 16, 16)
+	background-image url(bgImage)
+	background-size cover
+
+#container
+	float left
+	width 100%
+	height "calc(100% - %s)" % navigationHeight
+	display block
+	overflow-x hidden
+	overflow-y auto
+	text-align center

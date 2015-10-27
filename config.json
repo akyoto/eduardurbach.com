@@ -6,13 +6,14 @@
 	],
 	"styles": [
 		"base",
-		"sliding-underline",
-		"layout",
-		"meter",
-		"others",
+		"container",
+		"content",
+		"navigation",
+		"projects",
 		"loading-animation",
-		"mobile",
-		"projects"
+		"sliding-underline",
+		"invisible",
+		"mobile"
 	],
 	"static": [
 		"images"

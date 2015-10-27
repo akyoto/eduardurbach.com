@@ -1,32 +1,27 @@
 @require "styles/config.styl"
 
-html, body
+html
+	height 100%
+
+body
 	font-family "Julius Sans One"
-	font-size 1em
+	font-size baseFontSize
 	tab-size 4
 	text-rendering optimizeLegibility
 	height 100%
 	color mainColor
-	background-color rgb(32, 32, 32)
 	overflow-x hidden
 	overflow-y hidden
-	background url(/images/backgrounds/coast-dark.jpg) no-repeat center bottom fixed
-	background-size cover
-	margin 0
 
 a
 	text-decoration none
+	text-shadow none
 	color subColor
 	transition all transitionSpeed ease
 
 	&:hover
-		color rgb(187, 238, 255)
-		text-shadow 0px 0px 8px rgba(187, 238, 255, 0.3)
-
-h2
-	a
-		&:hover
-			text-decoration none
+		color lighten(subColor, 10%)
+		text-shadow 0px 0px 8px alpha(subColor, 30%)
 
 li
 	margin-top 1px
@@ -35,20 +30,11 @@ li
 #content
 	img
 		border none
-		box-shadow 0px 0px 8px rgba(0, 0, 0, 0.6)
+		box-shadow 0 0 8px rgba(0, 0, 0, 1)
+		transition all transitionSpeed ease-in-out
 
-.logo
-	float left
-	vertical-align baseline
-	margin-left 0.1em
-	margin-right 0.3em
-	width 54px
-	height 54px
-
-h1
-	display inline-block
-	font-size 3em
-	line-height 3em
+		&:hover
+			box-shadow 0 0 14px rgba(0, 0, 0, 1)
 
 h3
 	font-size 2em
@@ -138,41 +124,8 @@ hr
 	border-right none
 	border-top none
 
-.center
-	width auto
-	margin 0 auto
-	text-align center
-
-.copyright
-	float left
-	width 100%
-	text-align center
-	margin-top 0.25em
-	padding 0.25em 0
-	color rgba(32, 32, 32, 0.9)
-
-.clear
-	clear both
-
-.kanji
-	font-size 8em
-	&:hover
-		text-decoration none
-
-.anime-character
-	img
-		box-shadow none !important
-		vertical-align middle
-		margin 0
-		padding 0
-		width 16px
-		font-size 0
-	&:hover
-		text-decoration none
-		img
-			-webkit-transform translate(52px, -80px) scale(5)
-			transform translate(52px, -80px) scale(5)
-			transition all 200ms ease
+.dim
+	opacity 0.4
 
 ::selection
 	text-shadow none
