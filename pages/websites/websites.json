@@ -1,7 +1,12 @@
 {
 	"websites": {
 		"nihongo-center.com": {
-			"title": "Online application system, responsive design & SEO for Nihongo Center",
+			"title": "Responsive design & SEO for Nihongo Center",
+			"image": true,
+			"date": "2015"
+		},
+		"my.nihongo-center.com": {
+			"title": "Online application system for new students at Nihongo Center",
 			"image": true,
 			"date": "2015"
 		},
@@ -10,13 +15,13 @@
 			"image": true,
 			"date": "2015"
 		},
-		"increasedvoices.com": {
-			"title": "Website for a music album",
+		"blitzprog.org": {
+			"title": "Inception",
 			"image": true,
 			"date": "2015"
 		},
-		"blitzprog.org": {
-			"title": "Inception",
+		"increasedvoices.com": {
+			"title": "Website for a music album",
 			"image": true,
 			"date": "2015"
 		},
@@ -32,7 +37,7 @@
 		},
 		"battleofmages.com": {
 			"title": "Game website with Riak integration and player profiles",
-			"image": false,
+			"image": true,
 			"date": "2013"
 		},
 		"hersa.de": {
