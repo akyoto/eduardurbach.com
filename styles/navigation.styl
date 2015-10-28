@@ -12,9 +12,15 @@
 #navigation
 	padding-top 1rem
 
+	.active
+		color navLinkHoverColor
+		opacity 1
+		text-shadow 0 0 8px alpha(navLinkHoverColor, 75%)
+
 .navigation-item
 	color navLinkColor
 	font-size 1rem
+	line-height 1.7rem
 	letter-spacing 1px
 	padding 0 1rem
 	opacity 0
@@ -29,8 +35,3 @@
 	opacity 1
 	margin-left 0
 	transform rotateY(0deg)
-
-.active
-	color navLinkHoverColor
-	opacity 1
-	text-shadow 0 0 8px alpha(navLinkHoverColor, 75%)

@@ -19,16 +19,13 @@
 	#content, #footer
 		width calc(100% - 1em)
 
-@media only screen and (max-width: 800px)
-	.footer-item
-		color rgba(0, 0, 0, 0)
-		width 0
-		&:first-letter
-			color rgba(255, 255, 255, 1)
-			font-size 1.5rem
+@media only screen and (max-width: 650px)
+	newNavigationSize = 5.8rem
+	#navigation-container
+		height newNavigationSize
 
-		&:hover
-			//
+	#container
+		height "calc(100% - %s)" % newNavigationSize
 
 // @media only screen and (max-width: 800px)
 // 	#header

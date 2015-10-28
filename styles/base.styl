@@ -1,11 +1,11 @@
 @require "styles/config.styl"
 
 html
+	font-family "Julius Sans One"
+	font-size baseFontSize
 	height 100%
 
 body
-	font-family "Julius Sans One"
-	font-size baseFontSize
 	tab-size 4
 	text-rendering optimizeLegibility
 	height 100%
@@ -23,6 +23,10 @@ a
 		color lighten(subColor, 10%)
 		text-shadow 0px 0px 8px alpha(subColor, 30%)
 
+header
+	a:hover
+		text-shadow inherit
+
 li
 	margin-top 1px
 	margin-bottom 1px
@@ -35,6 +39,9 @@ li
 
 		&:hover
 			box-shadow 0 0 14px rgba(0, 0, 0, 1)
+
+h1, h2, h3, h4
+	font-family "Julius Sans One"
 
 h3
 	font-size 2em

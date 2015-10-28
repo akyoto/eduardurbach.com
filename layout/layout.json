@@ -5,10 +5,6 @@
 			"url": ""
 		},
 		{
-			"title": "Blog",
-			"url": "blog"
-		},
-		{
 			"title": "Skills",
 			"url": "skills"
 		},
@@ -21,8 +17,8 @@
 			"url": "websites"
 		},
 		{
-			"title": "Sitemap",
-			"url": "sitemap"
+			"title": "Other",
+			"url": "other"
 		},
 		{
 			"title": "Contact",
