@@ -1,6 +1,11 @@
 {
 	"quotes": [
 		{
+				"title": "Crazy",
+				"text": "The people who are crazy enough to think they can change the world are the ones who do.",
+				"author": "Steve Jobs"
+		},
+		{
 			"title": "Ideas",
 			"text": "Ideas are just a multiplier of execution.",
 			"author": "Derek Sivers"
@@ -9,6 +14,11 @@
 			"title": "The Art of War",
 			"text": "If you know the enemy and know yourself, you need not fear the result of a hundred battles. If you know yourself but not the enemy, for every victory gained you will also suffer a defeat. If you know neither the enemy nor yourself, you will succumb in every battle.",
 			"author": "Sun Tzu"
+		},
+		{
+			"title": "Mirror",
+			"text": "For the past 33 years, I have looked in the mirror every morning and asked myself: 'If today were the last day of my life, would I want to do what I am about to do today?' And whenever the answer has been 'No' for too many days in a row, I know I need to change something.",
+			"author": "Steve Jobs"
 		},
 		{
 			"title": "The Last Samurai",
