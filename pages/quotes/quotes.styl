@@ -4,11 +4,21 @@ blockquote
 	//&:first-letter
 	//	margin-left 0.8rem
 
-	footer
-		font-size 0.9rem
-		font-style italic
-		text-align right
-		margin-top 1rem
+	&:before
+		content "“"
+
+	&:after
+		content "”"
+
+.quote-title
+.quote-author
+	opacity 0.5
+
+.quote-author
+	font-size 0.9rem
+	font-style italic
+	text-align right
+	margin-top 1rem
 
 #content > section
 	margin-bottom 2em

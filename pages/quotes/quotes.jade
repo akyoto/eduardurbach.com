@@ -2,7 +2,9 @@ header
 	h2 Quotes
 
 each quote in quotes
-	h3= quote.title
 	section
-		blockquote= quote.text
-			footer= quote.author
+		header
+			h3.quote-title= quote.title
+		
+		blockquote.quote-text= quote.text
+		footer.quote-author= quote.author

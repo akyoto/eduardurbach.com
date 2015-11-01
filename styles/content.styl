@@ -16,18 +16,27 @@
 		width 100%
 		text-align center
 
+.text
+	color mainColor
+	text-shadow textShadow
+
+	&:hover
+		color mainColor
+		text-shadow textShadow
+
 #content > section,
 #content > article
 	font-family "Lato"
+	text-shadow textShadow
+	box-sizing border-box
 	float left
-	width calc(100% - 3em)
+	width 100%
 	display block
 	margin 0.5em auto
 	padding 1.5em
 	line-height 1.7em
 	overflow hidden
 	text-align center
-	text-shadow textShadow
 	box-shadow 0 0 8px rgba(0, 0, 0, 0.5)
 	background linear-gradient(to top, darken(bgColor, 25%) 0%, bgColor 100%)
 	border 1px dotted alpha(mainColor, 15%)
