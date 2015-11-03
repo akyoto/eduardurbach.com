@@ -1,0 +1,42 @@
+{
+	siteName: Eduard Urbach
+	scripts:
+	[
+		init
+		analytics
+	]
+	styles:
+	[
+		base
+		container
+		content
+		navigation
+		projects
+		loading-animation
+		sliding-underline
+		invisible
+		mobile
+	]
+	static:
+	[
+		images
+	]
+	fonts:
+	[
+		Lato
+		Julius Sans One
+	]
+	plugins:
+	{
+		reset: {}
+		jquery: {}
+		kaze: {}
+	}
+	security:
+	{
+		key: ""
+		cert: ""
+	}
+	port: 1991
+	liveReloadPort: 9009
+}
