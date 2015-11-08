@@ -53,6 +53,24 @@
 .links li:last-child:after
 	content ""
 
+.stars
+	display inline-block
+	opacity 0
+	transform rotateY(-90deg)
+	transition all 1s ease
+
+.visible-text
+	transform none
+	display inline-block
+	opacity 1
+
+	&:before
+		content '★'
+		margin-left 0.3em
+
+	&:after
+		content ''
+
 @media only screen and (max-width: 640px)
 	.tags
 		display none
