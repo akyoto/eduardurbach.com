@@ -1,0 +1,9 @@
+{
+	"shortcuts": {
+		"Navigate workspaces": "Ctrl + Alt + ⇅⇄",
+		"Move window to workspace": "Ctrl + Alt + Shift + ⇅⇄",
+		"Maximize window": "Ctrl + ⌘ + Up",
+		"Minimize window": "Ctrl + ⌘ + Down",
+		"Lock screen": "⌘ + L"
+	}
+}

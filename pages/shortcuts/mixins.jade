@@ -1,0 +1,7 @@
+mixin renderShortcuts(dict)
+	table.shortcut-list
+		tbody
+			each keys, action in dict
+				tr.shortcut
+					td.shortcut-action= action
+					td.shortcut-keys= keys

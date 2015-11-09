@@ -22,7 +22,7 @@ kaze.navigateRight = function() {
 
 // Load
 $(window).load(function() {
-	kaze.fadeSpeed = 300;
+	kaze.fadeSpeed = 250;
 
 	$(".navigation-item").each(function(index, item) {
 		var $item = $(item);

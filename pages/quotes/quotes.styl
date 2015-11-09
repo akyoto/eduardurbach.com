@@ -1,3 +1,6 @@
+quoteCharacterMargin = 0.2em
+quoteCharacterOpacity = 0.5
+
 blockquote
 	font-size 1.1rem
 
@@ -6,11 +9,13 @@ blockquote
 
 	&:before
 		content "“"
-		opacity 0.5
+		opacity quoteCharacterOpacity
+		margin-right quoteCharacterMargin
 
 	&:after
 		content "”"
-		opacity 0.5
+		opacity quoteCharacterOpacity
+		margin-left quoteCharacterMargin
 
 .quote-title
 	display none

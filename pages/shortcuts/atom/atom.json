@@ -1,0 +1,11 @@
+{
+	"shortcuts": {
+		"WTF HAX": "Ctrl + D",
+		"Select line": "Ctrl + L",
+		"Delete current line": "Ctrl + Shift + K",
+		"Find in project": "Ctrl + Shift + F",
+		"File finder": "Ctrl + P",
+		"Goto line": "Ctrl + G",
+		"Settings": "Ctrl + Comma"
+	}
+}

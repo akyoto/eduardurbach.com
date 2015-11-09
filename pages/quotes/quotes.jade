@@ -1,10 +1,10 @@
 header
 	h2 Quotes
 
-each quote in quotes
+each quote, title in quotes
 	section
 		header
-			h3.quote-title= quote.title
+			h3.quote-title= title
 		
 		blockquote.quote-text= quote.text.trim()
 		footer.quote-author= quote.author

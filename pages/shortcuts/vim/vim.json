@@ -1,0 +1,12 @@
+{
+	"shortcuts": {
+		"Search": "/keyword",
+		"Find next": "n",
+		"Find previous": "N",
+		"Select characters": "v",
+		"Select lines": "V",
+		"Cut": "d",
+		"Copy": "y",
+		"Paste": "P"
+	}
+}

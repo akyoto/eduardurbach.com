@@ -43,7 +43,7 @@ li
 h1, h2, h3, h4
 	font-family "Julius Sans One"
 
-p, ul, ol, h4, blockquote
+p, ul, ol, h4, blockquote, table
 	line-height 1.7em
 	float left
 	width 100%
@@ -82,9 +82,15 @@ small
 table
 	float left
 
-td
+tr
 	border-bottom-width 1px
 	border-bottom-style solid
+	border-bottom-color rgba(255, 255, 255, 0.05)
+
+	&:last-child
+		border none
+
+td
 	padding 0.5em
 	text-align left
 	vertical-align top
