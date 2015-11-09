@@ -6,5 +6,5 @@ each quote, title in quotes
 		header
 			h3.quote-title= title
 		
-		blockquote.quote-text= quote.text.trim()
+		blockquote.quote-text!= quote.text.trim()
 		footer.quote-author= quote.author
