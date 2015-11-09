@@ -1,8 +1,7 @@
 {
 	"siteName": "Eduard Urbach",
 	"scripts": [
-		"init",
-		"analytics"
+		"init"
 	],
 	"styles": [
 		"base",
