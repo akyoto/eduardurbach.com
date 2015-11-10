@@ -20,18 +20,21 @@ kaze.navigateRight = function() {
 	kaze.loadURL($('.active').parent().nextOrFirst('.navigation-item').children('.navigation-item-text').attr('href'));
 };
 
-// Load
-$(window).load(function() {
+// Init
+var init = function() {
 	kaze.fadeSpeed = 250;
-	kaze.$loadingAnimation.fadeOut(kaze.fadeSpeed);
 
-	$(".navigation-item").each(function(index, item) {
-		var $item = $(item);
+	var navItems = document.querySelectorAll('.navigation-item');
 
-		window.setTimeout(function() {
-			$item.addClass("navigation-item-ready");
-		}, (index) * 50);
-	});
+	var fadeIndex = function(i) {
+		return function() {
+			navItems[i].classList.add('navigation-item-ready');
+		};
+	}
+
+	for(var i = 0; i < navItems.length; i++) {
+		window.setTimeout(fadeIndex(i), i * 50);
+	}
 
 	/*$(document).keydown(function(event) {
 		switch(event.which) {
@@ -69,4 +72,13 @@ $(window).load(function() {
 		}
 		event.preventDefault();
 	});*/
-});
+
+	// Fade out loading animation
+	document.getElementById('loading-animation').classList.add('fade-out');
+};
+
+// Load
+if(document.readyState !== 'complete')
+	window.addEventListener('load', init);
+else
+	init();
