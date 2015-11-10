@@ -19,16 +19,14 @@
 	#content, #footer
 		width calc(100% - 1em)
 
-@media only screen and (max-width: 650px)
-	newNavigationSize = 5.8rem
-	#navigation-container
-		height newNavigationSize
-
-	#container
-		height "calc(100% - %s)" % newNavigationSize
-
 	.navigation-item
 		margin-left 0
+
+	.navigation-item-icon
+		margin-right 0 !important
+
+	.navigation-item-title
+		display none
 
 // @media only screen and (max-width: 800px)
 // 	#header

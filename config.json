@@ -25,7 +25,8 @@
 	"plugins": {
 		"style-reset": {},
 		"jquery": {},
-		"kaze": {}
+		"kaze": {},
+		"glyphicons": {}
 	},
 	"security": {
 		"key": "",

@@ -16,8 +16,10 @@ html(lang="en")
 				header
 					h2 Navigation
 					
-				each link in nav
-					a.navigation-item.sliding-middle-out.ajax(href="/#{link.url}")= link.title
+				each link, url in nav
+					a.navigation-item.sliding-middle-out.ajax(href=`/${url}`)
+						span(class='glyphicon glyphicon-' + link.icon + ' navigation-item-icon')
+						span.navigation-item-title= link.title
 		
 		#loading-animation.sk-cube-grid
 			.sk-cube.sk-cube1

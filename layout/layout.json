@@ -1,28 +1,28 @@
 {
-    "nav": [
-        {
-            "title": "Me",
-            "url": ""
-        },
-        {
-            "title": "Skills",
-            "url": "skills"
-        },
-        {
-            "title": "Projects",
-            "url": "projects"
-        },
-        {
-            "title": "Websites",
-            "url": "websites"
-        },
-        {
-            "title": "Other",
-            "url": "other"
-        },
-        {
-            "title": "Contact",
-            "url": "contact"
-        }
-    ]
+	"nav": {
+		"": {
+			"title": "Me",
+			"icon": "user"
+		},
+		"skills": {
+			"title": "Skills",
+			"icon": "education"
+		},
+		"projects": {
+			"title": "Projects",
+			"icon": "blackboard"
+		},
+		"websites": {
+			"title": "Websites",
+			"icon": "cloud"
+		},
+		"other": {
+			"title": "Other",
+			"icon": "pencil"
+		},
+		"contact": {
+			"title": "Contact",
+			"icon": "envelope"
+		}
+	}
 }

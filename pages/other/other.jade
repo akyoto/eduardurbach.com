@@ -3,17 +3,6 @@ section
 		h3 Other
 	
 	ul
-		li
-			a.ajax(href='/now') Now
-		li
-			a.ajax(href='/zen') Zen
-		li
-			a.ajax(href='/quotes') Quotes
-		li
-			a.ajax(href='/photos') Photos
-		li
-			a.ajax(href='/shortcuts') Shortcuts
-		li
-			a.ajax(href='/hardware') Hardware
-		li
-			a.ajax(href='/software-quality') Software Quality Factors
+		each page in pages
+			li
+				a.ajax(href='/' + page)= humanize(page)
