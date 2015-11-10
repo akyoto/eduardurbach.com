@@ -1,45 +1,47 @@
 @require "styles/config.styl"
 
-duration = 1.3s
+duration = 0.8s
 size = 16px
 
 #loading-animation
-	display none
+	display block
 	position fixed
-	bottom 1rem
-	right 1rem
+	bottom 1.15rem
+	right 1.15rem
 
 .sk-cube-grid
 	width size
 	height size
-	.sk-cube
-		width 33%
-		height 33%
-		background-color subColor
-		box-shadow 0 0 size alpha(subColor, 90%)
-		float left
-		animation sk-cubeGridScaleDelay duration infinite ease-in-out
-	.sk-cube1
-		animation-delay 0.2s
-	.sk-cube2
-		animation-delay 0.3s
-	.sk-cube3
-		animation-delay 0.4s
-	.sk-cube4
-		animation-delay 0.1s
-	.sk-cube5
-		animation-delay 0.2s
-	.sk-cube6
-		animation-delay 0.3s
-	.sk-cube7
-		animation-delay 0s
-	.sk-cube8
-		animation-delay 0.1s
-	.sk-cube9
-		animation-delay 0.2s
+	transform rotateZ(0deg)
+	animation sk-rotate duration infinite linear
 
-@keyframes sk-cubeGridScaleDelay
-	0%, 70%, 100%
-		transform scale3D(1, 1, 1)
-	35%
-		transform scale3D(0, 0, 1)
+.sk-cube
+	width 33.3%
+	height 33.3%
+	background-color alpha(navLinkColor, 50%)
+	box-shadow 0 0 size alpha(navLinkColor, 60%)
+	float left
+	animation sk-cube-grid duration infinite linear
+	border-radius 100%
+
+.sk-cube5
+	background-color navLinkColor
+	box-shadow 0 0 size alpha(navLinkColor, 90%)
+
+.sk-cube1
+.sk-cube3
+.sk-cube7
+.sk-cube9
+	visibility hidden
+
+@keyframes sk-cube-grid
+	0%, 100%
+		transform scale3D(0.4, 0.4, 0.4)
+	50%
+		transform scale3D(0.9, 0.9, 0.9)
+
+@keyframes sk-rotate
+	0%
+		transform rotateZ(0deg)
+	100%
+		transform rotateZ(360deg)
