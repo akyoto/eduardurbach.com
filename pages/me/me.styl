@@ -1,6 +1,8 @@
+@require "styles/config.styl"
+
 .profile
 	width 100%
-	color rgb(224, 224, 224)
+	color mainColor
 	font-size 1.9em
 	text-align center
 	letter-spacing 3px
@@ -25,7 +27,7 @@
 	margin-top 1em
 	font-size 0.5em
 	opacity 0.8
-	text-shadow 0px 0px 8px rgba(255, 255, 255, 0.5)
+	text-shadow 0px 0px 8px alpha(mainColor, 50%)
 
 @media only screen and (max-height: 800px)
 	.profile
