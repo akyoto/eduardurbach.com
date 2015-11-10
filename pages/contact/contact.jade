@@ -1,20 +1,8 @@
 section
 	header
 		h3 Contact
+	
 	ul
-		li
-			a.facebook(href='http://www.facebook.com/eduard.urbach', target='_blank') Facebook
-		li
-			a.twitter(href='https://twitter.com/eduardurbach', target='_blank') Twitter
-		li
-			a.google(href='https://google.com/+EduardUrbach', target='_blank') Google+
-		li
-			a.github(href='https://github.com/blitzprog', target='_blank') GitHub
-		li
-			a.soundcloud(href='http://soundcloud.com/eduard-urbach', target='_blank') SoundCloud
-		li
-			a.player(href='https://player.me/akyoto/games', target='_blank') Player
-		li
-			a.skype(href='skype:blitzprog?chat') Skype
-		li
-			a.email(href='mailto:e.urbach@gmail.com') E-Mail
+		each link, title in links
+			li
+				a(class=title.replace('-', '').toLowerCase(), href=link, target=link.startsWith('http') ? '_blank' : undefined)= title
