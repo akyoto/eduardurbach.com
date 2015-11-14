@@ -28,7 +28,10 @@
 		"style-reset": {},
 		"jquery": {},
 		"kaze": {},
-		"glyphicons": {}
+		"glyphicons": {},
+		"google-analytics": {
+			"UA": "UA-22786508-1"
+		}
 	},
 	"security": {
 		"key": "",
