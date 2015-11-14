@@ -28,15 +28,14 @@
 	letter-spacing 1px
 	padding 0 1rem
 	opacity 0
-	margin-left -50px
 	backface-visibility hidden
-	transform rotateY(-90deg)
+	transform rotateY(-90deg) translateX(0)
 	transition all 1000ms ease
+	will-change transform, opacity
 
 	&:hover
 		color navLinkHoverColor
 
 .navigation-item-ready
 	opacity 1
-	margin-left 0
-	transform none
+	transform rotateY(0) translateX(0)
