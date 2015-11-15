@@ -1,4 +1,4 @@
-"use strict";
+'use strict'
 
-let aero = require("aero");
-aero.run();
+let aero = require('aero')
+aero.run()
