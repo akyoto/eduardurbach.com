@@ -7,4 +7,4 @@ each quote, title in quotes
 			h3.quote-title= title
 		
 		blockquote.quote-text!= quote.text.trim()
-		footer.quote-author= quote.author
+		footer.quote-author(title=title)= quote.author
