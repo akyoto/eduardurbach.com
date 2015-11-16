@@ -5,8 +5,7 @@ let aero = require('aero')
 
 let excludePages = {
 	'me': true,
-	'api': true,
-	'activity': true
+	'api': true
 }
 
 exports.init = function() {

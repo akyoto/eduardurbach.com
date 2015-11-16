@@ -1,6 +1,6 @@
-$.getJSON('https://api.github.com/users/blitzprog/events', function(data) {
-	$("#github-events").html(
-		'<ul>' + data
+kaze.getJSON('https://api.github.com/users/blitzprog/events', function(data) {
+	document.getElementById('github-events').innerHTML = '<ul>' +
+		data
 		.filter(function(e) {
 			return e.type === 'PushEvent'
 		})
@@ -10,8 +10,5 @@ $.getJSON('https://api.github.com/users/blitzprog/events', function(data) {
 					+ '<span class="repository-name">' + e.repo.name.substring(e.repo.name.indexOf('/') + 1) + '</span>'
 					+ '</li>';
 			}).join('');
-		}).join('') + '</ul>'
-	);
-}).fail(function() {
-	console.error("Couldn't fetch GitHub events");
+		}).join('') + '</ul>';
 });
