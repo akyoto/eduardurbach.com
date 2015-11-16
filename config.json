@@ -9,6 +9,7 @@
 		"content",
 		"navigation",
 		"projects",
+		"skills",
 		"shortcuts",
 		"scrollbar",
 		"loading-animation",
@@ -26,7 +27,6 @@
 	],
 	"plugins": {
 		"style-reset": {},
-		"jquery": {},
 		"kaze": {},
 		"glyphicons": {}
 	},
