@@ -1,4 +1,4 @@
-kaze.getJSON('https://api.github.com/users/blitzprog/events', function(data) {
+kaze.getJSON('https://api.github.com/users/blitzprog/events?access_token=e350588171cbd6c8351b0d27cb07201b1e1fbe5e', function(data) {
 	document.getElementById('github-events').innerHTML = '<ul>' +
 		data
 		.filter(function(e) {
