@@ -1,6 +1,5 @@
 // Init
 var init = function() {
-	kaze.fadeSpeed = 250;
 	kaze.fadeIn(document.getElementById('container'))
 
 	var navItems = document.querySelectorAll('.navigation-item');
