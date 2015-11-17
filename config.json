@@ -31,8 +31,8 @@
 		"glyphicons": {}
 	},
 	"security": {
-		"key": "",
-		"cert": ""
+		"key": "privkey.pem",
+		"cert": "fullchain.pem"
 	},
 	"port": 1991,
 	"liveReloadPort": 9009
