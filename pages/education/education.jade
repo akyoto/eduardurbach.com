@@ -1,0 +1,39 @@
+header
+	h2(style="display: block") Education
+
+each edu, name in education
+	section
+		h3.education-institution= name
+		
+		table
+			tbody
+				tr.education-row
+					td.education-label Country
+					td.education-country= edu.country
+					
+				tr.education-row
+					td.education-label City
+					td.education-city
+						a.education-city-link(href='https://www.google.com/maps/place/' + edu.city + ',+' + edu.country, target='_blank')= edu.city
+					
+				tr.education-row
+					td.education-label Type
+					td.education-type= edu.type
+				
+				if edu.degree
+					tr.education-row
+						td.education-label Degree
+						td.degree= edu.degree
+					
+				tr.education-row
+					td.education-label Year
+					td.education-year= edu.fromYear + " - " + edu.toYear
+				
+				tr.education-row
+					td.education-label Status
+					td.degree-status= edu.status
+					
+				if edu.notes
+					tr.education-row
+						td.education-label Notes
+						td.education-notes= edu.notes

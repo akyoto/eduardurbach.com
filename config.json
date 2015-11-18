@@ -16,7 +16,8 @@
 		"sliding-underline",
 		"fade",
 		"invisible",
-		"mobile"
+		"mobile",
+		"print"
 	],
 	"static": [
 		"images"

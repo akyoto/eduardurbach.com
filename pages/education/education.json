@@ -1,0 +1,72 @@
+{
+	"education": {
+		"Grundschule Marienwerder": {
+			"country": "Germany",
+			"city": "Hannover",
+			"type": "Elementary school",
+			"fromYear": 1998,
+			"toYear": 1999,
+			"status": "Moved",
+			"notes": "Skipped 1st grade, went to 2nd."
+		},
+
+		"Grundschule Garbsen-Mitte": {
+			"country": "Germany",
+			"city": "Garbsen",
+			"type": "Elementary school",
+			"fromYear": 1999,
+			"toYear": 2001,
+			"status": "Graduated"
+		},
+
+		"Orientierungsstufe Nikolaus Kopernikus": {
+			"country": "Germany",
+			"city": "Garbsen",
+			"type": "Junior high school",
+			"fromYear": 2001,
+			"toYear": 2003,
+			"status": "Graduated"
+		},
+
+		"Johannes Kepler Gynmnasium Garbsen": {
+			"country": "Germany",
+			"city": "Garbsen",
+			"type": "High school",
+			"degree": "High school degree",
+			"fromYear": 2003,
+			"toYear": 2010,
+			"status": "Graduated",
+			"notes": "Canceled 3rd year in senior high school."
+		},
+
+		"BBS Brinkstrasse": {
+			"country": "Germany",
+			"city": "Osnabrück",
+			"type": "Vocational school",
+			"degree": "Software Engineer",
+			"fromYear": 2010,
+			"toYear": 2011,
+			"status": "Canceled"
+		},
+
+		"Leibniz Universität Hannover": {
+			"country": "Germany",
+			"city": "Hannover",
+			"type": "University",
+			"degree": "Bachelor of Computer Science",
+			"fromYear": 2012,
+			"toYear": 2014,
+			"status": "Canceled"
+		},
+
+		"Nihongo Center": {
+			"country": "Japan",
+			"city": "Kyoto",
+			"type": "Language school",
+			"degree": "Japanese Language Proficiency Test",
+			"fromYear": 2014,
+			"toYear": 2016,
+			"status": "Attending"
+		}
+	}
+}

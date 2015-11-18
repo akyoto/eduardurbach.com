@@ -1,0 +1,36 @@
+@require "styles/config.styl"
+
+.education-row
+	opacity 0.6
+	will-change opacity, background-color
+	transition all 150ms ease
+
+	&:hover
+		opacity 0.9
+		background-color rgba(255, 255, 255, 0.03)
+
+.education-label
+	width 50%
+	color rgb(255, 212, 60)
+	&:after
+		content ':'
+
+.education-year
+	//
+
+.education-institution
+	line-height 1.5em
+	font-size 1.4em
+	text-align left
+
+.education-country
+	//
+
+.degree
+	//
+
+.degree-status
+	//
+
+.education-city-link
+	color inherit
