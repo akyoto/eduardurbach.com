@@ -6,7 +6,7 @@ kaze.getJSON('https://api.github.com/users/blitzprog/events?clientid=e8fe5e8bcaf
 		})
 		.map(function(e) {
 			return e.payload.commits.map(function(commit) {
-				return '<li class="commit"><a href="https://github.com/' + e.repo.name + '/commit/' + commit.sha + '" target="_blank">' + commit.message + '</a>'
+				return '<li class="commit"><a href="https://github.com/' + e.repo.name + '/commit/' + commit.sha + '" target="_blank">' + commit.message.split('\n')[0] + '</a>'
 					+ '<span class="repository-name">' + e.repo.name.substring(e.repo.name.indexOf('/') + 1) + '</span>'
 					+ '</li>';
 			}).join('');
