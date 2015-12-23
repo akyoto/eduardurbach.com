@@ -1,0 +1,27 @@
+{
+	"employment": {
+		"net-com AG": {
+			"country": "Germany",
+			"city": "Osnabrück",
+			"field": "Software Engineering",
+			"fromYear": 2010,
+			"toYear": 2011
+		},
+
+		"Leibniz Universität Hannover IT Services": {
+			"country": "Germany",
+			"city": "Hannover",
+			"field": "Network Visualization",
+			"fromYear": 2014,
+			"toYear": 2014
+		},
+
+		"Nihongo Center": {
+			"country": "Japan",
+			"city": "Kyoto",
+			"field": "Web Development",
+			"fromYear": 2014,
+			"toYear": 2016
+		}
+	}
+}
