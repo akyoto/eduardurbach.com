@@ -35,8 +35,7 @@
 			"degree": "High school degree",
 			"fromYear": 2003,
 			"toYear": 2010,
-			"status": "Graduated",
-			"notes": "Canceled 3rd year in senior high school."
+			"status": "Graduated"
 		},
 
 		"BBS Brinkstrasse": {
@@ -55,7 +54,7 @@
 			"type": "University",
 			"degree": "Bachelor of Computer Science",
 			"fromYear": 2012,
-			"toYear": 2014,
+			"toYear": 2015,
 			"status": "Canceled"
 		},
 
