@@ -1,6 +1,27 @@
 {
 	"employment": {
+		"CONIMAGE": {
+			"url": "http://www.conimage.de/",
+			"country": "Germany",
+			"city": "Hannover",
+			"field": "Web Development",
+			"fromYear": 2007,
+			"toYear": 2008,
+			"notes": "Project-based work (freelancing)"
+		},
+
+		"RRZN": {
+			"url": "https://www.luis.uni-hannover.de/",
+			"country": "Germany",
+			"city": "Hannover",
+			"field": "Data Processing",
+			"fromYear": 2008,
+			"toYear": 2008,
+			"notes": "Internship (1 week)"
+		},
+
 		"net-com AG": {
+			"url": "http://www.net-com.de/",
 			"country": "Germany",
 			"city": "Osnabrück",
 			"field": "Software Engineering",
@@ -9,6 +30,7 @@
 		},
 
 		"Leibniz Universität Hannover IT Services": {
+			"url": "https://www.luis.uni-hannover.de/",
 			"country": "Germany",
 			"city": "Hannover",
 			"field": "Network Visualization",
@@ -17,6 +39,7 @@
 		},
 
 		"Nihongo Center": {
+			"url": "https://nihongo-center.com/",
 			"country": "Japan",
 			"city": "Kyoto",
 			"field": "Web Development",

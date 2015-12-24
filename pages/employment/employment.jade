@@ -3,7 +3,8 @@ header
 	
 each e, name in employment
 	section
-		h3.company-name= name
+		h3.company-name
+			a.company-url(href=e.url, target='_blank')= name
 		
 		table
 			tbody
@@ -23,3 +24,8 @@ each e, name in employment
 				tr.employment-row
 					td.employment-label Year
 					td.employment-year= e.fromYear + " - " + e.toYear
+					
+				if e.notes
+					tr.employment-row
+						td.employment-label Notes
+						td.employment-notes= e.notes
