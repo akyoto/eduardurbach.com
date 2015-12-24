@@ -11,10 +11,10 @@ each e, name in employment
 					td.employment-label Country
 					td.employment-country= e.country
 			
-					tr.employment-row
-						td.employment-label City
-						td.employment-city
-							a.employment-city-link(href='https://www.google.com/maps/place/' + e.city + ',+' + e.country, target='_blank')= e.city
+				tr.employment-row
+					td.employment-label City
+					td.employment-city
+						a.employment-city-link(href='https://www.google.com/maps/place/' + e.city + ',+' + e.country, target='_blank')= e.city
 					
 				tr.employment-row
 					td.employment-label Field
