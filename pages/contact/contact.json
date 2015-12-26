@@ -1,13 +1,40 @@
 {
 	"links": {
-		"Facebook": "http://www.facebook.com/eduard.urbach",
-		"Twitter": "https://twitter.com/eduardurbach",
-		"Google+": "https://google.com/+EduardUrbach",
-		"GitHub": "https://github.com/blitzprog",
-		"NPM": "https://www.npmjs.com/~blitzprog",
-		"SoundCloud": "http://soundcloud.com/eduard-urbach",
-		"Player": "https://player.me/akyoto/games",
-		"Skype": "skype:blitzprog?chat",
-		"E-Mail": "mailto:e.urbach@gmail.com"
+		"Facebook": {
+			"url": "http://www.facebook.com/eduard.urbach",
+			"icon": "user"
+		},
+		"Twitter": {
+			"url": "https://twitter.com/eduardurbach",
+			"icon": "user"
+		},
+		"Google+": {
+			"url": "https://google.com/+EduardUrbach",
+			"icon": "user"
+		},
+		"GitHub": {
+			"url": "https://github.com/blitzprog",
+			"icon": "hdd"
+		},
+		"NPM": {
+			"url": "https://www.npmjs.com/~blitzprog",
+			"icon": "hdd"
+		},
+		"SoundCloud": {
+			"url": "http://soundcloud.com/eduard-urbach",
+			"icon": "music"
+		},
+		"Player": {
+			"url": "https://player.me/akyoto/games",
+			"icon": "tower"
+		},
+		"Skype": {
+			"url": "skype:blitzprog?chat",
+			"icon": "earphone"
+		},
+		"E-Mail": {
+			"url": "mailto:e.urbach@gmail.com",
+			"icon": "envelope"
+		}
 	}
 }

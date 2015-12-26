@@ -2,7 +2,8 @@ section
 	header
 		h3 Contact
 	
-	ul
+	ul.contact-links
 		each link, title in links
 			li
-				a(class=title.replace('-', '').toLowerCase(), href=link, target=link.startsWith('http') ? '_blank' : undefined)= title
+				span(class="glyphicon glyphicon-" + link.icon)
+				a(class=title.replace('-', '').toLowerCase(), href=link.url, target=link.url.startsWith('http') ? '_blank' : undefined)= title
