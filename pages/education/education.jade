@@ -9,7 +9,7 @@ each edu, name in education
 			tbody
 				tr.education-row
 					td.education-label
-						span.glyphicon.glyphicon-map-marker
+						span.glyphicon.glyphicon-map-marker.label-icon
 						span.label-text Location
 					td.education-location
 						a.education-location-link(href='https://www.google.com/maps/place/' + edu.city + ',+' + edu.country, target='_blank')= edu.city
@@ -17,32 +17,32 @@ each edu, name in education
 				
 				tr.education-row
 					td.education-label
-						span.glyphicon.glyphicon-star
+						span.glyphicon.glyphicon-star.label-icon
 						span.label-text Type
 					td.education-type= edu.type
 				
 				if edu.degree
 					tr.education-row
 						td.education-label
-							span.glyphicon.glyphicon-certificate
+							span.glyphicon.glyphicon-certificate.label-icon
 							span.label-text Degree
 						td.degree= edu.degree
 					
 				tr.education-row
 					td.education-label
-						span.glyphicon.glyphicon-time
+						span.glyphicon.glyphicon-time.label-icon
 						span.label-text Year
 					td.education-year= edu.fromYear + " - " + edu.toYear
 				
 				tr.education-row
 					td.education-label
-						span.glyphicon.glyphicon-check
+						span.glyphicon.glyphicon-check.label-icon
 						span.label-text Status
 					td.degree-status= edu.status
 					
 				if edu.notes
 					tr.education-row
 						td.education-label
-							span.glyphicon.glyphicon-tag
+							span.glyphicon.glyphicon-tag.label-icon
 							span.label-text Notes
 						td.education-notes= edu.notes

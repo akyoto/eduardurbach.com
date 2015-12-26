@@ -10,7 +10,7 @@ each e, name in employment
 			tbody
 				tr.employment-row
 					td.employment-label
-						span.glyphicon.glyphicon-map-marker
+						span.glyphicon.glyphicon-map-marker.label-icon
 						span.label-text Location
 					td.employment-location
 						a.employment-location-link(href='https://www.google.com/maps/place/' + e.city + ',+' + e.country, target='_blank')= e.city
@@ -18,19 +18,19 @@ each e, name in employment
 					
 				tr.employment-row
 					td.employment-label
-						span.glyphicon.glyphicon-star
+						span.glyphicon.glyphicon-star.label-icon
 						span.label-text Field
 					td.employment-year= e.field
 				
 				tr.employment-row
 					td.employment-label
-						span.glyphicon.glyphicon-time
+						span.glyphicon.glyphicon-time.label-icon
 						span.label-text Year
 					td.employment-year= e.fromYear + " - " + e.toYear
 					
 				if e.notes
 					tr.employment-row
 						td.employment-label
-							span.glyphicon.glyphicon-tag
+							span.glyphicon.glyphicon-tag.label-icon
 							span.label-text Notes
 						td.employment-notes= e.notes
