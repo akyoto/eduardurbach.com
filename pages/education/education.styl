@@ -9,11 +9,12 @@
 		opacity 0.9
 		background-color rgba(255, 255, 255, 0.03)
 
+		.label-text
+			opacity 1
+
 .education-label
 	width 50%
 	color rgb(255, 212, 60)
-	&:after
-		content ':'
 
 .education-year
 	//
@@ -24,9 +25,9 @@
 	text-align left
 
 .education-country
-	//
+	opacity 0.5
 
-.education-city-link
+.education-location-link
 	color inherit
 
 .degree
@@ -34,3 +35,16 @@
 
 .degree-status
 	//
+
+.label-text
+	opacity 1
+	transition opacity 150ms ease
+	&:after
+		content ':'
+
+@media print
+	.education-label
+		color black
+
+	.label-text
+		opacity 1

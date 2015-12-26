@@ -8,32 +8,41 @@ each edu, name in education
 		table
 			tbody
 				tr.education-row
-					td.education-label Country
-					td.education-country= edu.country
-					
+					td.education-label
+						span.glyphicon.glyphicon-map-marker
+						span.label-text Location
+					td.education-location
+						a.education-location-link(href='https://www.google.com/maps/place/' + edu.city + ',+' + edu.country, target='_blank')= edu.city
+						span.education-country= ' / ' + edu.country
+				
 				tr.education-row
-					td.education-label City
-					td.education-city
-						a.education-city-link(href='https://www.google.com/maps/place/' + edu.city + ',+' + edu.country, target='_blank')= edu.city
-					
-				tr.education-row
-					td.education-label Type
+					td.education-label
+						span.glyphicon.glyphicon-star
+						span.label-text Type
 					td.education-type= edu.type
 				
 				if edu.degree
 					tr.education-row
-						td.education-label Degree
+						td.education-label
+							span.glyphicon.glyphicon-certificate
+							span.label-text Degree
 						td.degree= edu.degree
 					
 				tr.education-row
-					td.education-label Year
+					td.education-label
+						span.glyphicon.glyphicon-time
+						span.label-text Year
 					td.education-year= edu.fromYear + " - " + edu.toYear
 				
 				tr.education-row
-					td.education-label Status
+					td.education-label
+						span.glyphicon.glyphicon-check
+						span.label-text Status
 					td.degree-status= edu.status
 					
 				if edu.notes
 					tr.education-row
-						td.education-label Notes
+						td.education-label
+							span.glyphicon.glyphicon-tag
+							span.label-text Notes
 						td.education-notes= edu.notes
