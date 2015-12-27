@@ -35,6 +35,9 @@
 		"key": "privkey.pem",
 		"cert": "fullchain.pem"
 	},
-	"port": 1991,
-	"liveReloadPort": 9009
+	"ports": {
+		"http": 1990,
+		"https": 1991,
+		"liveReload": 9009
+	}
 }
