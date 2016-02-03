@@ -14,8 +14,8 @@ let excludePages = {
 }
 
 exports.init = function() {
-	fs.readdir(aero.config.path.pages, (error, pages) => {
-		this.pages = pages.filter(page => !(excludePages[page]) && !(page in aero.layout.json.nav))
+	fs.readdir(this.app.config.path.pages, (error, pages) => {
+		this.pages = pages.filter(page => !(excludePages[page]) && !(page in this.app.layout.json.nav))
 	})
 }
 

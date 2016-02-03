@@ -1,4 +1,5 @@
-kaze.getJSON('https://api.github.com/users/blitzprog/events?clientid=e8fe5e8bcaf6b7ebe0534a93976dca8bdc320ee4&clientsecret=eae6fea79ebe2c919770e0c5e2e38d64d70453d5', function(data) {
+kaze.getJSON('https://api.github.com/users/blitzprog/events?clientid=e8fe5e8bcaf6b7ebe0534a93976dca8bdc320ee4&clientsecret=eae6fea79ebe2c919770e0c5e2e38d64d70453d5')
+.then(function(data) {
 	document.getElementById('github-events').innerHTML = '<ul>' +
 		data
 		.filter(function(e) {

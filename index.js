@@ -1,4 +1,4 @@
 'use strict'
 
-let aero = require('aero')
-aero.run()
+let app = require('aero')()
+app.run()

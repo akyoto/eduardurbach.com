@@ -3,7 +3,10 @@
     "repository": "blitzprog/blitzprog.org",
     "version": "0.1.0",
     "dependencies": {
-        "aero": "*"
+        "aero": "*",
+		"aero-style-reset": "*",
+		"aero-kaze": "*",
+		"aero-glyphicons": "*"
     },
     "author": {
         "name": "Eduard Urbach",

@@ -1,5 +1,5 @@
 {
-	"siteName": "Eduard Urbach",
+	"title": "Eduard Urbach",
 	"scripts": [
 		"init"
 	],
@@ -26,11 +26,6 @@
 		"Lato",
 		"Julius Sans One"
 	],
-	"plugins": {
-		"style-reset": {},
-		"kaze": {},
-		"glyphicons": {}
-	},
 	"security": {
 		"key": "privkey.pem",
 		"cert": "fullchain.pem"
