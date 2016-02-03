@@ -1,7 +1,6 @@
 'use strict'
 
 let fs = require('fs')
-let aero = require('aero')
 
 let excludePages = {
 	'me': true,
