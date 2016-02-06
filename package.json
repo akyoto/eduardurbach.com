@@ -1,16 +1,16 @@
 {
-    "name": "blitzprog.org",
-    "repository": "blitzprog/blitzprog.org",
-    "version": "0.1.0",
-    "dependencies": {
-        "aero": "*",
+	"name": "blitzprog.org",
+	"repository": "blitzprog/blitzprog.org",
+	"version": "0.1.0",
+	"dependencies": {
+		"aero": "*",
 		"aero-style-reset": "*",
 		"aero-kaze": "*",
 		"aero-glyphicons": "*"
-    },
-    "author": {
-        "name": "Eduard Urbach",
-        "email": "e.urbach@gmail.com",
-        "url": "http://blitzprog.org"
-    }
+	},
+	"author": {
+		"name": "Eduard Urbach",
+		"email": "e.urbach@gmail.com",
+		"url": "https://blitzprog.org"
+	}
 }
