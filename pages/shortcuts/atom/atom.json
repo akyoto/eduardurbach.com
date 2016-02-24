@@ -1,6 +1,6 @@
 {
 	"shortcuts": {
-		"WTF HAX": "Ctrl + D",
+		"Multiple cursors": "Ctrl + D",
 		"Select line": "Ctrl + L",
 		"Delete current line": "Ctrl + Shift + K",
 		"Find in project": "Ctrl + Shift + F",

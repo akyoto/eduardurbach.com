@@ -26,10 +26,6 @@
 		"Lato",
 		"Julius Sans One"
 	],
-	"security": {
-		"key": "privkey.pem",
-		"cert": "fullchain.pem"
-	},
 	"ports": {
 		"http": 1990,
 		"https": 1991,

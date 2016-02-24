@@ -4,8 +4,8 @@
 	"version": "0.1.0",
 	"dependencies": {
 		"aero": "*",
-		"aero-style-reset": "*",
-		"aero-kaze": "*",
+		"aero-reset": "*",
+		"aero-ajax": "*",
 		"aero-glyphicons": "*"
 	},
 	"author": {
