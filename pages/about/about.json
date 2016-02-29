@@ -1,0 +1,16 @@
+{
+	"about": {
+		"name": "Eduard Urbach",
+		"nick": "エド",
+		"age": 24,
+		"living in": "Kyoto, Japan",
+		"hometown": "Garbsen, Germany",
+		"birthplace": "Nowosibirsk, Russia",
+		"hobbies": "Gaming, Music",
+		"sports": "Kendo, Basketball",
+		"favourite movie": "The Last Samurai",
+		"favourite anime": "Sakasama No Patema",
+		"programming experience": "13 years",
+		"main fields": "Web Development, Game Development"
+	}
+}
