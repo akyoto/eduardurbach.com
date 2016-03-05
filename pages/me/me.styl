@@ -7,16 +7,19 @@
 	margin-top 23%
 
 	a:hover
-		transform scale(1.04)
 		&:after
 			width 0 !important
 
 .profile-image
+	filter saturate(0%) contrast(170%)
 	border-radius 100%
 	margin 0 auto
 	display block
 	width 300px
 	height 300px
+	transition all 600ms ease
+	&:hover
+		box-shadow 0 0 50px rgba(255, 255, 255, 0.4) !important
 
 .name
 	display block
