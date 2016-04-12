@@ -2,35 +2,25 @@ section.project
 	header
 		h3.title
 			a.ajax(href='/projects/aero') Aero
-		.tags Framework
+		.tags Web Framework
 	
 	p
-		| Aero is a web framework running on the node platform.
-		| The main design goal is performance, it's easily possible to get top ranks on the following website checks:
+		| Aero is the fastest web framework on the node platform.
+	
 	ul
-		li
-			a(href='https://developers.google.com/speed/pagespeed/insights/?url=blitzprog.org', target='_blank') PageSpeed
-			|  100 / 100
-		li
-			a(href='http://tools.pingdom.com/fpt/cJubrF/http://blitzprog.org', target='_blank') Pingdom Tools
-			|  100 / 100
-		li
-			a(href='http://yslow.org/', target='_blank') YSlow
-			|  100 / 100
-			span.dim  (with CDN)
-	p
-		| Aero was born from the need to quickly load pages from any place in the world.
-		| It inlines a lot of needed resources into the initial response which reduces HTTP requests,
-		| thus making it perfect for high latency environments.
-		| Additionally it makes sure that the website is only loaded once thus sidestepping the usual disadvantages of inlining.
-		| It supports HTTP/2 and will continue to improve performance using the new push methods.
-		
-	p
-		| When using the included ajaxification the pages still work nicely with search engines,
-		| therefore ensuring the best possible experience for both humans and search engines alike (SEO friendly). 
+		li Performance-focused web server
+		li Highly optimized page loading time
+		li Instantly see changes while developing
+		li ES 2015 support for client scripts
+		li HTML 5 validator runs after every change
+		li Follows DRY like it's the bible
+		li Update your live server on every git commit
+		li All the good stuff: HTTP/2, IPv6, Web Manifest
 	
 	p
-		| This website runs on Aero.
+		| This website uses Aero and has a PageSpeed score of 
+		a(href='https://developers.google.com/speed/pagespeed/insights/?url=blitzprog.org', target='_blank') 100 / 100
+		| .
 	
 	ul.links
 		li
