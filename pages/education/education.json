@@ -62,9 +62,17 @@
 			"country": "Japan",
 			"city": "Kyoto",
 			"type": "Language school",
-			"degree": "Japanese Language Proficiency Test",
 			"fromYear": 2014,
 			"toYear": 2016,
+			"status": "Graduated"
+		},
+
+		"Kyoto Computer Gakuin": {
+			"country": "Japan",
+			"city": "Kyoto",
+			"type": "Vocational school",
+			"fromYear": 2016,
+			"toYear": 2018,
 			"status": "Attending"
 		}
 	}
