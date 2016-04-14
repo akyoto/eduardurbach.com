@@ -3,24 +3,26 @@ sliding-underline(selector, slideColor, thickness, distance)
 		display inline-block
 		position relative
 
-	{selector}:after
-		content ""
-		display block
-		margin auto
-		margin-top distance
-		height thickness
-		width 0px
-		max-width 100%
-		background transparent
-		transition all transitionSpeed ease
+		&:after
+			content ""
+			display block
+			margin auto
+			margin-top distance
+			height thickness
+			width 0px
+			max-width 100%
+			background transparent
+			transition all transitionSpeed ease
+			pointer-events none
 
-	{selector}:hover:after
-		width 100%
-		background-color slideColor
+		&:hover:after
+			width 100%
+			background-color slideColor
+			border-radius 3px
 
 // Thickness
 thickness = 1px
 
 // Build the classes
-sliding-underline(".navigation-item", navLinkHoverColor, thickness, 4px)
+sliding-underline(".navigation-item", navLinkHoverColor, thickness * 2, 4px)
 sliding-underline("#content a", subColor, thickness, 0)

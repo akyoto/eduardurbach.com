@@ -1,11 +1,10 @@
-header
+header.full-page
 	h2 Websites
 
-ul.websites
-	each website, url in websites
-		if website.image
-			li.website
-				h3.website-title= url
-				a.website-link(href='http://' + url, target='_blank')
-					img.website-image(src='/images/websites/' + url + ".png", title=website.title + ' (' + website.date + ')', alt=website.title)
-			//time.website-date(datetime=website.date)= website.date
+each website, url in websites
+	if website.image
+		section.website
+			h3.website-title= url
+			a.website-link(href='http://' + url, target='_blank')
+				img.website-image(src='/images/websites/' + url + ".png", title=website.title + ' (' + website.date + ')', alt=website.title)
+		//time.website-date(datetime=website.date)= website.date

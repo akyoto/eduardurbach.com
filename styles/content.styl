@@ -1,14 +1,25 @@
+contentBorder = 1px solid rgba(0, 0, 0, 0.2)
+
 #content
-	display block
+	flex-grow 1
 	width 100%
-	max-width 728px
-	background-color transparent
-	margin 3rem auto
+	margin 0 auto
+	display flex
+	flex-flow row wrap
+	// background-color rgb(238, 238, 238)
+	// border-left contentBorder
+	// border-right contentBorder
 
 	img
 		margin 0.5em auto
 		max-width 100%
 		height auto
+		border none
+		box-shadow 0 0 8px rgba(0, 0, 0, 0.5)
+		transition box-shadow transitionSpeed ease
+
+		&:hover
+			box-shadow 0 0 14px rgba(0, 0, 0, 1)
 	& > div
 		float left
 		width 100%
@@ -26,17 +37,10 @@
 #content > article
 	font-family "Lato"
 	text-shadow textShadow
-	box-sizing border-box
-	float left
 	width 100%
-	display block
+	max-width maxSectionSize
 	margin 0.5em auto
 	padding 1.5em
 	line-height 1.7em
 	overflow hidden
 	text-align center
-	box-shadow 0 0 8px rgba(0, 0, 0, 0.5)
-	background linear-gradient(to top, darken(bgColor, 25%) 0%, bgColor 100%)
-	border 1px dotted alpha(mainColor, 15%)
-	border-radius 5px
-	transform translateZ(0)

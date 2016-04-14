@@ -13,32 +13,31 @@ body
 	overflow-y hidden
 	display flex
 	flex-direction column
+	// background url("/images/backgrounds/pro.jpg")
+	// background-size cover
+	// background-position center bottom
 
 a
 	text-decoration none
 	text-shadow none
-	color subColor
+	color linkColor
 	transition all transitionSpeed ease
 
 	&:hover
-		color lighten(subColor, 10%)
-		text-shadow 0px 0px 8px alpha(subColor, 30%)
+		color lighten(linkColor, 20%)
+		text-shadow 0px 0px 8px alpha(linkColor, 30%)
 
 header
+	width 100%
+	color headerColor
 	a:hover
 		text-shadow inherit
+		&:after
+			width 0 !important
 
 li
 	margin-top 1px
 	margin-bottom 1px
-
-#content
-	img
-		border none
-		box-shadow 0 0 8px rgba(0, 0, 0, 1)
-
-		&:hover
-			box-shadow 0 0 14px rgba(0, 0, 0, 1)
 
 h1, h2, h3, h4
 	font-family "Julius Sans One"
@@ -54,6 +53,15 @@ p, ul, ol, pre, h3, blockquote
 	margin-bottom 0.4em
 	float left
 
+.full-page
+	display flex
+	align-items center
+	justify-content center
+	height 100vh - navigationHeight
+	h2
+		font-size 15vh
+		letter-spacing 5px
+
 h2
 	font-size 2.3rem
 	line-height 2.3rem
@@ -61,6 +69,7 @@ h2
 	width 100%
 	letter-spacing 2px
 	margin-bottom 2rem
+	text-align center
 
 h3
 	font-size 2em

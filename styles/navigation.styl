@@ -1,8 +1,8 @@
 #navigation-container
 	height navigationHeight
 	text-align center
-	background linear-gradient(to top, navColor 0%, lighten(navColor, 1%) 100%)
-	border-top 1px solid rgba(255, 255, 255, 0.02)
+	background-color navBGColor
+	// border-bottom 1px solid rgba(255, 255, 255, 0.02)
 	overflow hidden
 
 #navigation
@@ -12,17 +12,19 @@
 	.active
 		color navLinkHoverColor
 		opacity 1
-		text-shadow 0 0 8px alpha(navLinkHoverColor, 75%)
+		text-shadow 0 0 8px alpha(navLinkHoverColor, 50%)
 
 .navigation-item-title
 	display inline-block
 
 .navigation-item
+	display inline-block
+	position relative
 	color navLinkColor
-	font-size 1rem
+	font-size 1.1rem
 	line-height 1.7rem
 	letter-spacing 1px
-	padding 0 1rem
+	padding 0 1.5rem
 	opacity 0
 	backface-visibility hidden
 	transform rotateY(-90deg) translateX(0)
@@ -35,3 +37,6 @@
 .navigation-item-ready
 	opacity 1
 	transform rotateY(0) translateX(0)
+
+.navigation-item-icon
+	font-size 0.85em
