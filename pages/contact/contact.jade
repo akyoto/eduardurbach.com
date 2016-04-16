@@ -1,9 +1,10 @@
-section
-	header
-		h2 Contact
-	
-	ul.contact-links
-		each link, title in links
-			li
-				span(class="glyphicon glyphicon-" + link.icon)
-				a(class=title.replace('-', '').toLowerCase(), href=link.url, target=link.url.startsWith('http') ? '_blank' : undefined)= title
+h2 Contact
+
+each category, title in categories
+	section
+		h3= title
+		ul.contact-links
+			each link, title in category
+				li
+					i.fa.fa-fw(class='fa-' + link.icon)
+					a(class=title.replace('-', '').toLowerCase(), href=link.url, target=link.url.startsWith('http') ? '_blank' : undefined)= title

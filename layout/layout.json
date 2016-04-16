@@ -16,10 +16,6 @@
 			"title": "Websites",
 			"icon": "tv"
 		},
-		"other": {
-			"title": "Other",
-			"icon": "pencil"
-		},
 		"contact": {
 			"title": "Contact",
 			"icon": "envelope"

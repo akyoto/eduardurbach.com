@@ -1,9 +1,11 @@
 contentBorder = 1px solid rgba(0, 0, 0, 0.2)
 
 #content
-	flex-grow 1
 	display flex
 	flex-flow row wrap
+	align-items flex-start
+	justify-content center
+	padding 3rem 1.5rem
 
 	img
 		margin 0.5em auto
@@ -26,12 +28,15 @@ contentBorder = 1px solid rgba(0, 0, 0, 0.2)
 
 #content > section,
 #content > article
-	font-family textFont
-	text-shadow textShadow
+	display flex
+	flex-flow row wrap
 	width 100%
 	max-width maxSectionSize
-	margin 0.5em auto
-	padding 1.5em
+	font-family textFont
+	text-shadow textShadow
 	line-height 1.7em
-	overflow hidden
 	text-align center
+
+#content > section
+	margin 0.5em auto
+	padding 1.5em 0
