@@ -2,12 +2,17 @@
 	height navigationHeight
 	text-align center
 	background-color navBGColor
+	background-image navBGImage
 	// border-bottom 1px solid rgba(255, 255, 255, 0.02)
 	overflow hidden
 
 #navigation
-	padding-top 0.8rem
+	display flex
+	flex-flow row
+	align-items center
+	justify-content center
 	overflow hidden
+	height navigationHeight
 
 	.active
 		color navLinkHoverColor
@@ -39,4 +44,5 @@
 	transform rotateY(0) translateX(0)
 
 .navigation-item-icon
-	font-size 0.85em
+	font-size 1em
+	margin-right 0.6em !important

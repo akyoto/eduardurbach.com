@@ -2,13 +2,8 @@ contentBorder = 1px solid rgba(0, 0, 0, 0.2)
 
 #content
 	flex-grow 1
-	width 100%
-	margin 0 auto
 	display flex
 	flex-flow row wrap
-	// background-color rgb(238, 238, 238)
-	// border-left contentBorder
-	// border-right contentBorder
 
 	img
 		margin 0.5em auto
@@ -19,11 +14,7 @@ contentBorder = 1px solid rgba(0, 0, 0, 0.2)
 		transition box-shadow transitionSpeed ease
 
 		&:hover
-			box-shadow 0 0 14px rgba(0, 0, 0, 1)
-	& > div
-		float left
-		width 100%
-		text-align center
+			box-shadow 0 0 14px rgba(0, 0, 0, 0.8)
 
 .text
 	color mainColor
@@ -35,7 +26,7 @@ contentBorder = 1px solid rgba(0, 0, 0, 0.2)
 
 #content > section,
 #content > article
-	font-family "Lato"
+	font-family textFont
 	text-shadow textShadow
 	width 100%
 	max-width maxSectionSize

@@ -7,17 +7,12 @@ html(lang="en")
 	body
 		#navigation-container
 			nav#navigation
-				header.invisible
-					h2 Navigation
-					
 				each link, url in nav
 					a.navigation-item.ajax(href=`/${url}`)
-						span(class='glyphicon glyphicon-' + link.icon + ' navigation-item-icon')
+						i.navigation-item-icon.fa(class='fa-' + link.icon)
 						span.navigation-item-title= link.title
 		
-		#container
-			h1#title= title
-			
+		#content-container
 			#content.fade!= content
 		
 		#loading-animation.sk-cube-grid.fade

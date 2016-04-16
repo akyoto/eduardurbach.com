@@ -1,10 +1,10 @@
 include ../mixins.jade
 
 section
-	header
-		h3.skills-category
-			a.ajax(href='/skills/languages') Languages
-	ul.skills-list.no-list-image
+	h3.skills-category
+		a.ajax(href='/skills/languages') Languages
+	
+	ul.skills-list
 		li.gb(itemscope='', itemtype='http://schema.org/Language')
 			span(itemprop='name') English
 			+level(10)
@@ -13,7 +13,7 @@ section
 			+level(10)
 		li.ru(itemscope='', itemtype='http://schema.org/Language', title='Русский')
 			span(itemprop='name') Russian
-			+level(10)
+			+level(8)
 		li.jp(itemscope='', itemtype='http://schema.org/Language', title='日本語')
 			span(itemprop='name') Japanese
 			+level(7)

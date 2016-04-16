@@ -4,20 +4,10 @@
 		"init"
 	],
 	"styles": [
-		"base",
+		"elements",
 		"container",
 		"content",
-		"navigation",
-		"projects",
-		"skills",
-		"shortcuts",
-		"scrollbar",
-		"loading-animation",
-		"sliding-underline",
-		"fade",
-		"invisible",
-		"mobile",
-		"print"
+		"navigation"
 	],
 	"static": [
 		"images"

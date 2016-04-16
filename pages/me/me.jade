@@ -1,15 +1,4 @@
-header.invisible
-	h2 About myself
-
-.vcard.profile.full-page(itemscope, itemtype="http://schema.org/Person")
-	a.ajax(href="/resume")
-		img.photo.profile-image(
-			src="/images/profile/avatar.webp"
-			width="300",
-			height="300",
-			alt="Photo",
-			onerror="this.onerror=null; this.src='/images/profile/avatar.png'",
-			itemprop="image"
-		)
-	span.fn.name(itemprop="name") Eduard Urbach
-	span.category.job-title(itemprop="jobTitle") Developer
+.profile
+	img.profile-image(src='/images/profile/avatar.png', alt=app.config.title)
+	.name= app.config.title
+	.job-title Developer
