@@ -1,3 +1,27 @@
 {
-	
+	"@context": "http://schema.org",
+	"@type": "Person",
+	"name": "Eduard Urbach",
+	"givenName": "Eduard",
+	"familyName": "Urbach",
+	"jobTitle": "Developer",
+	"email": "mailto:e.urbach@gmail.com",
+	"url": "https://blitzprog.org",
+	"gender": "male",
+	"nationality": "German",
+	"birthPlace": "Nowosibirsk",
+	"address": {
+		"@type": "PostalAddress",
+		"addressCountry": "Japan",
+		"addressRegion": "Kyoto"
+	},
+	"sameAs": [
+		"https://www.facebook.com/eduard.urbach",
+		"https://twitter.com/eduardurbach",
+		"https://google.com/+EduardUrbach",
+		"https://github.com/blitzprog",
+		"https://www.npmjs.com/~blitzprog",
+		"https://soundcloud.com/eduard-urbach",
+		"https://player.me/akyoto"
+	]
 }
