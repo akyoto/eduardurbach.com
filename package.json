@@ -6,7 +6,7 @@
 		"aero": "*",
 		"aero-reset": "*",
 		"aero-ajax": "*",
-		"aero-glyphicons": "*"
+		"aero-font-awesome": "*"
 	},
 	"author": {
 		"name": "Eduard Urbach",

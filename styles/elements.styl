@@ -1,5 +1,5 @@
 html
-	font-family "Julius Sans One"
+	font-family titleFont
 	font-size baseFontSize
 	height 100%
 
@@ -7,74 +7,68 @@ body
 	tab-size 4
 	text-rendering optimizeLegibility
 	height 100%
-	color mainColor
-	background-color black
-	overflow-x hidden
-	overflow-y hidden
+	overflow hidden
 	display flex
 	flex-direction column
+
+header
+	width 100%
+	color headerColor
+	a:hover
+		text-shadow inherit
+		&:after
+			width 0 !important
 
 a
 	text-decoration none
 	text-shadow none
-	color subColor
+	color linkColor
 	transition all transitionSpeed ease
 
 	&:hover
-		color lighten(subColor, 10%)
-		text-shadow 0px 0px 8px alpha(subColor, 30%)
-
-header
-	a:hover
-		text-shadow inherit
+		color lighten(linkColor, 20%)
+		text-shadow 0px 0px 8px alpha(linkColor, 25%)
 
 li
 	margin-top 1px
 	margin-bottom 1px
 
-#content
-	img
-		border none
-		box-shadow 0 0 8px rgba(0, 0, 0, 1)
-
-		&:hover
-			box-shadow 0 0 14px rgba(0, 0, 0, 1)
-
-h1, h2, h3, h4
-	font-family "Julius Sans One"
-
-p, ul, ol, h4, blockquote, table
-	line-height 1.7em
-	float left
+h1, h2, h3, h4, h5, h6
+	color headerColor
+	font-family titleFont
+	font-weight bold
 	width 100%
 
-p, ul, ol, pre, h3, blockquote
+p, ul, ol, blockquote, table
+	line-height lineHeight
+	width 100%
+
+p, ul, ol, pre, blockquote
 	text-align left
 	margin-top 0.4em
 	margin-bottom 0.4em
-	float left
+
+	&:first-child
+		margin-top 0
+
+	&:last-child
+		margin-bottom 0
 
 h2
-	font-size 2.3rem
-	line-height 2.3rem
-	font-weight bold
-	width 100%
+	font-size 2.6rem
+	line-height 1.2em
 	letter-spacing 2px
 	margin-bottom 2rem
 
 h3
 	font-size 2em
 	line-height 1.5em
-	font-weight bold
-	width 100%
 	letter-spacing 1px
-	text-align center
+	color alpha(headerColor, 80%)
 
 h4
+	font-size 1.5rem
 	line-height 1.5em
-	font-size 1.5em
-	font-weight bold
-	text-align left
 	letter-spacing 1px
 
 small
@@ -113,7 +107,7 @@ pre
 	border-radius 3px
 
 pre, code
-	font-family 'Ubuntu Mono', Consolas, monospace
+	font-family monospaceFont
 	tab-size 4
 
 ul
@@ -146,16 +140,3 @@ hr
 	border-left none
 	border-right none
 	border-top none
-
-.no-shadow
-	box-shadow none !important
-
-span.glyphicon
-	margin-right 0.4em
-
-.dim
-	opacity 0.4
-
-::selection
-	text-shadow none
-	background rgba(255, 255, 255, 0.1)

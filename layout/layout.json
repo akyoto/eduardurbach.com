@@ -6,19 +6,15 @@
 		},
 		"skills": {
 			"title": "Skills",
-			"icon": "education"
+			"icon": "graduation-cap"
 		},
 		"projects": {
 			"title": "Projects",
-			"icon": "blackboard"
+			"icon": "rocket"
 		},
 		"websites": {
 			"title": "Websites",
-			"icon": "cloud"
-		},
-		"other": {
-			"title": "Other",
-			"icon": "pencil"
+			"icon": "tv"
 		},
 		"contact": {
 			"title": "Contact",

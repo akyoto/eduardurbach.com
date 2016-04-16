@@ -5,20 +5,15 @@ html(lang="en")
 		meta(name="apple-mobile-web-app-capable", content="yes")
 	
 	body
-		#container
-			h1#title= title
-			
-			#content.fade!= content
-		
 		#navigation-container
 			nav#navigation
-				header
-					h2 Navigation
-					
 				each link, url in nav
-					a.navigation-item.sliding-middle-out.ajax(href=`/${url}`)
-						span(class='glyphicon glyphicon-' + link.icon + ' navigation-item-icon')
+					a.navigation-item.ajax(href=`/${url}`)
+						i.navigation-item-icon.fa(class='fa-' + link.icon)
 						span.navigation-item-title= link.title
+		
+		#content-container
+			#content.fade!= content
 		
 		#loading-animation.sk-cube-grid.fade
 			.sk-cube.sk-cube1

@@ -1,14 +1,22 @@
+#content-container
+	display flex
+	flex-flow column
+
+#content
+	flex-grow 1
+	align-items center
+
 .profile
-	width 100%
-	color rgb(224, 224, 224)
-	font-size 1.9em
+	display flex
+	flex-flow column
+	font-size 1.9rem
+	line-height 1.4em
 	text-align center
 	letter-spacing 3px
-	margin-top 23%
-
-	a:hover
-		&:after
-			width 0 !important
+	width 100%
+	align-items center
+	justify-content center
+	//transform translateY(navigationHeight * -1)
 
 .profile-image
 	filter saturate(0%) contrast(170%)
@@ -22,29 +30,15 @@
 		box-shadow 0 0 50px rgba(255, 255, 255, 0.4) !important
 
 .name
+	color headerColor
 	display block
-	margin-top 1.6em
 	font-weight bold
 	text-shadow 0px 0px 6px rgba(0, 0, 0, 0.5)
 
 .job-title
+	color headerColor
 	display block
-	margin-top 1em
+	margin-top 0.1em
 	font-size 0.5em
 	opacity 0.8
-	text-shadow 0px 0px 8px rgba(255, 255, 255, 0.5)
-
-@media only screen and (max-height: 800px)
-	.profile
-		margin-top 13%
-
-@media only screen and (max-height: 700px)
-	.profile
-		margin-top 6%
-
-@media only screen and (max-height: 600px)
-	.profile
-		margin-top 0%
-
-	.name
-		margin-top 1em
+	text-shadow 0px 0px 8px rgba(255, 255, 255, 0.4)

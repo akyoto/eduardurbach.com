@@ -1,9 +1,9 @@
 mixin level(mastery)
 	if mastery > 7
-		.level.level-3 ★★★
+		.level.level-3(title=mastery + ' / 10') ★★★
 	else if mastery > 4
-		.level.level-2 ★★☆
+		.level.level-2(title=mastery + ' / 10') ★★☆
 	else if mastery > 0
-		.level.level-1 ★☆☆
+		.level.level-1(title=mastery + ' / 10') ★☆☆
 	else
-		.level.level-0 ☆☆☆
+		.level.level-0(title=mastery + ' / 10') ☆☆☆

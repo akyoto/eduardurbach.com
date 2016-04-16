@@ -1,18 +1,23 @@
+contentBorder = 1px solid rgba(0, 0, 0, 0.2)
+
 #content
-	display block
-	width 100%
-	max-width 728px
-	background-color transparent
-	margin 3rem auto
+	display flex
+	flex-flow row wrap
+	align-items flex-start
+	justify-content center
+	padding 3rem 1.5rem
+	transition all transitionSpeed ease
 
 	img
 		margin 0.5em auto
 		max-width 100%
 		height auto
-	& > div
-		float left
-		width 100%
-		text-align center
+		border none
+		box-shadow 0 0 8px rgba(0, 0, 0, 0.5)
+		transition box-shadow transitionSpeed ease
+
+		&:hover
+			box-shadow 0 0 14px rgba(0, 0, 0, 0.8)
 
 .text
 	color mainColor
@@ -24,18 +29,20 @@
 
 #content > section,
 #content > article
-	font-family "Lato"
-	text-shadow textShadow
-	box-sizing border-box
-	float left
+	display flex
+	flex-flow row wrap
 	width 100%
-	display block
-	margin 0.5em auto
-	padding 1.5em
+	max-width maxSectionSize
+	font-family textFont
+	text-shadow textShadow
 	line-height 1.7em
-	overflow hidden
 	text-align center
-	box-shadow 0 0 8px rgba(0, 0, 0, 0.9)
-	background-color rgb(16, 16, 16)
-	border-radius 5px
-	transform translateZ(0)
+	transition all transitionSpeed ease
+
+#content > section
+	margin 0.5em auto
+	padding 1.5em 0
+
+	h3
+		margin-top 0.25em
+		margin-bottom 0.25em
