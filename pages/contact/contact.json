@@ -29,6 +29,10 @@
 				"url": "http://soundcloud.com/eduard-urbach",
 				"icon": "music"
 			},
+			"Sketchfab": {
+				"url": "https://sketchfab.com/EduardUrbach",
+				"icon": "eye"
+			},
 			"Player": {
 				"url": "https://player.me/akyoto/games",
 				"icon": "gamepad"
