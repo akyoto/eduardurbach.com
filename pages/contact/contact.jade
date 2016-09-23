@@ -7,4 +7,4 @@ each category, title in categories
 			each link, title in category
 				li
 					i.fa.fa-fw(class='fa-' + link.icon)
-					a(class=title.replace('-', '').toLowerCase(), href=link.url, target=link.url.startsWith('http') ? '_blank' : undefined)= title
+					a(href=link.url, target=link.url.startsWith('http') ? '_blank' : undefined)= title
