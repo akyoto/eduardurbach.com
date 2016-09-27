@@ -4,11 +4,12 @@
 	"version": "0.1.0",
 	"dependencies": {
 		"aero": "*",
+		"aero-git": "*",
+		"aero-sitemap": "*",
+		"aero-transpile-scripts": "*",
 		"aero-reset": "*",
 		"aero-ajax": "*",
-		"aero-font-awesome": "*",
-		"aero-git": "*",
-		"aero-sitemap": "*"
+		"aero-font-awesome": "*"
 	},
 	"author": {
 		"name": "Eduard Urbach",
