@@ -1,4 +1,4 @@
-let navItems = document.querySelectorAll('.navigation-item')
+let navItems = $('navigation').querySelectorAll('.navigation-item')
 
 let fadeIndex = function(i) {
 	return function() {

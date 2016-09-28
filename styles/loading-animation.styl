@@ -2,24 +2,22 @@ duration = 0.8s
 size = 16px
 
 #loading-animation
-	display block
 	position fixed
 	bottom 1.15rem
 	right 1.15rem
-
-.sk-cube-grid
+	display flex
+	flex-flow row wrap
 	width size
 	height size
 	transform rotateZ(0deg)
 	animation sk-rotate duration infinite linear
+	will-change transform, opacity
 
 .sk-cube
-	width 33.3%
-	height 33.3%
+	flex 0 0 33.3%
 	background-color alpha(loadingColor, 50%)
 	box-shadow 0 0 size alpha(loadingColor, 60%)
-	float left
-	animation sk-cube-grid duration infinite linear
+	animation sk-scale duration infinite linear
 	border-radius 100%
 
 .sk-cube5
@@ -32,14 +30,14 @@ size = 16px
 .sk-cube9
 	visibility hidden
 
-@keyframes sk-cube-grid
-	0%, 100%
-		transform scale3D(0.4, 0.4, 0.4)
-	50%
-		transform scale3D(0.9, 0.9, 0.9)
-
 @keyframes sk-rotate
 	0%
 		transform rotateZ(0deg)
 	100%
 		transform rotateZ(360deg)
+
+@keyframes sk-scale
+	0%, 100%
+		transform scale3D(0.4, 0.4, 0.4)
+	50%
+		transform scale3D(0.9, 0.9, 0.9)
