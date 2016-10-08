@@ -38,7 +38,8 @@
 		"battleofmages.com": {
 			"title": "Game website with Riak integration and player profiles",
 			"image": true,
-			"date": 2013
+			"date": 2013,
+			"link": "133.130.89.80:4000"
 		},
 		"hersa.de": {
 			"title": "Freelance work for CONIMAGE",

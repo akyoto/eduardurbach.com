@@ -4,6 +4,6 @@ each website, url in websites
 	if website.image
 		section.website
 			h3.website-title= url
-			a.website-link(href='http://' + url, target='_blank')
+			a.website-link(href='http://' + (website.link || url), target='_blank')
 				img.website-image(src='/images/websites/' + url + ".png", title=website.title + ' (' + website.date + ')', alt=website.title)
-		//time.website-date(datetime=website.date)= website.date
+		//- time.website-date(datetime=website.date)= website.date
