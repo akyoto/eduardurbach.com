@@ -1,7 +1,10 @@
 {
-	"domain": "",
-	"title": "Untitled site",
-	"fonts": [],
+	"domain": "blitzprog.org",
+	"title": "Eduard Urbach",
+	"fonts": [
+		"Lato",
+		"Julius Sans One"
+	],
 	"styles": [],
 	"scripts": {
 		"main": "main"
@@ -9,7 +12,7 @@
 	"push": [],
 	"manifest": {
 		"name": "",
-		"short_name": "Untitled",
+		"short_name": "Eduard Urbach",
 		"start_url": "/",
 		"display": "standalone",
 		"lang": "en"

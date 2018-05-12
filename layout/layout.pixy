@@ -1,0 +1,12 @@
+component Layout(app *aero.Application, ctx *aero.Context, content string)
+	html(lang="en")
+		head
+			link(rel="stylesheet", href="/styles")
+		body
+			#container
+				Content(content)
+			script(src="/scripts")
+
+component Content(content string)
+	#content-container
+		main#content.fade!= content
