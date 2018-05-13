@@ -19,6 +19,7 @@
 	line-height 1.4em
 	color header-color
 	text-shadow 0px 0px 6px rgba(0, 0, 0, 0.5)
+	text-align center
 
 .job-title
 	font-family title-font
@@ -27,3 +28,4 @@
 	margin-top 0.5em
 	opacity 0.8
 	text-shadow 0px 0px 8px rgba(255, 255, 255, 0.4)
+	text-align center

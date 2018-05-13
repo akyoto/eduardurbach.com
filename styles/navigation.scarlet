@@ -18,7 +18,11 @@
 		text-shadow 0 0 8px alpha(nav-link-hover-color, 50%)
 
 .navigation-item-title
-	display inline-block
+	display none
+
+> 800px
+	.navigation-item-title
+		display inline-block
 
 .navigation-item
 	display inline-block

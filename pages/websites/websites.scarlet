@@ -10,8 +10,8 @@
 	font-size 1.3rem
 
 .website-image
-	width 668px
-	height 376px
+	width 334px
+	height 188px
 	object-fit cover
 	border-radius 3px
 	margin 0.5em auto
@@ -20,6 +20,11 @@
 
 	:hover
 		box-shadow 0 0 14px rgba(0, 0, 0, 0.8)
+
+> 800px
+	.website-image
+		width 668px
+		height 376px
 
 .website-link
 	display block
