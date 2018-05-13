@@ -33,6 +33,7 @@
 
 .skills-category-name
 	font-family title-font
+	margin-bottom 0.75em
 
 	a
 		color inherit !important
