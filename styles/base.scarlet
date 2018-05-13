@@ -1,5 +1,5 @@
 html
-	font-family "Lato", "Ubuntu", "Trebuchet MS", sans-serif
+	font-family text-font, "Ubuntu", "Trebuchet MS", sans-serif
 	font-size 20px
 	height 100%
 

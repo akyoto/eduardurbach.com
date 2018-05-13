@@ -1,3 +1,4 @@
 component Home
-	h1.name Eduard Urbach
-	h3.job-title Developer
+	.profile
+		.name Eduard Urbach
+		.job-title Developer

@@ -1,6 +1,5 @@
 #navigation-container
 	height nav-height
-	text-align center
 	background-color nav-bg-color
 	background-image nav-bg-image
 	// border-bottom 1px solid rgba(255, 255, 255, 0.02)
