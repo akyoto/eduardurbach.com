@@ -1,0 +1,30 @@
+component GamedevSkills
+	section.skills-category
+		h3.skills-category-name
+			span Gamedev
+		
+		ul.skills-list
+			li.unity3d
+				span Unity
+				Level(10)
+			li.blitzmax
+				span BlitzMax
+				Level(10)
+			li.blitz3d
+				span Blitz3D
+				Level(10)
+			li
+				span OpenGL
+				Level(8)
+			li
+				span DirectX
+				Level(5)
+			li.ogre3d
+				span Ogre3D
+				Level(4)
+			li
+				span Irrlicht
+				Level(2)
+			li.unrealengine
+				span Unreal Engine
+				Level(0)

@@ -14,7 +14,7 @@
 	height 188px
 	object-fit cover
 	border-radius 3px
-	margin 0.5em auto
+	margin 0.5em
 	box-shadow 0 0 8px rgba(0, 0, 0, 0.5)
 	transition box-shadow transition-speed ease
 

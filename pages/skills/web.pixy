@@ -1,0 +1,30 @@
+component WebSkills
+	section.skills-category
+		h3.skills-category-name
+			span Web
+		
+		ul.skills-list
+			li.html5(title="HyperText Markup Language")
+				span HTML 5
+				Level(10)
+			li.css(title="Cascading Style Sheets")
+				span CSS 3
+				Level(10)
+			li
+				span HTTP 2
+				Level(10)
+			li(title="Search Engine Optimization")
+				span SEO
+				Level(10)
+			li
+				span Service Workers
+				Level(10)
+			li
+				span Push Notifications
+				Level(10)
+			li(title="JSON-LD, RDFa and Microdata")
+				span Structured Data
+				Level(6)
+			li
+				span ColdFusion
+				Level(6)

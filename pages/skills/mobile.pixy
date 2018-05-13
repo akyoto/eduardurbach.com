@@ -1,0 +1,12 @@
+component MobileSkills
+	section.skills-category
+		h3.skills-category-name
+			span Mobile
+		
+		ul.skills-list
+			li.android
+				span Android
+				Level(9)
+			li.iphone
+				span iOS
+				Level(0)

@@ -1,0 +1,18 @@
+component ThreeDeeSkills
+	section.skills-category
+		h3.skills-category-name
+			span 3D
+		
+		ul.skills-list
+			li.blender
+				span Blender
+				Level(6)
+			li.maya
+				span Maya
+				Level(5)
+			li.three-ds-max
+				span 3DS Max
+				Level(0)
+			li.z-brush
+				span ZBrush
+				Level(0)

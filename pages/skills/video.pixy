@@ -1,0 +1,15 @@
+component VideoSkills
+	section.skills-category
+		h3.skills-category-name
+			span Video
+		
+		ul.skills-list
+			li.after-effects
+				span Adobe After Effects
+				Level(7)
+			li.adobe-premiere
+				span Adobe Premiere
+				Level(3)
+			li.sony-vegas
+				span Sony Vegas
+				Level(3)

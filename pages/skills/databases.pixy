@@ -1,0 +1,24 @@
+component DatabaseSkills
+	section.skills-category
+		h3.skills-category-name
+			span Databases
+		
+		ul.skills-list
+			li.nano
+				span Nano
+				Level(10)
+			li.aerospike
+				span Aerospike
+				Level(10)
+			li.riak
+				span Riak
+				Level(10)
+			li.sql
+				span SQL
+				Level(7)
+			li.mongodb
+				span MongoDB
+				Level(3)
+			li.rethinkdb
+				span RethinkDB
+				Level(1)

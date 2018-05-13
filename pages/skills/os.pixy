@@ -1,0 +1,15 @@
+component OSSkills
+	section.skills-category
+		h3.skills-category-name
+			span OS
+		
+		ul.skills-list
+			li.windows
+				span Windows
+				Level(10)
+			li.linux
+				span Linux
+				Level(10)
+			li.mac
+				span Mac
+				Level(9)

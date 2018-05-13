@@ -8,7 +8,7 @@
 #navigation
 	horizontal
 	align-items center
-	justify-content center
+	justify-content space-evenly
 	overflow hidden
 	height nav-height
 
@@ -20,10 +20,6 @@
 .navigation-item-title
 	display none
 
-> 800px
-	.navigation-item-title
-		display inline-block
-
 .navigation-item
 	display inline-block
 	position relative
@@ -32,7 +28,6 @@
 	font-size 1.1rem
 	line-height 1.7rem
 	letter-spacing 1px
-	padding 0 1.5rem
 	opacity 0
 	backface-visibility hidden
 	transform rotateY(-90deg) translateX(0)
@@ -41,6 +36,16 @@
 
 	:hover
 		color nav-link-hover-color
+
+> 800px
+	.navigation-item-title
+		display inline-block
+	
+	#navigation
+		justify-content center
+	
+	.navigation-item
+		padding 0 1.5rem
 
 .navigation-item-ready
 	opacity 1

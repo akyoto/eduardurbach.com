@@ -1,0 +1,21 @@
+component LanguageSkills
+	section.skills-category
+		h3.skills-category-name
+			span Languages
+		
+		ul.skills-list
+			li.gb
+				span English
+				Level(10)
+			li.de
+				span German
+				Level(10)
+			li.jp
+				span Japanese
+				Level(8)
+			li.ru
+				span Russian
+				Level(8)
+			li.fr
+				span French
+				Level(4)

@@ -1,0 +1,15 @@
+component VCSSkills
+	section.skills-category
+		h3.skills-category-name
+			span Versioning
+		
+		ul.skills-list
+			li
+				span Git
+				Level(10)
+			li
+				span Subversion
+				Level(10)
+			li
+				span Perforce
+				Level(7)

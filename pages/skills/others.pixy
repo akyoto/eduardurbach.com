@@ -1,0 +1,24 @@
+component OtherSkills
+	section.skills-category
+		h3.skills-category-name
+			span Others
+		
+		ul.skills-list
+			li
+				span Performance Optimization
+				Level(10)
+			li(title="Promises, Futures, etc.")
+				span Async Programming
+				Level(10)
+			li
+				span Multi-Threading
+				Level(10)
+			li
+				span Functional Programming
+				Level(9)
+			li
+				span Regular Expressions
+				Level(8)
+			li
+				span STM
+				Level(7)

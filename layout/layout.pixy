@@ -25,8 +25,9 @@ component Navigation
 				.navigation-item-icon.fa.fa-user
 				.navigation-item-title Me
 
-			//- a.navigation-item(href="/skills") Skills
-			//- a.navigation-item(href="/projects") Projects
+			a.navigation-item(href="/skills")
+				.navigation-item-icon.fa.fa-graduation-cap
+				.navigation-item-title Skills
 
 			a.navigation-item(href="/websites")
 				.navigation-item-icon.fa.fa-tv

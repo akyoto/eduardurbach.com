@@ -10,6 +10,7 @@ import (
 	"github.com/blitzprog/blitzprog.org/layout"
 	"github.com/blitzprog/blitzprog.org/pages/contact"
 	"github.com/blitzprog/blitzprog.org/pages/home"
+	"github.com/blitzprog/blitzprog.org/pages/skills"
 	"github.com/blitzprog/blitzprog.org/pages/websites"
 )
 
@@ -23,6 +24,7 @@ func configure(app *aero.Application) *aero.Application {
 	l.Render = fullpage.Render
 
 	l.Page("/", home.Get)
+	l.Page("/skills", skills.Get)
 	l.Page("/websites", websites.Get)
 	l.Page("/contact", contact.Get)
 

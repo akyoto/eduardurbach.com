@@ -1,0 +1,12 @@
+component AudioSkills
+	section.skills-category
+		h3.skills-category-name
+			span Audio
+		
+		ul.skills-list
+			li.cubase
+				span Cubase
+				Level(8)
+			li.audacity
+				span Audacity
+				Level(5)

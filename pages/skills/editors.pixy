@@ -1,0 +1,18 @@
+component EditorSkills
+	section.skills-category
+		h3.skills-category-name
+			span Editors
+		
+		ul.skills-list
+			li.visual-studio-code
+				span Visual Studio Code
+				Level(10)
+			li.atom
+				span Atom
+				Level(10)
+			li.sublime
+				span Sublime Text
+				Level(10)
+			li.vim
+				span Vim
+				Level(7)
