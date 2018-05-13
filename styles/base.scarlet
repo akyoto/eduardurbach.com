@@ -1,0 +1,11 @@
+html
+	font-family "Lato", "Ubuntu", "Trebuchet MS", sans-serif
+	font-size 20px
+	height 100%
+
+body
+	vertical
+	tab-size 4
+	text-rendering optimizeLegibility
+	height 100%
+	overflow hidden

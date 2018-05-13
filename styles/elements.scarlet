@@ -1,0 +1,130 @@
+header
+	width 100%
+	color header-color
+	
+	a:hover
+		text-shadow inherit
+		&:after
+			width 0 !important
+
+a
+	text-decoration none
+	text-shadow none
+	color link-color
+	transition all transitionSpeed ease
+
+	&:hover
+		color lighten(link-color, 20%)
+		text-shadow 0px 0px 8px alpha(link-color, 25%)
+
+li
+	margin-top 1px
+	margin-bottom 1px
+
+h1, h2, h3, h4, h5, h6
+	color header-color
+	font-family titleFont
+	font-weight bold
+	width 100%
+
+p, ul, ol, blockquote, table
+	line-height lineHeight
+	width 100%
+
+p, ul, ol, pre, blockquote
+	text-align left
+	margin-top 0.4em
+	margin-bottom 0.4em
+
+	&:first-child
+		margin-top 0
+
+	&:last-child
+		margin-bottom 0
+
+h2
+	font-size 2.6rem
+	line-height 1.2em
+	letter-spacing 2px
+	margin-bottom 2rem
+
+h3
+	font-size 2em
+	line-height 1.5em
+	letter-spacing 1px
+	color alpha(header-color, 80%)
+
+h4
+	font-size 1.5rem
+	line-height 1.5em
+	letter-spacing 1px
+
+small
+	font-size 70%
+
+table
+	float left
+
+tr
+	border-bottom-width 1px
+	border-bottom-style solid
+	border-bottom-color rgba(255, 255, 255, 0.05)
+
+	&:last-child
+		border none
+
+td
+	padding 0.3em 0.5em
+	text-align left
+	vertical-align top
+
+iframe
+	padding 0.5em
+	float left
+	display block
+	margin 0 auto
+
+pre
+	border 1px solid rgb(128, 128, 128)
+	padding 1em
+	width calc(100% - 2em)
+	box-shadow 1px 1px 16px rgba(0, 0, 0, 0.6)
+	color rgb(224, 224, 224)
+	background-color rgb(32, 32, 32)
+	border none
+	border-radius 3px
+
+pre, code
+	font-family monospaceFont
+	tab-size 4
+
+ul
+	list-style-type square
+
+ol
+	list-style-type decimal
+
+ul, ol
+	list-style-position outside
+	padding 0
+	margin-left 1.7em
+	width calc(100% - 1.7em)
+
+strong
+	font-weight bold
+
+em
+	font-style italic
+
+th
+	font-size 120%
+	padding 5px 0
+	text-align left
+
+hr
+	clear both
+	height 4px
+	border-bottom 1px dotted #ccc
+	border-left none
+	border-right none
+	border-top none

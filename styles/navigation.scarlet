@@ -1,0 +1,48 @@
+#navigation-container
+	height nav-height
+	text-align center
+	background-color nav-bg-color
+	background-image nav-bg-image
+	// border-bottom 1px solid rgba(255, 255, 255, 0.02)
+	overflow hidden
+
+#navigation
+	display flex
+	flex-flow row
+	align-items center
+	justify-content center
+	overflow hidden
+	height nav-height
+
+	.active
+		color nav-link-hover-color
+		opacity 1
+		text-shadow 0 0 8px alpha(nav-link-hover-color, 50%)
+
+.navigation-item-title
+	display inline-block
+
+.navigation-item
+	display inline-block
+	position relative
+	color navLinkColor
+	font-size 1.1rem
+	line-height 1.7rem
+	letter-spacing 1px
+	padding 0 1.5rem
+	opacity 0
+	backface-visibility hidden
+	transform rotateY(-90deg) translateX(0)
+	transition all 1000ms ease
+	will-change transform, opacity
+
+	:hover
+		color nav-link-hover-color
+
+.navigation-item-ready
+	opacity 1
+	transform rotateY(0) translateX(0)
+
+.navigation-item-icon
+	font-size 1em
+	margin-right 0.6em !important

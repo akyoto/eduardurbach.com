@@ -1,11 +1,14 @@
 package main
 
 import (
+	"path"
+
 	"github.com/aerogo/aero"
 	"github.com/aerogo/layout"
 	"github.com/blitzprog/blitzprog.org/components/css"
 	"github.com/blitzprog/blitzprog.org/components/js"
 	"github.com/blitzprog/blitzprog.org/layout"
+	"github.com/blitzprog/blitzprog.org/pages/home"
 )
 
 func main() {
@@ -17,9 +20,7 @@ func configure(app *aero.Application) *aero.Application {
 	l := layout.New(app)
 	l.Render = fullpage.Render
 
-	l.Page("/", func(ctx *aero.Context) string {
-		return ctx.HTML("Hello World")
-	})
+	l.Page("/", home.Get)
 
 	// Script bundle
 	scriptBundle := js.Bundle()
@@ -33,6 +34,12 @@ func configure(app *aero.Application) *aero.Application {
 
 	app.Get("/styles", func(ctx *aero.Context) string {
 		return ctx.CSS(cssBundle)
+	})
+
+	// Static files
+	app.Get("/images/*file", func(ctx *aero.Context) string {
+		ctx.Response().Header().Set("Access-Control-Allow-Origin", "*")
+		return ctx.File(path.Join("images", ctx.Get("file")))
 	})
 
 	return app

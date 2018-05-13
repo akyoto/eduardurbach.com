@@ -4,8 +4,18 @@ component Layout(app *aero.Application, ctx *aero.Context, content string)
 			link(rel="stylesheet", href="/styles")
 		body
 			#container
+				Navigation
 				Content(content)
 			script(src="/scripts")
+
+component Navigation
+	#navigation-container
+		nav#navigation
+			.navigation-item Me
+			.navigation-item Skills
+			.navigation-item Projects
+			.navigation-item Websites
+			.navigation-item Contact
 
 component Content(content string)
 	#content-container

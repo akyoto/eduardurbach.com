@@ -1,0 +1,15 @@
+bg-color = rgb(42, 42, 42)
+bg-image = url("/images/backgrounds/noise-light.png")
+transition-speed = 350ms
+
+header-color = rgb(248, 248, 248)
+main-color = rgb(160, 160, 160)
+sub-color = rgb(177, 255, 32)
+link-color = rgb(224, 224, 224)
+
+nav-bg-color = rgb(38, 38, 38)
+nav-bg-image = url("/images/backgrounds/noise-light.png")
+nav-link-color = rgb(128, 128, 128)
+nav-link-hover-color = sub-color
+loading-color = sub-color
+nav-height = 3.2rem

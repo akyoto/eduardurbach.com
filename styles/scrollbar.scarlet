@@ -1,0 +1,24 @@
+// scroll-bar-color = rgb(255, 255, 255)
+
+// @media only screen and (min-width: 801px)
+// 	::-webkit-scrollbar
+// 		width 12px
+
+// 	::-webkit-scrollbar-track
+// 		box-shadow inset 0 0 6px rgba(0, 0, 0, 0.3)
+// 		border-radius 10px
+// 		background-color alpha(scroll-bar-color, 8%)
+
+// 		&:window-inactive
+// 			background-color alpha(scroll-bar-color, 4%)
+
+// 	::-webkit-scrollbar-thumb
+// 		border-radius 10px
+// 		box-shadow inset 0 0 6px rgba(0, 0, 0, 0.5)
+// 		background-color alpha(scroll-bar-color, 80%)
+
+// 		&:hover
+// 			background-color alpha(scroll-bar-color, 90%)
+
+// 		&:window-inactive
+// 			background-color alpha(scroll-bar-color, 40%)
