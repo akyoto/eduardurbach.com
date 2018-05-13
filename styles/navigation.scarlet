@@ -12,7 +12,7 @@
 	overflow hidden
 	height nav-height
 
-	&.active
+	.active
 		color nav-link-hover-color
 		opacity 1
 		text-shadow 0 0 8px alpha(nav-link-hover-color, 50%)
