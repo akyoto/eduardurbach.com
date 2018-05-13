@@ -23,12 +23,13 @@ li
 
 h1, h2, h3, h4, h5, h6
 	color header-color
-	font-family titleFont
+	font-family title-font
 	font-weight bold
 	width 100%
+	text-align center
 
 p, ul, ol, blockquote, table
-	line-height lineHeight
+	line-height line-height
 	width 100%
 
 p, ul, ol, pre, blockquote
@@ -95,7 +96,7 @@ pre
 	border-radius 3px
 
 pre, code
-	font-family monospaceFont
+	font-family monospace-font
 	tab-size 4
 
 ul

@@ -7,10 +7,9 @@
 	position relative
 
 #content
-	horizontal-wrap
-	justify-content center
+	vertical
+	justify-content flex-start
 	flex-grow 1
-	align-items center
 	height 100%
 	padding 3rem 1.5rem
 	transition all transition-speed ease

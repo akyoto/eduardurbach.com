@@ -17,3 +17,6 @@ nav-link-color = rgb(128, 128, 128)
 nav-link-hover-color = sub-color
 loading-color = sub-color
 nav-height = 3.2rem
+
+line-height = 1.7em
+monospace-font = "Ubuntu Mono, Consolas, monospace"

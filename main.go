@@ -8,7 +8,9 @@ import (
 	"github.com/blitzprog/blitzprog.org/components/css"
 	"github.com/blitzprog/blitzprog.org/components/js"
 	"github.com/blitzprog/blitzprog.org/layout"
+	"github.com/blitzprog/blitzprog.org/pages/contact"
 	"github.com/blitzprog/blitzprog.org/pages/home"
+	"github.com/blitzprog/blitzprog.org/pages/websites"
 )
 
 func main() {
@@ -21,6 +23,8 @@ func configure(app *aero.Application) *aero.Application {
 	l.Render = fullpage.Render
 
 	l.Page("/", home.Get)
+	l.Page("/websites", websites.Get)
+	l.Page("/contact", contact.Get)
 
 	// Script bundle
 	scriptBundle := js.Bundle()

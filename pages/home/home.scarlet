@@ -1,4 +1,10 @@
 
+.profile-container
+	display flex
+	justify-content center
+	align-items center
+	height 100%
+
 .profile
 	vertical
 	align-items center
