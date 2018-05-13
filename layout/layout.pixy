@@ -21,7 +21,7 @@ component Navigation
 			//- a.navigation-item(href="/projects") Projects
 
 			a.navigation-item(href="/websites")
-				.navigation-item-icon.fa.fa-globe
+				.navigation-item-icon.fa.fa-tv
 				.navigation-item-title Websites
 
 			a.navigation-item(href="/contact")
