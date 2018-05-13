@@ -6,14 +6,13 @@
 	overflow hidden
 
 #navigation
-	display flex
-	flex-flow row
+	horizontal
 	align-items center
 	justify-content center
 	overflow hidden
 	height nav-height
 
-	.active
+	&.active
 		color nav-link-hover-color
 		opacity 1
 		text-shadow 0 0 8px alpha(nav-link-hover-color, 50%)
@@ -24,7 +23,8 @@
 .navigation-item
 	display inline-block
 	position relative
-	color navLinkColor
+	color nav-link-color
+	font-family title-font
 	font-size 1.1rem
 	line-height 1.7rem
 	letter-spacing 1px

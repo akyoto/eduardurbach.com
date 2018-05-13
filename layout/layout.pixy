@@ -2,21 +2,44 @@ component Layout(app *aero.Application, ctx *aero.Context, content string)
 	html(lang="en")
 		head
 			link(rel="stylesheet", href="/styles")
+			link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.13/css/all.css", integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp", crossorigin="anonymous")
 		body
 			#container
 				Navigation
 				Content(content)
+			LoadingAnimation
 			script(src="/scripts")
 
 component Navigation
 	#navigation-container
 		nav#navigation
-			.navigation-item Me
-			.navigation-item Skills
-			.navigation-item Projects
-			.navigation-item Websites
-			.navigation-item Contact
+			a.navigation-item(href="/")
+				.navigation-item-icon.fa.fa-user
+				.navigation-item-title Me
+
+			//- a.navigation-item(href="/skills") Skills
+			//- a.navigation-item(href="/projects") Projects
+
+			a.navigation-item(href="/websites")
+				.navigation-item-icon.fa.fa-globe
+				.navigation-item-title Websites
+
+			a.navigation-item(href="/contact")
+				.navigation-item-icon.fa.fa-envelope
+				.navigation-item-title Contact
 
 component Content(content string)
 	#content-container
 		main#content.fade!= content
+
+component LoadingAnimation
+	#loading.sk-cube-grid.fade
+		.sk-cube.hide
+		.sk-cube
+		.sk-cube.hide
+		.sk-cube
+		.sk-cube.sk-cube-center
+		.sk-cube
+		.sk-cube.hide
+		.sk-cube
+		.sk-cube.hide

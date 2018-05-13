@@ -9,3 +9,4 @@ body
 	text-rendering optimizeLegibility
 	height 100%
 	overflow hidden
+	color text-color

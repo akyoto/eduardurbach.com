@@ -1,0 +1,42 @@
+const loading-anim-duration = 0.8s
+const loading-anim-size = 24px
+
+#loading
+	position fixed
+	bottom 1.15rem
+	right 1.15rem
+	z-index 1
+	pointer-events none
+
+.sk-cube-grid
+	horizontal-wrap
+	width loading-anim-size
+	height loading-anim-size
+	transform rotateZ(0deg)
+	animation sk-rotate loading-anim-duration infinite linear
+
+.sk-cube
+	width 33.3%
+	height 33.3%
+	background-color loading-color
+	opacity 0.7
+	border-radius 100%
+	animation sk-pulse loading-anim-duration infinite linear
+
+.sk-cube-center
+	opacity 1.0
+
+.hide
+	visibility hidden
+
+animation sk-rotate
+	0%
+		transform rotateZ(0deg)
+	100%
+		transform rotateZ(360deg)
+
+animation sk-pulse
+	0%, 100%
+		transform scale3D(0.4, 0.4, 0.4)
+	50%
+		transform scale3D(0.9, 0.9, 0.9)
