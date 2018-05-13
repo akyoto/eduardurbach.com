@@ -1,0 +1,11 @@
+.contact-links
+	horizontal-wrap
+	justify-content center
+	font-size 2em
+
+.contact-link
+	color rgba(248, 248, 248, 0.8)
+	margin 0.6em
+
+	:after
+		margin-top 10px !important

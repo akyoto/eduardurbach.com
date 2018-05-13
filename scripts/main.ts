@@ -1,14 +1,7 @@
-let navItems = document.getElementsByClassName("navigation-item")
+import Application from "./Application"
+import Website from "./Website"
 
-let fadeIndex = function(i) {
-	return function() {
-		navItems[i].classList.add("navigation-item-ready")
-	}
-}
+let app = new Application()
+let website = new Website(app)
 
-for(let i = 0; i < navItems.length; i++) {
-	window.setTimeout(fadeIndex(i), i * 50)
-}
-
-// Fade out loading animation
-window.onload = () => document.getElementById("loading").classList.add("fade-out")
+website.init()

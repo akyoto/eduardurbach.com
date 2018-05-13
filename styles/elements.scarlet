@@ -11,11 +11,11 @@ a
 	text-decoration none
 	text-shadow none
 	color link-color
-	transition all transitionSpeed ease
+	transition all transition-speed ease
 
-	&:hover
-		color lighten(link-color, 20%)
-		text-shadow 0px 0px 8px alpha(link-color, 25%)
+	:hover
+		color #b1ff20
+		text-shadow 0px 0px 8px rgba(224, 224, 224, 0.25)
 
 li
 	margin-top 1px
