@@ -3,6 +3,14 @@ component Layout(app *aero.Application, ctx *aero.Context, content string)
 		head
 			link(rel="stylesheet", href="/styles")
 			link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+
+			title= app.Config.Title
+
+			//- Viewport
+			meta(name="viewport", content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes")
+
+			//- Icons
+			link(rel="icon", type="image/png", sizes="128x128", href="/images/icons/favicon.png")
 		body
 			#container
 				Navigation
