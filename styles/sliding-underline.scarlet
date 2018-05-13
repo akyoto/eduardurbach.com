@@ -1,0 +1,25 @@
+// Thickness
+const thickness = 1px
+const distance = 0
+
+#content
+	a
+		display inline-block
+		position relative
+
+		:after
+			content ""
+			display block
+			margin auto
+			margin-top distance
+			height thickness
+			width 100%
+			background-color slide-color
+			transform rotateY(-90deg)
+			opacity 0
+			transition all transition-speed ease
+			pointer-events none
+
+		:hover:after
+			opacity 1
+			transform rotateY(0)

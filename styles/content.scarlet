@@ -14,13 +14,13 @@
 	padding 3rem 1.5rem
 	transition all transition-speed ease
 
-	img
-		margin 0.5em auto
-		max-width 100%
-		height auto
-		border none
-		box-shadow 0 0 8px rgba(0, 0, 0, 0.5)
-		transition box-shadow transition-speed ease
+	// img
+	// 	margin 0.5em auto
+	// 	max-width 100%
+	// 	// height auto
+	// 	border none
+	// 	box-shadow 0 0 8px rgba(0, 0, 0, 0.5)
+	// 	transition box-shadow transition-speed ease
 
-		:hover
-			box-shadow 0 0 14px rgba(0, 0, 0, 0.8)
+	// 	:hover
+	// 		box-shadow 0 0 14px rgba(0, 0, 0, 0.8)

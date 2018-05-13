@@ -1,0 +1,32 @@
+.websites
+	horizontal-wrap
+	justify-content space-evenly
+
+.website
+	margin 1.6rem 0
+
+.website-title
+	color rgba(248, 248, 248, 0.8)
+	font-size 1.3rem
+
+.website-image
+	width 668px
+	height 376px
+	object-fit cover
+	border-radius 3px
+	margin 0.5em auto
+	box-shadow 0 0 8px rgba(0, 0, 0, 0.5)
+	transition box-shadow transition-speed ease
+
+	:hover
+		box-shadow 0 0 14px rgba(0, 0, 0, 0.8)
+
+.website-link
+	display block
+	transform rotateZ(0)
+
+	:hover
+		transform rotateZ(-1deg) scale(1.01)
+	
+	:after
+		display none !important

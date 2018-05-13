@@ -10,6 +10,7 @@ main-color = rgb(160, 160, 160)
 sub-color = rgb(177, 255, 32)
 link-color = rgb(224, 224, 224)
 text-color = header-color
+slide-color = sub-color
 
 nav-bg-color = rgb(38, 38, 38)
 nav-bg-image = url("/images/backgrounds/noise-light.png")

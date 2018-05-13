@@ -2,6 +2,8 @@
 	horizontal-wrap
 	justify-content center
 	font-size 2em
+	max-width 400px
+	margin 0 auto
 
 .contact-link
 	color rgba(248, 248, 248, 0.8)

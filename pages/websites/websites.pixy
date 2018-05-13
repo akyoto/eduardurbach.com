@@ -1,2 +1,20 @@
 component Websites
 	h2 Websites
+
+	.websites
+		Website("notify.moe", "Anime Notifier (2018)")
+		Website("nihongo-center.com", "Responsive design & SEO for Nihongo Center (2015)")
+		Website("my.nihongo-center.com", "Online application system for new students at Nihongo Center (2015)")
+		Website("blitzprog.org", "Inception (2015)")
+		Website("increasedvoices.com", "Website for a music album (2015)")
+		Website("gekkabijin.jp", "Website for French/Japanese singer Senya and her group Gekka Bijin (2014)")
+		Website("battleofmages.com", "Game website with Riak integration and player profiles (2013)")
+		Website("reha-kirchrode.de", "Freelance work for CONIMAGE (2007)")
+		Website("uro-praxis-garbsen.de", "Freelance work for CONIMAGE (2007)")
+		Website("hersa.de", "Freelance work for CONIMAGE (2007)")
+
+component Website(url string, title string)
+	section.website
+		h3.website-title= url
+		a.website-link(href="http://" + url, target="_blank")
+			img.website-image(src="/images/websites/" + url + ".png", title=title, alt=title)
