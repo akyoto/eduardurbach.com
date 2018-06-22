@@ -28,6 +28,9 @@ func configure(app *aero.Application) *aero.Application {
 	l.Page("/websites", websites.Get)
 	l.Page("/contact", contact.Get)
 
+	// Certificate
+	app.Security.Load("security/cert.crt", "security/key.pem")
+
 	// Script bundle
 	scriptBundle := js.Bundle()
 
