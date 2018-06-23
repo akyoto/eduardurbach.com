@@ -17,7 +17,7 @@
 	"push": [],
 	"manifest": {
 		"name": "Eduard Urbach",
-		"short_name": "E.U.",
+		"short_name": "Eduard",
 		"start_url": "/",
 		"display": "standalone",
 		"lang": "en"
