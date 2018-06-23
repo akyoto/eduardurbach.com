@@ -54,5 +54,10 @@ func configure(app *aero.Application) *aero.Application {
 		return ctx.File(path.Join("images", ctx.Get("file")))
 	})
 
+	// Manifest
+	app.Get("/manifest.json", func(ctx *aero.Context) string {
+		return ctx.JSON(app.Config.Manifest)
+	})
+
 	return app
 }
