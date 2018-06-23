@@ -5,13 +5,13 @@ import (
 
 	"github.com/aerogo/aero"
 	"github.com/aerogo/layout"
-	"github.com/blitzprog/blitzprog.org/components/css"
-	"github.com/blitzprog/blitzprog.org/components/js"
-	"github.com/blitzprog/blitzprog.org/layout"
-	"github.com/blitzprog/blitzprog.org/pages/contact"
-	"github.com/blitzprog/blitzprog.org/pages/home"
-	"github.com/blitzprog/blitzprog.org/pages/skills"
-	"github.com/blitzprog/blitzprog.org/pages/websites"
+	"github.com/blitzprog/eduardurbach.com/components/css"
+	"github.com/blitzprog/eduardurbach.com/components/js"
+	"github.com/blitzprog/eduardurbach.com/layout"
+	"github.com/blitzprog/eduardurbach.com/pages/contact"
+	"github.com/blitzprog/eduardurbach.com/pages/home"
+	"github.com/blitzprog/eduardurbach.com/pages/skills"
+	"github.com/blitzprog/eduardurbach.com/pages/websites"
 )
 
 func main() {

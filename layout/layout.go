@@ -2,7 +2,7 @@ package fullpage
 
 import (
 	"github.com/aerogo/aero"
-	"github.com/blitzprog/blitzprog.org/components"
+	"github.com/blitzprog/eduardurbach.com/components"
 )
 
 // Render layout.
