@@ -1,9 +1,9 @@
 component VideoSkills
 	section.skills-category
-		h2.skills-category-name
+		h2.skills-category-name.mountable
 			span Video
 		
-		ul.skills-list
+		ul.skills-list.mountable
 			li.after-effects
 				span Adobe After Effects
 				Level(7)

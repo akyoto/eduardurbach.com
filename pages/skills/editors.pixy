@@ -1,9 +1,9 @@
 component EditorSkills
 	section.skills-category
-		h2.skills-category-name
+		h2.skills-category-name.mountable
 			span Editors
 		
-		ul.skills-list
+		ul.skills-list.mountable
 			li.visual-studio-code
 				span Visual Studio Code
 				Level(10)

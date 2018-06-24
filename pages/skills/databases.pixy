@@ -1,9 +1,9 @@
 component DatabaseSkills
 	section.skills-category
-		h2.skills-category-name
+		h2.skills-category-name.mountable
 			span Databases
 		
-		ul.skills-list
+		ul.skills-list.mountable
 			li.nano
 				span Nano
 				Level(10)

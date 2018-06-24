@@ -1,9 +1,9 @@
 component VCSSkills
 	section.skills-category
-		h2.skills-category-name
+		h2.skills-category-name.mountable
 			span Versioning
 		
-		ul.skills-list
+		ul.skills-list.mountable
 			li
 				span Git
 				Level(10)

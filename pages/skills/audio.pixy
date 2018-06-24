@@ -1,9 +1,9 @@
 component AudioSkills
 	section.skills-category
-		h2.skills-category-name
+		h2.skills-category-name.mountable
 			span Audio
 		
-		ul.skills-list
+		ul.skills-list.mountable
 			li.cubase
 				span Cubase
 				Level(8)

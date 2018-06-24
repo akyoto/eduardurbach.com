@@ -28,11 +28,6 @@
 	font-size 1.1rem
 	line-height 1.7rem
 	letter-spacing 1px
-	opacity 0
-	backface-visibility hidden
-	transform rotateY(-90deg) translateX(0)
-	transition all 1000ms ease
-	will-change transform, opacity
 
 	:visited
 		color nav-link-color
@@ -43,16 +38,12 @@
 > 800px
 	.navigation-item-title
 		display inline-block
-	
+
 	#navigation
 		justify-content center
-	
+
 	.navigation-item
 		padding 0 1.5rem
-
-.navigation-item-ready
-	opacity 1
-	transform rotateY(0) translateX(0)
 
 .navigation-item-icon
 	margin-right 0.6em

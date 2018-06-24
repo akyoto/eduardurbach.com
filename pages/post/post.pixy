@@ -1,4 +1,4 @@
 component Post(post *eu.Post)
 	.post-view
-		h1= post.Title
-		div!= markdown.Render(post.Text)
+		h1.mountable= post.Title
+		div!= eu.MountableMarkdown(markdown.Render(post.Text))

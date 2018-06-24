@@ -1,5 +1,5 @@
 component Contact
-	h1 Contact
+	h1.mountable Contact
 
 	.contact-links
 		ContactLink("Facebook", "http://www.facebook.com/eduard.urbach", "facebook")
@@ -54,5 +54,5 @@ component Contact
 		//- 	}
 
 component ContactLink(title string, url string, icon string)
-	a.contact-link(href=url, title=title, target="_blank")
+	a.contact-link.mountable(href=url, title=title, target="_blank")
 		svg-icon(name=icon)

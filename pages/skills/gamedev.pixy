@@ -1,9 +1,9 @@
 component GamedevSkills
 	section.skills-category
-		h2.skills-category-name
+		h2.skills-category-name.mountable
 			span Gamedev
 		
-		ul.skills-list
+		ul.skills-list.mountable
 			li.unity3d
 				span Unity
 				Level(10)

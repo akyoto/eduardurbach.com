@@ -1,9 +1,9 @@
 component ThreeDeeSkills
 	section.skills-category
-		h2.skills-category-name
+		h2.skills-category-name.mountable
 			span 3D
 		
-		ul.skills-list
+		ul.skills-list.mountable
 			li.blender
 				span Blender
 				Level(6)

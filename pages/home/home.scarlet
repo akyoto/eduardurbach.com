@@ -28,6 +28,8 @@
 	font-size 0.6em
 	color header-color
 	margin-top 0.5em
-	opacity 0.8
 	text-shadow 0px 0px 8px rgba(255, 255, 255, 0.4)
 	text-align center
+
+	&.mounted
+		opacity 0.8

@@ -1,9 +1,9 @@
 component WebSkills
 	section.skills-category
-		h2.skills-category-name
+		h2.skills-category-name.mountable
 			span Web
 		
-		ul.skills-list
+		ul.skills-list.mountable
 			li.html5(title="HyperText Markup Language")
 				span HTML 5
 				Level(10)

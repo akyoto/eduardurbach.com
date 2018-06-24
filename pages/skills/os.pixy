@@ -1,9 +1,9 @@
 component OSSkills
 	section.skills-category
-		h2.skills-category-name
+		h2.skills-category-name.mountable
 			span OS
 		
-		ul.skills-list
+		ul.skills-list.mountable
 			li.windows
 				span Windows
 				Level(10)

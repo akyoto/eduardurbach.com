@@ -1,5 +1,6 @@
 import Application from "./Application"
 import SVGIcon from "elements/svg-icon/svg-icon"
+import Diff from "./Diff"
 
 export default class Website {
 	app: Application
@@ -44,7 +45,6 @@ export default class Website {
 		this.app.loading = document.getElementById("loading")
 
 		this.registerWebComponents()
-		this.mountMenu()
 
 		// Fade out loading animation
 		this.app.loading.classList.add("fade-out")
@@ -67,20 +67,29 @@ export default class Website {
 		}
 	}
 
-	mountMenu() {
-		let navItems = document.getElementsByClassName("navigation-item")
+	mountMountables() {
+		let mountables = document.getElementsByClassName("mountable")
 
 		let fadeIndex = function(i) {
 			return function() {
-				navItems[i].classList.add("navigation-item-ready")
+				Diff.mutations.queue(() => mountables[i].classList.add("mounted"))
 			}
 		}
 
-		for(let i = 0; i < navItems.length; i++) {
-			window.setTimeout(fadeIndex(i), i * 50)
+		let count = 0
+
+		for(let i = 0; i < mountables.length; i++) {
+			if(mountables[i].classList.contains("mounted")) {
+				continue
+			}
+
+			window.setTimeout(fadeIndex(i), count * 50)
+			count++
 		}
 	}
 
-	onContentLoaded() {}
+	onContentLoaded() {
+		this.mountMountables()
+	}
 	onIdle() {}
 }

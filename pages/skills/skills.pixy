@@ -1,5 +1,5 @@
 component Skills
-	h1 Skills
+	h1.mountable Skills
 
 	.skills
 		LanguageSkills

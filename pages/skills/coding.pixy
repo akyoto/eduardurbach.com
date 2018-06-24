@@ -1,9 +1,9 @@
 component CodingSkills
 	section.skills-category
-		h2.skills-category-name
+		h2.skills-category-name.mountable
 			span Coding
 		
-		ul.skills-list
+		ul.skills-list.mountable
 			li
 				span Go
 				Level(10)

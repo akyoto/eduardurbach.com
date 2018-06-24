@@ -1,9 +1,9 @@
 component LanguageSkills
 	section.skills-category
-		h2.skills-category-name
+		h2.skills-category-name.mountable
 			span Languages
 		
-		ul.skills-list
+		ul.skills-list.mountable
 			li.gb
 				span English
 				Level(10)
