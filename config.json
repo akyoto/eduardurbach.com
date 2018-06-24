@@ -14,7 +14,10 @@
 	"scripts": {
 		"main": "main"
 	},
-	"push": [],
+	"push": [
+		"/scripts",
+		"/styles"
+	],
 	"manifest": {
 		"name": "Eduard Urbach",
 		"short_name": "Eduard",

@@ -55,4 +55,4 @@ component Contact
 
 component ContactLink(title string, url string, icon string)
 	a.contact-link(href=url, title=title, target="_blank")
-		span.fa.fa-fw(class="fa-" + icon)
+		svg-icon(name=icon)

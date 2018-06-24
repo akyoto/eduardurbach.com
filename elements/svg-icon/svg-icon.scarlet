@@ -1,0 +1,12 @@
+svg-icon
+	width auto
+	height 1em
+	min-width 1em
+	
+	svg
+		width auto
+		height 1em
+		position relative
+		top -2px
+		vertical-align text-bottom
+		fill currentColor

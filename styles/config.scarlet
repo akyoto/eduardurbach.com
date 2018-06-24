@@ -16,6 +16,7 @@ nav-bg-color = rgb(38, 38, 38)
 nav-bg-image = url("/images/backgrounds/noise-light.png")
 nav-link-color = rgb(128, 128, 128)
 nav-link-hover-color = sub-color
+nav-link-hover-shadow-color = rgba(177, 255, 32, 0.4)
 loading-color = sub-color
 nav-height = 3.2rem
 

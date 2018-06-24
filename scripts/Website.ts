@@ -1,4 +1,5 @@
 import Application from "./Application"
+import SVGIcon from "elements/svg-icon/svg-icon"
 
 export default class Website {
 	app: Application
@@ -35,10 +36,23 @@ export default class Website {
 		this.app.content = document.getElementById("content")
 		this.app.loading = document.getElementById("loading")
 
+		this.registerWebComponents()
 		this.mountMenu()
 
 		// Fade out loading animation
 		this.app.loading.classList.add("fade-out")
+	}
+
+	registerWebComponents() {
+		// Custom element names must have a dash in their name
+		const elements = new Map<string, Function>([
+			["svg-icon", SVGIcon],
+		])
+
+		// Register all custom elements
+		for(const [tag, definition] of elements.entries()) {
+			window.customElements.define(tag, definition)
+		}
 	}
 
 	mountMenu() {
