@@ -44,9 +44,14 @@ export default class Website {
 	}
 
 	registerWebComponents() {
+		if(!("customElements" in window)) {
+			console.warn("Web components not supported in your current browser")
+			return
+		}
+
 		// Custom element names must have a dash in their name
 		const elements = new Map<string, Function>([
-			["svg-icon", SVGIcon],
+			["svg-icon", SVGIcon]
 		])
 
 		// Register all custom elements
