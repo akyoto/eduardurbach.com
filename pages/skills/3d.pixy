@@ -1,6 +1,6 @@
 component ThreeDeeSkills
 	section.skills-category
-		h3.skills-category-name
+		h2.skills-category-name
 			span 3D
 		
 		ul.skills-list

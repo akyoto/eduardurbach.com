@@ -10,7 +10,7 @@ var Node = nano.New(5000)
 
 // DB is the main database client.
 var DB = Node.Namespace("eu").RegisterTypes(
-	(*BlogPost)(nil),
+	(*Post)(nil),
 )
 
 // API is the automatically created API for the database.

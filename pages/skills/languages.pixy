@@ -1,6 +1,6 @@
 component LanguageSkills
 	section.skills-category
-		h3.skills-category-name
+		h2.skills-category-name
 			span Languages
 		
 		ul.skills-list

@@ -1,6 +1,6 @@
 component DatabaseSkills
 	section.skills-category
-		h3.skills-category-name
+		h2.skills-category-name
 			span Databases
 		
 		ul.skills-list

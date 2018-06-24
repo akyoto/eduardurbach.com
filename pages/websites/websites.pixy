@@ -1,5 +1,5 @@
 component Websites
-	h2 Websites
+	h1 Websites
 
 	.websites
 		Website("notify.moe", "Anime Notifier (2018)")
@@ -15,6 +15,6 @@ component Websites
 
 component Website(url string, title string)
 	section.website
-		h3.website-title= url
+		h2.website-title= url
 		a.website-link(href="http://" + url, target="_blank")
 			img.website-image(src="/images/websites/" + url + ".jpg", title=title, alt=title)

@@ -1,6 +1,6 @@
 component OtherSkills
 	section.skills-category
-		h3.skills-category-name
+		h2.skills-category-name
 			span Others
 		
 		ul.skills-list

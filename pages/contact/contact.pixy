@@ -1,5 +1,5 @@
 component Contact
-	h2 Contact
+	h1 Contact
 
 	.contact-links
 		ContactLink("Facebook", "http://www.facebook.com/eduard.urbach", "facebook")

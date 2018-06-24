@@ -10,7 +10,7 @@ import (
 
 // Get overview of all posts.
 func Get(ctx *aero.Context) string {
-	posts := eu.AllBlogPosts()
+	posts := eu.AllPosts()
 
 	sort.Slice(posts, func(i, j int) bool {
 		return posts[i].Created > posts[j].Created

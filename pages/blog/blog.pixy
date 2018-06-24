@@ -1,5 +1,5 @@
-component Blog(posts []*eu.BlogPost)
-	h2 Blog
+component Blog(posts []*eu.Post)
+	h1 Blog
 
 	.posts
 		each post in posts

@@ -32,3 +32,4 @@ _cgo_export.*
 
 # Project specific
 /eduardurbach.com
+/custom.go

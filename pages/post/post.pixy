@@ -1,4 +1,4 @@
-component Post(post *eu.BlogPost)
-	h2= post.Title
-
-	.post-view!= markdown.Render(post.Text)
+component Post(post *eu.Post)
+	.post-view
+		h1= post.Title
+		div!= markdown.Render(post.Text)

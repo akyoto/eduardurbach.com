@@ -1,5 +1,5 @@
 component Skills
-	h2 Skills
+	h1 Skills
 
 	.skills
 		LanguageSkills

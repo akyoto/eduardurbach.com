@@ -36,9 +36,6 @@ func configure(app *aero.Application) *aero.Application {
 	// Certificate
 	app.Security.Load("security/server.crt", "security/server.key")
 
-	// Allow Cloudflare CDN as CSS source
-	app.ContentSecurityPolicy.Set("style-src", "'self' https://cdnjs.cloudflare.com")
-
 	// Script bundle
 	scriptBundle := js.Bundle()
 

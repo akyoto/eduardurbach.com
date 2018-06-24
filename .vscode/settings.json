@@ -1,0 +1,23 @@
+{
+	"editor.detectIndentation": false,
+	"editor.insertSpaces": false,
+	"files.trimTrailingWhitespace": true,
+	"files.exclude": {
+		"**/*.js": {
+			"when": "$(basename).ts"
+		},
+		"components/": true
+	},
+	"files.associations": {
+		"*.pixy": "jade",
+		"*.scarlet": "stylus"
+	},
+	"search.exclude": {
+		"components/": true,
+		"**/*.svg": true,
+		"**/*.html": true
+	},
+	"[jade]": {
+		"files.trimTrailingWhitespace": false
+	}
+}

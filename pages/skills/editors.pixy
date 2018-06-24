@@ -1,6 +1,6 @@
 component EditorSkills
 	section.skills-category
-		h3.skills-category-name
+		h2.skills-category-name
 			span Editors
 		
 		ul.skills-list

@@ -1,7 +1,7 @@
 const title-font = "Julius Sans One"
 const text-font = "Lato"
 
-bg-color = rgb(48, 48, 48)
+bg-color = rgb(42, 42, 42)
 bg-image = url("/images/backgrounds/noise-light.png")
 transition-speed = 200ms
 

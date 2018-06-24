@@ -1,5 +1,5 @@
 component Home
 	.profile-container
 		.profile
-			.name Eduard Urbach
+			h1.name Eduard Urbach
 			.job-title Developer
