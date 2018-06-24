@@ -1,0 +1,18 @@
+.posts
+	vertical
+	width 100%
+	max-width 500px
+	margin 0 auto
+
+.post
+	horizontal
+	text-align left
+	margin-bottom 1rem
+
+.post-title
+	flex 1
+	line-height line-height
+
+.post-time
+	line-height line-height
+	opacity 0.5

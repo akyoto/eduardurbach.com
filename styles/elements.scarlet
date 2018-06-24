@@ -34,8 +34,8 @@ p, ul, ol, blockquote, table
 
 p, ul, ol, pre, blockquote
 	text-align left
-	margin-top 0.4em
-	margin-bottom 0.4em
+	margin-top typography-margin
+	margin-bottom typography-margin
 
 	&:first-child
 		margin-top 0
@@ -53,7 +53,7 @@ h3
 	font-size 2em
 	line-height 1.5em
 	letter-spacing 1px
-	color alpha(header-color, 80%)
+	// color alpha(header-color, 80%)
 
 h4
 	font-size 1.5rem
@@ -86,14 +86,13 @@ iframe
 	margin 0 auto
 
 pre
-	border 1px solid rgb(128, 128, 128)
-	padding 1em
-	width calc(100% - 2em)
-	box-shadow 1px 1px 16px rgba(0, 0, 0, 0.6)
+	padding 1rem
+	box-shadow 0 4px 8px rgba(0, 0, 0, 0.05)
 	color rgb(224, 224, 224)
 	background-color rgb(32, 32, 32)
-	border none
 	border-radius 3px
+	overflow-x auto
+	overflow-y hidden
 
 pre, code
 	font-family monospace-font

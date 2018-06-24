@@ -1,0 +1,9 @@
+component Blog(posts []*eu.BlogPost)
+	h2 Blog
+
+	.posts
+		each post in posts
+			.post
+				.post-title
+					a(href=post.Link())= post.Title
+				time.post-time(datetime=post.Created)= post.Created[:10]

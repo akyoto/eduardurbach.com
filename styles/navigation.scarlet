@@ -34,6 +34,9 @@
 	transition all 1000ms ease
 	will-change transform, opacity
 
+	:visited
+		color nav-link-color
+
 	:hover
 		color nav-link-hover-color
 

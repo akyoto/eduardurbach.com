@@ -1,0 +1,5 @@
+.post-view
+	width 100%
+	max-width 700px
+	margin 0 auto
+	margin-bottom calc(typography-margin * 2)

@@ -1,9 +1,9 @@
 const title-font = "Julius Sans One"
 const text-font = "Lato"
 
-bg-color = rgb(42, 42, 42)
+bg-color = rgb(48, 48, 48)
 bg-image = url("/images/backgrounds/noise-light.png")
-transition-speed = 300ms
+transition-speed = 200ms
 
 header-color = rgb(248, 248, 248)
 main-color = rgb(160, 160, 160)
@@ -20,5 +20,6 @@ nav-link-hover-shadow-color = rgba(177, 255, 32, 0.4)
 loading-color = sub-color
 nav-height = 3.2rem
 
-line-height = 1.7em
-monospace-font = "Ubuntu Mono, Consolas, monospace"
+line-height = 1.8em
+typography-margin = line-height
+monospace-font = "Ubuntu Mono", "Consolas", "monospace"

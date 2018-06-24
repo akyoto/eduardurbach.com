@@ -7,9 +7,12 @@ import (
 	"github.com/aerogo/layout"
 	"github.com/blitzprog/eduardurbach.com/components/css"
 	"github.com/blitzprog/eduardurbach.com/components/js"
+	"github.com/blitzprog/eduardurbach.com/eu"
 	"github.com/blitzprog/eduardurbach.com/layout"
+	"github.com/blitzprog/eduardurbach.com/pages/blog"
 	"github.com/blitzprog/eduardurbach.com/pages/contact"
 	"github.com/blitzprog/eduardurbach.com/pages/home"
+	"github.com/blitzprog/eduardurbach.com/pages/post"
 	"github.com/blitzprog/eduardurbach.com/pages/skills"
 	"github.com/blitzprog/eduardurbach.com/pages/websites"
 )
@@ -24,6 +27,8 @@ func configure(app *aero.Application) *aero.Application {
 	l.Render = fullpage.Render
 
 	l.Page("/", home.Get)
+	l.Page("/blog", blog.Get)
+	l.Page("/post/:id", post.Get)
 	l.Page("/skills", skills.Get)
 	l.Page("/websites", websites.Get)
 	l.Page("/contact", contact.Get)
@@ -58,6 +63,15 @@ func configure(app *aero.Application) *aero.Application {
 	app.Get("/manifest.json", func(ctx *aero.Context) string {
 		return ctx.JSON(app.Config.Manifest)
 	})
+
+	// API
+	eu.API.Install(app)
+
+	// Close the database node on shutdown
+	app.OnEnd(eu.Node.Close)
+
+	// Prefetch all collections
+	eu.DB.Prefetch()
 
 	return app
 }

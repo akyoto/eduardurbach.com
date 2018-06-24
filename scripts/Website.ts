@@ -15,6 +15,7 @@ export default class Website {
 		// Event listeners
 		document.addEventListener("readystatechange", this.onReadyStateChange.bind(this))
 		document.addEventListener("DOMContentLoaded", this.onContentLoaded.bind(this))
+		window.addEventListener("popstate", this.onPopState.bind(this))
 
 		// If we finished loading the DOM (either "interactive" or "complete" state),
 		// immediately trigger the event listener functions.
@@ -30,6 +31,12 @@ export default class Website {
 		}
 
 		this.run()
+	}
+
+	onPopState(e: PopStateEvent) {
+		this.app.load(location.pathname, {
+			addToHistory: false
+		})
 	}
 
 	run() {
