@@ -30,9 +30,9 @@ component Navigation
 				svg-icon.navigation-item-icon(name="user")
 				.navigation-item-title Me
 			
-			a.navigation-item(href="/blog")
-				svg-icon.navigation-item-icon(name="comment")
-				.navigation-item-title Blog
+			//- a.navigation-item(href="/blog")
+			//- 	svg-icon.navigation-item-icon(name="comment")
+			//- 	.navigation-item-title Blog
 
 			a.navigation-item(href="/skills")
 				svg-icon.navigation-item-icon(name="graduation-cap")
