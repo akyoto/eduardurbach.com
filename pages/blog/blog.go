@@ -1,6 +1,8 @@
 package blog
 
 import (
+	"sort"
+
 	"github.com/aerogo/aero"
 	"github.com/blitzprog/eduardurbach.com/components"
 	"github.com/blitzprog/eduardurbach.com/eu"
@@ -9,6 +11,10 @@ import (
 // Get overview of all posts.
 func Get(ctx *aero.Context) string {
 	posts := eu.AllBlogPosts()
+
+	sort.Slice(posts, func(i, j int) bool {
+		return posts[i].Created > posts[j].Created
+	})
 
 	return ctx.HTML(components.Blog(posts))
 }
