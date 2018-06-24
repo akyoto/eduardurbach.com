@@ -26,23 +26,23 @@ component Layout(app *aero.Application, ctx *aero.Context, content string)
 component Navigation
 	#navigation-container
 		nav#navigation
-			a.navigation-item.mountable(href="/")
+			a.navigation-item.mountable(href="/", aria-label="Me")
 				svg-icon.navigation-item-icon(name="user")
 				.navigation-item-title Me
 			
-			a.navigation-item.mountable(href="/blog")
+			a.navigation-item.mountable(href="/blog", aria-label="Blog")
 				svg-icon.navigation-item-icon(name="comment")
 				.navigation-item-title Blog
 
-			a.navigation-item.mountable(href="/skills")
+			a.navigation-item.mountable(href="/skills", aria-label="Skills")
 				svg-icon.navigation-item-icon(name="graduation-cap")
 				.navigation-item-title Skills
 
-			a.navigation-item.mountable(href="/websites")
+			a.navigation-item.mountable(href="/websites", aria-label="Websites")
 				svg-icon.navigation-item-icon(name="tv")
 				.navigation-item-title Websites
 
-			a.navigation-item.mountable(href="/contact")
+			a.navigation-item.mountable(href="/contact", aria-label="Contact")
 				svg-icon.navigation-item-icon(name="envelope")
 				.navigation-item-title Contact
 
