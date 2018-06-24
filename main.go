@@ -2,6 +2,7 @@ package main
 
 import (
 	"path"
+	"strings"
 
 	"github.com/aerogo/aero"
 	"github.com/aerogo/layout"
@@ -69,6 +70,15 @@ func configure(app *aero.Application) *aero.Application {
 
 	// Prefetch all collections
 	eu.DB.Prefetch()
+
+	// Send "Link" header for Cloudflare on HTML responses
+	app.Use(func(ctx *aero.Context, next func()) {
+		if !strings.HasPrefix(ctx.URI(), "/_/") && strings.Contains(ctx.Request().Header().Get("Accept"), "text/html") {
+			ctx.Response().Header().Set("Link", "</styles>; rel=preload; as=style,</scripts>; rel=preload; as=script")
+		}
+
+		next()
+	})
 
 	return app
 }
