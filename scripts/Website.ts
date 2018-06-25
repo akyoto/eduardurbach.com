@@ -68,7 +68,7 @@ export default class Website {
 	}
 
 	mountMountables() {
-		let mountables = document.getElementsByClassName("mountable")
+		let mountables = [...document.getElementsByClassName("mountable")]
 
 		let fadeIndex = function(i) {
 			return function() {
@@ -80,6 +80,12 @@ export default class Website {
 
 		for(let i = 0; i < mountables.length; i++) {
 			if(mountables[i].classList.contains("mounted")) {
+				continue
+			}
+
+			// Special case: Paragraphs in blockquotes should never be mounted.
+			if(mountables[i].parentElement.tagName === "BLOCKQUOTE") {
+				mountables[i].classList.remove("mountable")
 				continue
 			}
 
