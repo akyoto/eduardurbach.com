@@ -1,3 +1,5 @@
+import Diff from "scripts/Diff";
+
 export default class SVGIcon extends HTMLElement {
 	static get observedAttributes() {
 		return ["name"]
@@ -12,14 +14,14 @@ export default class SVGIcon extends HTMLElement {
 	async render() {
 		let url = `/images/svg/${this.name}.svg`
 		let response = await fetch(url)
-		
+
 		if(!response.ok) {
 			console.warn(`Failed loading SVG icon: ${url}`)
 			return
 		}
 
 		let text = await response.text()
-		this.innerHTML = text
+		Diff.mutations.queue(() => this.innerHTML = text)
 	}
 
 	get name() {

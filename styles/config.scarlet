@@ -1,25 +1,35 @@
-const title-font = "Julius Sans One"
+const title-font = "Lato"
 const text-font = "Lato"
 
-bg-color = rgb(42, 42, 42)
+const text-color-h = 0
+const text-color-s = 0%
+const text-color-l = 24%
+text-color = hsl(text-color-h, text-color-s, text-color-l)
+
+const bg-color-h = 0
+const bg-color-s = 0%
+const bg-color-l = 98%
+bg-color = hsl(bg-color-h, bg-color-s, bg-color-l)
+
+const link-color-h = 118
+const link-color-s = 60%
+const link-color-l = 45%
+link-color = hsl(link-color-h, link-color-s, link-color-l)
+
 bg-image = url("/images/backgrounds/noise-light.png")
-transition-speed = 200ms
 
-header-color = rgb(248, 248, 248)
-main-color = rgb(160, 160, 160)
-sub-color = rgb(177, 255, 32)
-link-color = rgb(224, 224, 224)
-text-color = header-color
-slide-color = sub-color
+link-hover-color = link-color
+header-color = text-color
+slide-color = link-color
 
-nav-bg-color = rgb(38, 38, 38)
+const nav-bg-color = hsl(bg-color-h, bg-color-s, calc(bg-color-l - 3%))
 nav-bg-image = url("/images/backgrounds/noise-light.png")
 nav-link-color = rgb(128, 128, 128)
-nav-link-hover-color = sub-color
-nav-link-hover-shadow-color = rgba(177, 255, 32, 0.4)
-loading-color = sub-color
-nav-height = 3.2rem
+const nav-link-hover-color = link-color
+loading-color = link-color
+nav-height = 2.8rem
 
+transition-speed = 200ms
 line-height = 1.8em
 typography-margin = line-height
 monospace-font = "Ubuntu Mono", "Consolas", "monospace"

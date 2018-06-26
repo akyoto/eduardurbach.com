@@ -13,3 +13,6 @@ mixin horizontal-wrap
 mixin vertical-wrap
 	display flex
 	flex-flow column wrap
+
+mixin default-transition
+	transition all transition-speed ease

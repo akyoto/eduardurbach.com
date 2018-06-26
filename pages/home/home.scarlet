@@ -17,8 +17,8 @@
 	font-weight bold
 	font-size 1.5em
 	line-height 1.4em
+	text-transform uppercase
 	color header-color
-	text-shadow 0px 0px 6px rgba(0, 0, 0, 0.5)
 	text-align center
 	margin 0
 	letter-spacing inherit
@@ -26,9 +26,9 @@
 .job-title
 	font-family title-font
 	font-size 0.6em
+	text-transform uppercase
 	color header-color
 	margin-top 0.5em
-	text-shadow 0px 0px 8px rgba(255, 255, 255, 0.4)
 	text-align center
 
 	&.mounted

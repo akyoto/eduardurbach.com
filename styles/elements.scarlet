@@ -5,8 +5,8 @@ a
 	transition all transition-speed ease
 
 	:hover
-		color #b1ff20
-		text-shadow 0px 0px 8px rgba(224, 224, 224, 0.25)
+		color link-hover-color
+		text-shadow 0px 0px 8px rgba(255, 255, 255, 0.25)
 
 li
 	margin-top 1px
@@ -78,9 +78,9 @@ iframe
 
 pre, blockquote
 	padding 1rem
-	box-shadow 0 4px 8px rgba(0, 0, 0, 0.05)
 	color text-color
-	background-color rgba(0, 0, 0, 0.35)
+	background-color hsla(0, 0%, 0%, 0.05)
+	// box-shadow 0 4px 8px hsla(0, 0%, 0%, 0.05)
 	border-radius 3px
 	overflow-x auto
 	overflow-y hidden
