@@ -17,6 +17,9 @@ component WebSkills
 				span SEO
 				Level(10)
 			li
+				span Progressive Web Apps
+				Level(10)
+			li
 				span Service Workers
 				Level(10)
 			li

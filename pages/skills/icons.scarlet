@@ -61,7 +61,8 @@
 .html5
 	list-style-image url("/images/icons/web/html5.png")
 
-.aero
+.aero,
+.nano
 	list-style-image url("/images/icons/servers/aero.png")
 
 .nodejs

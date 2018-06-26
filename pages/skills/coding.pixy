@@ -39,6 +39,10 @@ component CodingSkills
 			li
 				span Haskell
 				Level(4)
+			
+			//- li
+			//- 	span Elixir
+			//- 	Level(1)
 				
 			//- li
 			//- 	span Elm
