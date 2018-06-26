@@ -21,6 +21,7 @@
 	align-items center
 	position relative
 	color nav-link-color
+	background-color nav-link-bg-color
 	font-family title-font
 	text-transform uppercase
 	font-size 0.9rem
@@ -32,8 +33,8 @@
 
 	:hover,
 	&.active
-		color bg-color
-		background-color nav-link-hover-color
+		color nav-link-hover-color
+		background-color nav-link-hover-bg-color
 
 		// .navigation-item-icon
 		// 	opacity 0.85
@@ -53,5 +54,5 @@
 		justify-content center
 
 	.navigation-item-icon
-		opacity 0.3
+		opacity 0.5
 		margin-right 0.6em

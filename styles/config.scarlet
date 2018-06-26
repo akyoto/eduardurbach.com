@@ -25,7 +25,9 @@ slide-color = link-color
 const nav-bg-color = hsl(bg-color-h, bg-color-s, calc(bg-color-l - 2%))
 nav-bg-image = url("/images/backgrounds/noise-light.png")
 nav-link-color = text-color
-const nav-link-hover-color = link-color
+nav-link-bg-color = transparent
+nav-link-hover-color = white
+nav-link-hover-bg-color = rgba(0, 0, 0, 0.5)
 loading-color = link-color
 nav-height = 2.7rem
 
