@@ -2,11 +2,11 @@ component Websites
 	h1.mountable Websites
 
 	.websites
-		Website("notify.moe", "Anime Notifier (2018)")
 		Website("nihongo-center.com", "Responsive design & SEO for Nihongo Center (2015)")
-		Website("my.nihongo-center.com", "Online application system for new students at Nihongo Center (2015)")
-		Website("eduardurbach.com", "Inception (2015)")
 		Website("increasedvoices.com", "Website for a music album (2015)")
+		Website("notify.moe", "Anime Notifier (2018)")
+		Website("eduardurbach.com", "Inception (2015)")
+		Website("my.nihongo-center.com", "Online application system for new students at Nihongo Center (2015)")
 		//- Website("gekkabijin.jp", "Website for French/Japanese singer Senya and her group Gekka Bijin (2014)")
 		//- Website("battleofmages.com", "Game website with Riak integration and player profiles (2013)")
 		Website("reha-kirchrode.de", "Freelance work for CONIMAGE (2007)")
