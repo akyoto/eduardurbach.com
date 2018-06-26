@@ -1,12 +1,10 @@
 a
 	text-decoration none
-	text-shadow none
 	color link-color
 	transition all transition-speed ease
 
 	:hover
 		color link-hover-color
-		text-shadow 0px 0px 8px rgba(255, 255, 255, 0.25)
 
 li
 	margin-top 1px
@@ -79,7 +77,7 @@ iframe
 pre, blockquote
 	padding 1rem
 	color text-color
-	background-color hsla(0, 0%, 0%, 0.05)
+	background-color hsla(0, 0%, 0%, 0.03)
 	// box-shadow 0 4px 8px hsla(0, 0%, 0%, 0.05)
 	border-radius 3px
 	overflow-x auto

@@ -1,6 +1,6 @@
-scroll-bar-r = 255
-scroll-bar-g = 255
-scroll-bar-b = 255
+scroll-bar-r = 92
+scroll-bar-g = 92
+scroll-bar-b = 92
 
 @media only screen and (min-width: 801px)
 	::-webkit-scrollbar
