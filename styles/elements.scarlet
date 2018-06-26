@@ -6,6 +6,9 @@ a
 	:hover
 		color link-hover-color
 
+	:active
+		transform translateY(3px)
+
 li
 	margin-top 1px
 	margin-bottom 1px
@@ -16,6 +19,7 @@ h1, h2, h3, h4, h5, h6
 	font-weight bold
 	width 100%
 	text-align center
+	text-transform uppercase
 
 p, ul, ol, blockquote, pre, table
 	line-height line-height

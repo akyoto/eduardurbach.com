@@ -61,6 +61,9 @@
 .html5
 	list-style-image url("/images/icons/web/html5.png")
 
+.aero
+	list-style-image url("/images/icons/servers/aero.png")
+
 .nodejs
 	list-style-image url("/images/icons/servers/nodejs.png")
 

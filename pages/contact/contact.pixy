@@ -7,52 +7,11 @@ component Contact
 		ContactLink("Google+", "https://google.com/+EduardUrbach", "google-plus")
 		ContactLink("GitHub", "https://github.com/blitzprog", "github")
 		ContactLink("SoundCloud", "http://soundcloud.com/eduard-urbach", "music")
-		ContactLink("Sketchfab", "https://sketchfab.com/EduardUrbach", "eye")
+		ContactLink("Sketchfab", "https://sketchfab.com/EduardUrbach", "cube")
 		ContactLink("E-Mail", "mailto:e.urbach@gmail.com", "envelope")
 
-		//- "Twitter": {
-		//- 		"url": "https://twitter.com/eduardurbach",
-		//- 		"icon": "twitter"
-		//- 	},
-		//- 	"Google+": {
-		//- 		"url": "https://google.com/+EduardUrbach",
-		//- 		"icon": "google-plus"
-		//- 	}
-		//- },
-		//- "Code": {
-		//- 	"GitHub": {
-		//- 		"url": "https://github.com/blitzprog",
-		//- 		"icon": "github"
-		//- 	},
-		//- 	"NPM": {
-		//- 		"url": "https://www.npmjs.com/~blitzprog",
-		//- 		"icon": "code"
-		//- 	}
-		//- },
-		//- "Media": {
-		//- 	"SoundCloud": {
-		//- 		"url": "http://soundcloud.com/eduard-urbach",
-		//- 		"icon": "music"
-		//- 	},
-		//- 	"Sketchfab": {
-		//- 		"url": "https://sketchfab.com/EduardUrbach",
-		//- 		"icon": "eye"
-		//- 	},
-		//- 	"Player": {
-		//- 		"url": "https://player.me/akyoto/games",
-		//- 		"icon": "gamepad"
-		//- 	}
-		//- },
-		//- "Traditional": {
-		//- 	"Skype": {
-		//- 		"url": "skype:blitzprog?chat",
-		//- 		"icon": "skype"
-		//- 	},
-		//- 	"E-Mail": {
-		//- 		"url": "mailto:e.urbach@gmail.com",
-		//- 		"icon": "envelope"
-		//- 	}
-
 component ContactLink(title string, url string, icon string)
-	a.contact-link.mountable(href=url, title=title, target="_blank")
-		svg-icon(name=icon)
+	.contact-link-container
+		a.contact-link.mountable(href=url, target="_blank")
+			svg-icon(name=icon)
+			.contact-link-name= title

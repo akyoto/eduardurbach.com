@@ -2,7 +2,7 @@
 	opacity 0
 	backface-visibility hidden
 	transform translateY(25px)
-	transition all 500ms ease
+	transition transform mount-speed ease, opacity mount-speed ease
 	will-change transform, opacity
 
 .mounted

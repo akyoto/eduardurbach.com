@@ -2,8 +2,7 @@
 	"domain": "eduardurbach.com",
 	"title": "Eduard Urbach",
 	"fonts": [
-		"Lato",
-		"Julius Sans One"
+		"Lato"
 	],
 	"styles": [
 		"reset",

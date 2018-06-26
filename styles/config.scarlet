@@ -3,7 +3,7 @@ const text-font = "Lato"
 
 const text-color-h = 0
 const text-color-s = 0%
-const text-color-l = 24%
+const text-color-l = 32%
 text-color = hsl(text-color-h, text-color-s, text-color-l)
 
 const bg-color-h = 0
@@ -22,15 +22,16 @@ link-hover-color = link-color
 header-color = text-color
 slide-color = link-color
 
-const nav-bg-color = hsl(bg-color-h, bg-color-s, calc(bg-color-l - 3%))
+const nav-bg-color = hsl(bg-color-h, bg-color-s, calc(bg-color-l - 2%))
 nav-bg-image = url("/images/backgrounds/noise-light.png")
-nav-link-color = rgb(128, 128, 128)
+nav-link-color = text-color
 const nav-link-hover-color = link-color
 loading-color = link-color
-nav-height = 2.8rem
+nav-height = 2.7rem
 
 base-font-size = 20px
 transition-speed = 200ms
+mount-speed = 500ms
 line-height = 1.8em
 typography-margin = line-height
 monospace-font = "Ubuntu Mono", "Consolas", "monospace"

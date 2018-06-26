@@ -2,7 +2,7 @@
 	height nav-height
 	background-color nav-bg-color
 	background-image nav-bg-image
-	// border-bottom 1px solid rgba(0, 0, 0, 0.02)
+	border-bottom 1px solid rgba(0, 0, 0, 0.02)
 	overflow hidden
 
 #navigation
@@ -27,27 +27,31 @@
 	line-height 1.7rem
 	letter-spacing 1px
 	height 100%
-
-	:visited
-		color nav-link-color
+	padding 0 1.1rem
+	transition transform mount-speed ease, opacity mount-speed ease, color transition-speed ease, background-color transition-speed ease
 
 	:hover,
 	&.active
-		color white
+		color bg-color
 		background-color nav-link-hover-color
 
-	&.mounted
-		default-transition
+		// .navigation-item-icon
+		// 	opacity 0.85
 
-> 800px
+	:active
+		transform none
+
+.navigation-item-icon
+	opacity 0.85
+	margin-right 0
+
+> 760px
 	.navigation-item-title
 		display inline-block
 
 	#navigation
 		justify-content center
 
-	.navigation-item
-		padding 0 1.3rem
-
-.navigation-item-icon
-	margin-right 0.6em
+	.navigation-item-icon
+		opacity 0.3
+		margin-right 0.6em
