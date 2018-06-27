@@ -28,7 +28,7 @@ nav-link-color = text-color
 nav-link-bg-color = transparent
 nav-link-hover-color = white
 nav-link-hover-bg-color = rgba(0, 0, 0, 0.6)
-loading-color = link-color
+loading-color = rgb(192, 192, 192)
 nav-height = 2.7rem
 
 base-font-size = 20px
