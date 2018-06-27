@@ -4,9 +4,11 @@ import Diff from "./Diff"
 
 export default class Website {
 	app: Application
+	title: string
 
 	constructor(app: Application) {
 		this.app = app
+		this.title = "Eduard Urbach"
 	}
 
 	init() {
@@ -34,10 +36,9 @@ export default class Website {
 		this.run()
 	}
 
-	onPopState(e: PopStateEvent) {
-		this.app.load(location.pathname, {
-			addToHistory: false
-		})
+	onContentLoaded() {
+		this.applyPageTitle()
+		this.mountMountables()
 	}
 
 	run() {
@@ -94,8 +95,19 @@ export default class Website {
 		}
 	}
 
-	onContentLoaded() {
-		this.mountMountables()
+	applyPageTitle() {
+		let header = document.querySelector("h1")
+
+		if(!header) {
+			document.title = this.title
+		} else {
+			document.title = header.textContent
+		}
 	}
-	onIdle() {}
+
+	onPopState(e: PopStateEvent) {
+		this.app.load(location.pathname, {
+			addToHistory: false
+		})
+	}
 }
