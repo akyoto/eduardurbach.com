@@ -27,7 +27,7 @@ nav-bg-image = url("/images/backgrounds/noise-light.png")
 nav-link-color = text-color
 nav-link-bg-color = transparent
 nav-link-hover-color = white
-nav-link-hover-bg-color = rgba(0, 0, 0, 0.6)
+nav-link-hover-bg-color = rgba(0, 0, 0, 0.67)
 loading-color = rgb(192, 192, 192)
 nav-height = 2.7rem
 
