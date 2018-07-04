@@ -14,6 +14,9 @@ component Layout(app *aero.Application, ctx *aero.Context, content string)
 			link(rel="icon", type="image/png", sizes="192x192", href="/images/icons/favicon/192.png")
 			link(rel="icon", type="image/png", sizes="128x128", href="/images/icons/favicon/128.png")
 
+			//- Canonical URL
+			link(rel="canonical", href="https://" + app.Config.Domain + ctx.URI())
+
 			//- Manifest
 			link(rel="manifest", href="/manifest.json")
 		body
