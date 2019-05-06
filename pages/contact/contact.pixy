@@ -5,7 +5,7 @@ component Contact
 		ContactLink("Facebook", "http://www.facebook.com/eduard.urbach", "facebook")
 		ContactLink("Twitter", "https://twitter.com/eduardurbach", "twitter")
 		ContactLink("Google+", "https://google.com/+EduardUrbach", "google-plus")
-		ContactLink("GitHub", "https://github.com/blitzprog", "github")
+		ContactLink("GitHub", "https://github.com/akyoto", "github")
 		ContactLink("SoundCloud", "http://soundcloud.com/eduard-urbach", "music")
 		ContactLink("Sketchfab", "https://sketchfab.com/EduardUrbach", "cube")
 		ContactLink("E-Mail", "mailto:e.urbach@gmail.com", "envelope")

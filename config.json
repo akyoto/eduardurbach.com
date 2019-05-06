@@ -46,7 +46,6 @@
 			}
 		]
 	},
-	"gzip": true,
 	"ports": {
 		"http": 4000,
 		"https": 4001

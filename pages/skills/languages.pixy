@@ -16,6 +16,9 @@ component LanguageSkills
 			li.ru
 				span Russian
 				Level(8)
+			li.kr
+				span Korean
+				Level(4)
 			li.fr
 				span French
 				Level(4)

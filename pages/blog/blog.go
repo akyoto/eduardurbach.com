@@ -4,8 +4,8 @@ import (
 	"sort"
 
 	"github.com/aerogo/aero"
-	"github.com/blitzprog/eduardurbach.com/components"
-	"github.com/blitzprog/eduardurbach.com/eu"
+	"github.com/akyoto/eduardurbach.com/components"
+	"github.com/akyoto/eduardurbach.com/eu"
 )
 
 // Get overview of all posts.

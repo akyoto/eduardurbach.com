@@ -6,16 +6,16 @@ import (
 
 	"github.com/aerogo/aero"
 	"github.com/aerogo/layout"
-	"github.com/blitzprog/eduardurbach.com/components/css"
-	"github.com/blitzprog/eduardurbach.com/components/js"
-	"github.com/blitzprog/eduardurbach.com/eu"
-	"github.com/blitzprog/eduardurbach.com/layout"
-	"github.com/blitzprog/eduardurbach.com/pages/blog"
-	"github.com/blitzprog/eduardurbach.com/pages/contact"
-	"github.com/blitzprog/eduardurbach.com/pages/home"
-	"github.com/blitzprog/eduardurbach.com/pages/post"
-	"github.com/blitzprog/eduardurbach.com/pages/skills"
-	"github.com/blitzprog/eduardurbach.com/pages/websites"
+	"github.com/akyoto/eduardurbach.com/components/css"
+	"github.com/akyoto/eduardurbach.com/components/js"
+	"github.com/akyoto/eduardurbach.com/eu"
+	fullpage "github.com/akyoto/eduardurbach.com/layout"
+	"github.com/akyoto/eduardurbach.com/pages/blog"
+	"github.com/akyoto/eduardurbach.com/pages/contact"
+	"github.com/akyoto/eduardurbach.com/pages/home"
+	"github.com/akyoto/eduardurbach.com/pages/post"
+	"github.com/akyoto/eduardurbach.com/pages/skills"
+	"github.com/akyoto/eduardurbach.com/pages/websites"
 )
 
 func main() {

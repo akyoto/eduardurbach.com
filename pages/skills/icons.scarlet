@@ -10,6 +10,9 @@
 .jp
 	list-style-image url("/images/icons/countries/jp.png")
 
+.kr
+	list-style-image url("/images/icons/countries/kr.png")
+
 .fr
 	list-style-image url("/images/icons/countries/fr.png")
 
