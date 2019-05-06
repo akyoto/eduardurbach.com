@@ -12,13 +12,13 @@ component LanguageSkills
 				Level(10)
 			li.jp
 				span Japanese
-				Level(8)
+				Level(9)
 			li.ru
 				span Russian
 				Level(8)
 			li.kr
 				span Korean
-				Level(4)
+				Level(5)
 			li.fr
 				span French
 				Level(4)
