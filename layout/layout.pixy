@@ -10,6 +10,9 @@ component Layout(app *aero.Application, ctx *aero.Context, content string)
 			//- Viewport
 			meta(name="viewport", content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes")
 
+			//- Description
+			meta(name="description", content="Eduard Urbach's website about software development.")
+
 			//- Icons
 			link(rel="icon", type="image/png", sizes="192x192", href="/images/icons/favicon/192.png")
 			link(rel="icon", type="image/png", sizes="128x128", href="/images/icons/favicon/128.png")
