@@ -1,0 +1,18 @@
+{
+	"@context":"http://schema.org",
+	"@type":"Organization",
+	"name":"Eduard Urbach",
+	"description": "Eduard Urbach's website about software and web development.",
+	"url":"https://eduardurbach.com",
+	"email":"e.urbach@gmail.com",
+	"logo":"https://eduardurbach.com/images/icons/favicon/192.png",
+	"sameAs":[
+		"https://facebook.com/eduard.urbach",
+		"https://twitter.com/eduardurbach",
+		"https://github.com/akyoto/eduardurbach.com"
+	],
+	"founder":{
+		"@type":"Person",
+		"name":"Eduard Urbach"
+	}
+}
