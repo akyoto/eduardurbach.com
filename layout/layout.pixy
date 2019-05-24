@@ -29,8 +29,11 @@ component Layout(app *aero.Application, ctx *aero.Context, content string)
 			#container
 				Navigation
 				Content(content)
+			
 			LoadingAnimation
-			script(src="/scripts")
+
+			script(src="/scripts", importance="high", crossorigin="anonymous")
+			script(type="application/ld+json")!= assets.Organization
 
 component Navigation
 	#navigation-container
@@ -47,9 +50,9 @@ component Navigation
 				svg-icon.navigation-item-icon(name="graduation-cap")
 				.navigation-item-title Skills
 
-			a.navigation-item.mountable(href="/websites", aria-label="Websites")
+			a.navigation-item.mountable(href="/projects", aria-label="Projects")
 				svg-icon.navigation-item-icon(name="tv")
-				.navigation-item-title Websites
+				.navigation-item-title Projects
 
 			a.navigation-item.mountable(href="/contact", aria-label="Contact")
 				svg-icon.navigation-item-icon(name="envelope")

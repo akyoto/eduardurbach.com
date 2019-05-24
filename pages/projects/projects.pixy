@@ -1,0 +1,9 @@
+component Projects(projects []*eu.Project)
+	h1.mountable Projects
+
+	.projects
+		each project in projects
+			.project.mountable
+				.project-title
+					a(href=project.Link())= project.Title
+				time.project-time(datetime=project.Created)= project.Created[:10]

@@ -12,6 +12,7 @@ import (
 	"github.com/akyoto/eduardurbach.com/pages/contact"
 	"github.com/akyoto/eduardurbach.com/pages/home"
 	"github.com/akyoto/eduardurbach.com/pages/post"
+	"github.com/akyoto/eduardurbach.com/pages/projects"
 	"github.com/akyoto/eduardurbach.com/pages/skills"
 	"github.com/akyoto/eduardurbach.com/pages/websites"
 )
@@ -29,6 +30,7 @@ func configure(app *aero.Application) *aero.Application {
 	l.Page("/blog", blog.Get)
 	l.Page("/post/:id", post.Get)
 	l.Page("/skills", skills.Get)
+	l.Page("/projects", projects.Get)
 	l.Page("/websites", websites.Get)
 	l.Page("/contact", contact.Get)
 
