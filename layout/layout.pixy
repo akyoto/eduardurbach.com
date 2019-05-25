@@ -1,11 +1,11 @@
-component Layout(app *aero.Application, ctx *aero.Context, content string)
+component Layout(ctx *aero.Context, content string)
 	html(lang="en")
 		head
 			//- Styles
 			link(rel="stylesheet", href="/styles")
 
 			//- Meta
-			title= app.Config.Title
+			title= ctx.App.Config.Title
 
 			//- Viewport
 			meta(name="viewport", content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes")
@@ -21,7 +21,7 @@ component Layout(app *aero.Application, ctx *aero.Context, content string)
 			link(rel="preconnect", href="//fonts.gstatic.com")
 
 			//- Canonical URL
-			link(rel="canonical", href="https://" + app.Config.Domain + ctx.URI())
+			link(rel="canonical", href="https://" + ctx.App.Config.Domain + ctx.URI())
 
 			//- Manifest
 			link(rel="manifest", href="/manifest.json")

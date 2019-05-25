@@ -6,7 +6,9 @@ import (
 )
 
 // Node represents the database node.
-var Node = nano.New(5000)
+var Node = nano.New(nano.Configuration{
+	Port: 5000,
+})
 
 // DB is the main database client.
 var DB = Node.Namespace("eu").RegisterTypes(

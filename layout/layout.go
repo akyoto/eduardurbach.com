@@ -7,5 +7,5 @@ import (
 
 // Render layout.
 func Render(ctx *aero.Context, content string) string {
-	return components.Layout(ctx.App, ctx, content)
+	return components.Layout(ctx, content)
 }
