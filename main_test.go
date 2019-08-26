@@ -7,6 +7,5 @@ import (
 )
 
 func TestApp(t *testing.T) {
-	app := configure(aero.New())
-	println(app.Config.Title)
+	configure(aero.New())
 }

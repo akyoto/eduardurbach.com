@@ -9,7 +9,7 @@ import (
 )
 
 // Get overview of all projects.
-func Get(ctx *aero.Context) string {
+func Get(ctx aero.Context) error {
 	projects := eu.AllProjects()
 
 	sort.Slice(projects, func(i, j int) bool {

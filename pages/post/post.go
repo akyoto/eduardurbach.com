@@ -9,7 +9,7 @@ import (
 )
 
 // Get ...
-func Get(ctx *aero.Context) string {
+func Get(ctx aero.Context) error {
 	id := ctx.Get("id")
 	post, err := eu.GetPost(id)
 

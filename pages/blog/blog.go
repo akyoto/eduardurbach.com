@@ -9,7 +9,7 @@ import (
 )
 
 // Get overview of all posts.
-func Get(ctx *aero.Context) string {
+func Get(ctx aero.Context) error {
 	posts := eu.AllPosts()
 
 	sort.Slice(posts, func(i, j int) bool {

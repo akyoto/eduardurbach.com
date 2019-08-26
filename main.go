@@ -4,10 +4,9 @@ import (
 	"strings"
 
 	"github.com/aerogo/aero"
-	"github.com/aerogo/layout"
 	"github.com/akyoto/eduardurbach.com/assets"
 	"github.com/akyoto/eduardurbach.com/eu"
-	fullpage "github.com/akyoto/eduardurbach.com/layout"
+	"github.com/akyoto/eduardurbach.com/pages"
 	"github.com/akyoto/eduardurbach.com/pages/blog"
 	"github.com/akyoto/eduardurbach.com/pages/contact"
 	"github.com/akyoto/eduardurbach.com/pages/home"
@@ -23,16 +22,14 @@ func main() {
 }
 
 func configure(app *aero.Application) *aero.Application {
-	l := layout.New(app)
-	l.Render = fullpage.Render
-
-	l.Page("/", home.Get)
-	l.Page("/blog", blog.Get)
-	l.Page("/post/:id", post.Get)
-	l.Page("/skills", skills.Get)
-	l.Page("/projects", projects.Get)
-	l.Page("/websites", websites.Get)
-	l.Page("/contact", contact.Get)
+	// Pages
+	pages.Get(app, "/", home.Get)
+	pages.Get(app, "/blog", blog.Get)
+	pages.Get(app, "/post/:id", post.Get)
+	pages.Get(app, "/skills", skills.Get)
+	pages.Get(app, "/projects", projects.Get)
+	pages.Get(app, "/websites", websites.Get)
+	pages.Get(app, "/contact", contact.Get)
 
 	// Certificate
 	app.Security.Load("security/server.crt", "security/server.key")
@@ -48,14 +45,19 @@ func configure(app *aero.Application) *aero.Application {
 	// Prefetch all collections
 	eu.DB.Prefetch()
 
-	// Send "Link" header for Cloudflare on HTML responses
-	app.Use(func(ctx *aero.Context, next func()) {
-		if !strings.HasPrefix(ctx.URI(), "/_/") && strings.Contains(ctx.Request().Header().Get("Accept"), "text/html") {
-			ctx.Response().Header().Set("Link", "</styles>; rel=preload; as=style,</scripts>; rel=preload; as=script")
-		}
-
-		next()
+	// Don't push when an underscore URL has been requested
+	app.AddPushCondition(func(ctx aero.Context) bool {
+		return !strings.HasPrefix(ctx.Path(), "/_")
 	})
+
+	// // Send "Link" header for Cloudflare on HTML responses
+	// app.Use(func(ctx aero.Context, next func()) {
+	// 	if !strings.HasPrefix(ctx.Path(), "/_/") && strings.Contains(ctx.Request().Header("Accept"), "text/html") {
+	// 		ctx.Response().SetHeader("Link", "</styles>; rel=preload; as=style,</scripts>; rel=preload; as=script")
+	// 	}
+
+	// 	next()
+	// })
 
 	return app
 }

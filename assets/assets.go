@@ -59,26 +59,26 @@ func load() {
 func Configure(app *aero.Application) {
 	load()
 
-	app.Get("/scripts", func(ctx *aero.Context) string {
+	app.Get("/scripts", func(ctx aero.Context) error {
 		return ctx.JavaScript(JS)
 	})
 
-	app.Get("/styles", func(ctx *aero.Context) string {
+	app.Get("/styles", func(ctx aero.Context) error {
 		return ctx.CSS(CSS)
 	})
 
-	app.Get("/service-worker", func(ctx *aero.Context) string {
+	app.Get("/service-worker", func(ctx aero.Context) error {
 		return ctx.JavaScript(ServiceWorker)
 	})
 
 	// Web manifest
-	app.Get("/manifest.json", func(ctx *aero.Context) string {
+	app.Get("/manifest.json", func(ctx aero.Context) error {
 		return ctx.JSON(Manifest)
 	})
 
 	// Images
-	app.Get("/images/*file", func(ctx *aero.Context) string {
-		ctx.Response().Header().Set("Access-Control-Allow-Origin", "*")
+	app.Get("/images/*file", func(ctx aero.Context) error {
+		ctx.Response().SetHeader("Access-Control-Allow-Origin", "*")
 		return ctx.File("images/" + ctx.Get("file"))
 	})
 }
