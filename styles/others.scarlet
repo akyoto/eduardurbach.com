@@ -1,3 +1,6 @@
+.page-title
+	display none
+
 ::selection
 	text-shadow none
 	background hsla(0, 0%, 0%, 0.1)

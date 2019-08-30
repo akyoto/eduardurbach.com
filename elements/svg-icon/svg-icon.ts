@@ -1,4 +1,4 @@
-import Diff from "scripts/Diff";
+import Diff from "scripts/Diff"
 
 export default class SVGIcon extends HTMLElement {
 	static get observedAttributes() {

@@ -16,3 +16,6 @@ mixin vertical-wrap
 
 mixin default-transition
 	transition all transition-speed ease
+
+mixin noise-strong
+	background-image url("/images/backgrounds/noise-light.png")

@@ -15,11 +15,10 @@ li
 
 h1, h2, h3, h4, h5, h6
 	color header-color
-	font-family title-font
+	font-family text-font
 	font-weight bold
 	width 100%
 	text-align center
-	text-transform uppercase
 
 p, ul, ol, blockquote, pre, table
 	line-height line-height
@@ -38,15 +37,13 @@ p, ul, ol, pre, blockquote
 
 h1
 	font-size 2.6rem
-	line-height 1.3em
-	letter-spacing 2px
-	margin-bottom 2rem
+	line-height 1.5em
+	letter-spacing 1px
 
 h2
 	font-size 1.6em
 	line-height 1.5em
 	letter-spacing 1px
-	// color alpha(header-color, 80%)
 
 h3
 	font-size 1.3rem

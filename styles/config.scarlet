@@ -1,5 +1,5 @@
-const title-font = "Lato"
 const text-font = "Lato"
+const text-size = 20px
 
 const text-color-h = 0
 const text-color-s = 0%
@@ -11,27 +11,23 @@ const bg-color-s = 0%
 const bg-color-l = 98%
 bg-color = hsl(bg-color-h, bg-color-s, bg-color-l)
 
-const link-color-h = 0
-const link-color-s = 0%
-const link-color-l = 24%
+const link-color-h = text-color-h
+const link-color-s = text-color-s
+const link-color-l = calc(text-color-l - 10%)
 link-color = hsl(link-color-h, link-color-s, link-color-l)
-
-bg-image = url("/images/backgrounds/noise-light.png")
 
 link-hover-color = link-color
 header-color = text-color
 slide-color = link-color
 
 const nav-bg-color = hsl(bg-color-h, bg-color-s, calc(bg-color-l - 2%))
-nav-bg-image = url("/images/backgrounds/noise-light.png")
 nav-link-color = text-color
 nav-link-bg-color = transparent
 nav-link-hover-color = white
 nav-link-hover-bg-color = rgba(0, 0, 0, 0.67)
-loading-color = rgb(192, 192, 192)
 nav-height = 2.7rem
 
-base-font-size = 20px
+loading-color = rgb(192, 192, 192)
 transition-speed = 200ms
 mount-speed = 500ms
 line-height = 1.8em

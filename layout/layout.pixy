@@ -26,7 +26,7 @@ component Layout(ctx aero.Context, content string)
 			//- Manifest
 			link(rel="manifest", href="/manifest.json")
 		body
-			#container
+			#root
 				Navigation
 				Content(content)
 			
@@ -36,27 +36,18 @@ component Layout(ctx aero.Context, content string)
 			script(type="application/ld+json")!= assets.Organization
 
 component Navigation
-	#navigation-container
-		nav#navigation
-			a.navigation-item.mountable(href="/", aria-label="Me")
-				svg-icon.navigation-item-icon(name="user")
-				.navigation-item-title Me
-			
-			a.navigation-item.mountable(href="/blog", aria-label="Blog")
-				svg-icon.navigation-item-icon(name="comment")
-				.navigation-item-title Blog
+	nav
+		a.nav-item.mountable(href="/", aria-label="Blog")
+			svg-icon.nav-item-icon(name="comment")
+			span.nav-item-title Blog
 
-			a.navigation-item.mountable(href="/skills", aria-label="Skills")
-				svg-icon.navigation-item-icon(name="graduation-cap")
-				.navigation-item-title Skills
+		//- a.nav-item.mountable(href="/projects", aria-label="Projects")
+		//- 	svg-icon.nav-item-icon(name="laptop")
+		//- 	.nav-item-title Projects
 
-			a.navigation-item.mountable(href="/projects", aria-label="Projects")
-				svg-icon.navigation-item-icon(name="tv")
-				.navigation-item-title Projects
-
-			a.navigation-item.mountable(href="/contact", aria-label="Contact")
-				svg-icon.navigation-item-icon(name="envelope")
-				.navigation-item-title Contact
+		a.nav-item.mountable(href="/sponsor", aria-label="Sponsor")
+			svg-icon.nav-item-icon(name="heart")
+			span.nav-item-title Sponsor
 
 component Content(content string)
 	#content-container

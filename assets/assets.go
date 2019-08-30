@@ -24,7 +24,7 @@ func load() {
 	var err error
 
 	// Manifest
-	Manifest, err = manifest.FromFile("manifest.json")
+	Manifest, err = manifest.FromFile("assets/manifest.json")
 
 	if err != nil {
 		panic("Couldn't load manifest.json")
@@ -40,7 +40,7 @@ func load() {
 	ServiceWorker = unsafe.BytesToString(data)
 
 	// Organization
-	data, err = ioutil.ReadFile("organization.json")
+	data, err = ioutil.ReadFile("assets/organization.json")
 
 	if err != nil {
 		panic("Couldn't load organization.json")

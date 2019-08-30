@@ -1,0 +1,24 @@
+.sponsor
+	vertical
+	width 100%
+	max-width 700px
+	justify-self center
+	align-self center
+
+.sponsor-links
+	horizontal-wrap
+	justify-content center
+
+.sponsor-link
+	vertical
+	align-items center
+	color text-color
+
+	:after
+		margin-top 10px !important
+
+.sponsor-link-name
+	margin-top 0.4rem
+	font-size 0.7rem
+	text-align center
+	opacity 0.75

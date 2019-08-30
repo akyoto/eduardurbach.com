@@ -1,0 +1,14 @@
+component Sponsor
+	h1.page-title.mountable Sponsor
+
+	.sponsor
+		p.mountable Sponsoring me will help me keep working on open source software. This means I can keep working for the people and focus on things that matter.
+
+		.sponsor-links
+			SponsorLink("GitHub", "https://github.com/users/akyoto/sponsorship", "github")
+			SponsorLink("Patreon", "https://www.patreon.com/eduardurbach", "patreon")
+
+component SponsorLink(title string, url string, icon string)
+	a.sponsor-link.mountable(href=url, target="_blank")
+		svg-icon(name=icon)
+		.sponsor-link-name= title

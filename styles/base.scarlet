@@ -1,12 +1,12 @@
 html
-	font-family text-font, "Ubuntu", "Trebuchet MS", sans-serif
-	font-size base-font-size
 	height 100%
+	font-family text-font, "Ubuntu", "Trebuchet MS", sans-serif
+	font-size text-size
 
 body
-	vertical
 	tab-size 4
-	text-rendering optimizeLegibility
-	height 100%
 	overflow hidden
+	height 100%
 	color text-color
+	background-color bg-color
+	noise-strong

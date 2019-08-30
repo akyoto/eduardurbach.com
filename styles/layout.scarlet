@@ -1,0 +1,18 @@
+#root
+	vertical
+	height 100%
+
+#scrollable
+	flex 1
+	overflow-x hidden
+	overflow-y auto
+	background-color bg-color
+	position relative
+
+#content
+	vertical
+	justify-content flex-start
+	flex-grow 1
+	height 100%
+	padding 3rem 1rem
+	transition all transition-speed ease

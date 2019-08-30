@@ -1,11 +1,10 @@
 svg-icon
-	width auto
-	min-width 1em
+	display inline-block
+	width 1.1em
+	height 1em
 
 	svg
-		width auto
+		display inherit
+		width 1.1em
 		height 1em
-		position relative
-		top -2px
-		vertical-align text-bottom
 		fill currentColor

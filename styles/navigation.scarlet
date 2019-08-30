@@ -1,34 +1,20 @@
-#navigation-container
+nav
+	horizontal
+	justify-content center
 	height nav-height
 	background-color nav-bg-color
-	background-image nav-bg-image
 	border-bottom 1px solid rgba(0, 0, 0, 0.02)
 	overflow hidden
+	flex-shrink 0
 
-#navigation
+.nav-item
 	horizontal
 	align-items center
-	justify-content space-evenly
-	overflow hidden
-	height nav-height
-
-.navigation-item-title
-	display none
-
-.navigation-item
-	display flex
-	justify-content center
-	align-items center
-	position relative
-	color nav-link-color
-	background-color nav-link-bg-color
-	font-family title-font
-	text-transform uppercase
-	font-size 0.9rem
-	line-height 1.7rem
-	letter-spacing 1px
 	height 100%
 	padding 0 1.1rem
+	color nav-link-color
+	background-color nav-link-bg-color
+	text-transform uppercase
 	transition transform mount-speed ease, opacity mount-speed ease, color transition-speed ease, background-color transition-speed ease
 
 	:hover,
@@ -36,23 +22,9 @@
 		color nav-link-hover-color
 		background-color nav-link-hover-bg-color
 
-		// .navigation-item-icon
-		// 	opacity 0.85
-
 	:active
 		transform none
 
-.navigation-item-icon
-	opacity 0.85
-	margin-right 0
-
-> 760px
-	.navigation-item-title
-		display inline-block
-
-	#navigation
-		justify-content center
-
-	.navigation-item-icon
-		opacity 0.5
-		margin-right 0.6em
+.nav-item-icon
+	opacity 0.5
+	margin-right 0.6em

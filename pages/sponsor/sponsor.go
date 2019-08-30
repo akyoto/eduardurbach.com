@@ -1,4 +1,4 @@
-package home
+package sponsor
 
 import (
 	"github.com/aerogo/aero"
@@ -7,5 +7,5 @@ import (
 
 // Get ...
 func Get(ctx aero.Context) error {
-	return ctx.HTML(components.Home())
+	return ctx.HTML(components.Sponsor())
 }

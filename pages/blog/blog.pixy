@@ -1,5 +1,5 @@
 component Blog(posts []*eu.Post)
-	h1.mountable Blog
+	h1.page-title.mountable Blog
 
 	.posts
 		each post in posts
