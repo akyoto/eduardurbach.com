@@ -20,9 +20,9 @@ func main() {
 
 func configure(app *aero.Application) *aero.Application {
 	// Pages
-	pages.Get(app, "/", blog.Get)
+	pages.Get(app, "/", projects.Get)
+	pages.Get(app, "/blog", blog.Get)
 	pages.Get(app, "/blog/:id", post.Get)
-	pages.Get(app, "/projects", projects.Get)
 	pages.Get(app, "/sponsor", sponsor.Get)
 
 	// Certificate

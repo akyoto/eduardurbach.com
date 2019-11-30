@@ -37,13 +37,13 @@ component Layout(ctx aero.Context, content string)
 
 component Navigation
 	nav
-		a.nav-item.mountable(href="/", aria-label="Blog")
-			svg-icon.nav-item-icon(name="comment")
-			span.nav-item-title Blog
-
-		a.nav-item.mountable(href="/projects", aria-label="Projects")
+		a.nav-item.mountable(href="/", aria-label="Projects")
 			svg-icon.nav-item-icon(name="list")
 			.nav-item-title Projects
+		
+		a.nav-item.mountable(href="/blog", aria-label="Blog")
+			svg-icon.nav-item-icon(name="comment")
+			span.nav-item-title Blog
 
 		a.nav-item.mountable(href="/sponsor", aria-label="Sponsor")
 			svg-icon.nav-item-icon(name="heart")
