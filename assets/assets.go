@@ -12,11 +12,10 @@ import (
 )
 
 var (
-	Manifest      *manifest.Manifest
-	JS            string
-	CSS           string
-	ServiceWorker string
-	Organization  string
+	Manifest     *manifest.Manifest
+	JS           string
+	CSS          string
+	Organization string
 )
 
 // load loads all the necessary assets into memory.
@@ -30,17 +29,8 @@ func load() {
 		panic("Couldn't load manifest.json")
 	}
 
-	// Service worker
-	data, err := ioutil.ReadFile("scripts/ServiceWorker/ServiceWorker.js")
-
-	if err != nil {
-		panic("Couldn't load service worker")
-	}
-
-	ServiceWorker = unsafe.BytesToString(data)
-
 	// Organization
-	data, err = ioutil.ReadFile("assets/organization.json")
+	data, err := ioutil.ReadFile("assets/organization.json")
 
 	if err != nil {
 		panic("Couldn't load organization.json")
@@ -65,10 +55,6 @@ func Configure(app *aero.Application) {
 
 	app.Get("/styles", func(ctx aero.Context) error {
 		return ctx.CSS(CSS)
-	})
-
-	app.Get("/service-worker", func(ctx aero.Context) error {
-		return ctx.JavaScript(ServiceWorker)
 	})
 
 	// Web manifest
