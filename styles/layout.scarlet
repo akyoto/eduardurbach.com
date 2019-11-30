@@ -13,6 +13,5 @@
 	vertical
 	justify-content flex-start
 	flex-grow 1
-	height 100%
 	padding 3rem 1rem
 	transition all transition-speed ease

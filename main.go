@@ -8,7 +8,7 @@ import (
 	"github.com/akyoto/eduardurbach.com/eu"
 	"github.com/akyoto/eduardurbach.com/pages"
 	"github.com/akyoto/eduardurbach.com/pages/blog"
-	"github.com/akyoto/eduardurbach.com/pages/post"
+	"github.com/akyoto/eduardurbach.com/pages/blog/post"
 	"github.com/akyoto/eduardurbach.com/pages/projects"
 	"github.com/akyoto/eduardurbach.com/pages/sponsor"
 )
@@ -21,7 +21,7 @@ func main() {
 func configure(app *aero.Application) *aero.Application {
 	// Pages
 	pages.Get(app, "/", blog.Get)
-	pages.Get(app, "/post/:id", post.Get)
+	pages.Get(app, "/blog/:id", post.Get)
 	pages.Get(app, "/projects", projects.Get)
 	pages.Get(app, "/sponsor", sponsor.Get)
 
@@ -46,13 +46,15 @@ func configure(app *aero.Application) *aero.Application {
 	})
 
 	// // Send "Link" header for Cloudflare on HTML responses
-	// app.Use(func(ctx aero.Context, next func()) {
-	// 	if !strings.HasPrefix(ctx.Path(), "/_/") && strings.Contains(ctx.Request().Header("Accept"), "text/html") {
-	// 		ctx.Response().SetHeader("Link", "</styles>; rel=preload; as=style,</scripts>; rel=preload; as=script")
-	// 	}
+	app.Use(func(next aero.Handler) aero.Handler {
+		return func(ctx aero.Context) error {
+			if !strings.HasPrefix(ctx.Path(), "/_/") && strings.Contains(ctx.Request().Header("Accept"), "text/html") {
+				ctx.Response().SetHeader("Link", "</styles>; rel=preload; as=style,</scripts>; rel=preload; as=script")
+			}
 
-	// 	next()
-	// })
+			return next(ctx)
+		}
+	})
 
 	return app
 }

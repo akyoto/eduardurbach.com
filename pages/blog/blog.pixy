@@ -7,3 +7,5 @@ component Blog(posts []*eu.Post)
 				.post-title
 					a(href=post.Link())= post.Title
 				time.post-time(datetime=post.Created)= post.Created[:10]
+	
+	footer.mountable &copy; Eduard Urbach

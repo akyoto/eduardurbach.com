@@ -1,0 +1,17 @@
+.projects
+	vertical
+	width 100%
+	max-width 700px
+	margin 0 auto
+
+.project
+	horizontal
+	text-align left
+
+.project-title
+	flex 1
+	line-height line-height
+
+.project-time
+	line-height line-height
+	opacity 0.5

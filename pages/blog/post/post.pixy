@@ -1,0 +1,6 @@
+component Post(post *eu.Post)
+	.post-view
+		h1.mountable= post.Title
+		div!= eu.MountableMarkdown(markdown.Render(post.Text))
+	
+	footer.mountable &copy; Eduard Urbach

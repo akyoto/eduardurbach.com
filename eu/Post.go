@@ -6,15 +6,16 @@ import (
 
 // Post represents a single article in the blog.
 type Post struct {
-	ID      string
-	Title   string
-	Text    string
-	Created string
+	ID        string
+	Title     string
+	Text      string
+	Created   string
+	Published bool
 }
 
 // Link returns the path to the blog post.
 func (post *Post) Link() string {
-	return "/post/" + post.ID
+	return "/blog/" + post.ID
 }
 
 // Save saves the blog post in the database.
@@ -54,6 +55,19 @@ func AllPosts() []*Post {
 
 	for obj := range StreamPosts() {
 		all = append(all, obj)
+	}
+
+	return all
+}
+
+// PublishedPosts returns a slice of all published blog posts.
+func PublishedPosts() []*Post {
+	var all []*Post
+
+	for obj := range StreamPosts() {
+		if obj.Published {
+			all = append(all, obj)
+		}
 	}
 
 	return all

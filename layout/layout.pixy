@@ -41,16 +41,16 @@ component Navigation
 			svg-icon.nav-item-icon(name="comment")
 			span.nav-item-title Blog
 
-		//- a.nav-item.mountable(href="/projects", aria-label="Projects")
-		//- 	svg-icon.nav-item-icon(name="laptop")
-		//- 	.nav-item-title Projects
+		a.nav-item.mountable(href="/projects", aria-label="Projects")
+			svg-icon.nav-item-icon(name="list")
+			.nav-item-title Projects
 
 		a.nav-item.mountable(href="/sponsor", aria-label="Sponsor")
 			svg-icon.nav-item-icon(name="heart")
 			span.nav-item-title Sponsor
 
 component Content(content string)
-	#content-container
+	#scrollable
 		main#content.fade!= content
 
 component LoadingAnimation

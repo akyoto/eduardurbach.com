@@ -1,9 +1,11 @@
 component Projects(projects []*eu.Project)
-	h1.mountable Projects
+	h1.page-title.mountable Projects
 
 	.projects
 		each project in projects
 			.project.mountable
 				.project-title
 					a(href=project.Link())= project.Title
-				time.project-time(datetime=project.Created)= project.Created[:10]
+				time.project-time(datetime=project.Created)= project.Created
+	
+	footer.mountable &copy; Eduard Urbach

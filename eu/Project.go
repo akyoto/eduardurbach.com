@@ -9,12 +9,18 @@ type Project struct {
 	ID      string
 	Title   string
 	Text    string
+	GitHub  string
+	Domain  string
 	Created string
 }
 
 // Link returns the path to the project.
 func (project *Project) Link() string {
-	return "/project/" + project.ID
+	if project.Domain != "" {
+		return "https://" + project.Domain + "/"
+	}
+
+	return "https://github.com/" + project.GitHub
 }
 
 // Save saves the project in the database.

@@ -3,6 +3,7 @@
 	"short_name": "Eduard",
 	"start_url": "/",
 	"display": "standalone",
+	"description": "Eduard Urbach's website.",
 	"lang": "en",
 	"icons": [
 		{

@@ -7,7 +7,8 @@ import (
 
 // Node represents the database node.
 var Node = nano.New(nano.Configuration{
-	Port: 5000,
+	Directory: "db",
+	Port:      5000,
 })
 
 // DB is the main database client.

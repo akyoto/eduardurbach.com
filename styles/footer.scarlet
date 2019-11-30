@@ -1,0 +1,7 @@
+footer
+	margin-top typography-margin
+	font-size 0.9rem
+	text-align center
+
+	&.mounted
+		opacity 0.5

@@ -31,5 +31,5 @@ loading-color = rgb(192, 192, 192)
 transition-speed = 200ms
 mount-speed = 500ms
 line-height = 1.8em
-typography-margin = line-height
+typography-margin = 1.8rem
 monospace-font = "Ubuntu Mono", "Consolas", "monospace"

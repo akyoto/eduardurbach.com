@@ -1,20 +1,3 @@
-# Aero: Folders
-/components
-/security
-/db
-
-# Aero: Files
-*.log
-
-# Aero: TypeScript
-*.js
-
-# Folders
-_obj
-_test
-vendor
-
-# Files
 *.o
 *.a
 *.so
@@ -23,13 +6,14 @@ vendor
 *.exe
 *.test
 *.prof
+*.log
+*.js
 
-# Special files
-_testmain.go
-_cgo_defun.c
-_cgo_gotypes.go
-_cgo_export.*
+# Pack components
+/components
+
+# Security related files
+/security
 
 # Project specific
 /eduardurbach.com
-/custom.go

@@ -2,13 +2,16 @@ component Sponsor
 	h1.page-title.mountable Sponsor
 
 	.sponsor
-		p.mountable Sponsoring me will help me keep working on open source software. This means I can keep working for the people and focus on things that matter.
+		p.mountable Despite the great benefits that Open Source software has given us, there is one problem that remains unsolved. How do we sustain the lives of developers who are working on free software?
+		p.mountable Several organizations are now offering a way to sponsor individuals for their development, innovation and maintenance efforts. If you enjoy using my software and would like to help sustain the development costs, please consider becoming a sponsor. You can advertise your company or your personal profile and will receive permission to use my software for commercial projects.
 
-		.sponsor-links
-			SponsorLink("GitHub", "https://github.com/users/akyoto/sponsorship", "github")
-			SponsorLink("Patreon", "https://www.patreon.com/eduardurbach", "patreon")
-
-component SponsorLink(title string, url string, icon string)
-	a.sponsor-link.mountable(href=url, target="_blank")
-		svg-icon(name=icon)
-		.sponsor-link-name= title
+		ul
+			li.mountable
+				a(href="https://github.com/sponsors/akyoto")
+					span GitHub
+			
+			li.mountable
+				a(href="https://www.patreon.com/eduardurbach")
+					span Patreon
+	
+	footer.mountable &copy; Eduard Urbach

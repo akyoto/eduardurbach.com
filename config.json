@@ -14,8 +14,8 @@
 		"main": "main"
 	},
 	"push": [
-		"/scripts",
-		"/styles"
+		"/styles",
+		"/scripts"
 	],
 	"ports": {
 		"http": 4000,

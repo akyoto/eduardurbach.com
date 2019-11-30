@@ -9,31 +9,12 @@ a
 	:active
 		transform translateY(3px)
 
-li
-	margin-top 1px
-	margin-bottom 1px
-
 h1, h2, h3, h4, h5, h6
 	color header-color
 	font-family text-font
 	font-weight bold
 	width 100%
 	text-align center
-
-p, ul, ol, blockquote, pre, table
-	line-height line-height
-	width 100%
-
-p, ul, ol, pre, blockquote
-	text-align left
-	margin-top typography-margin
-	margin-bottom typography-margin
-
-	&:first-child
-		margin-top 0
-
-	&:last-child
-		margin-bottom 0
 
 h1
 	font-size 2.6rem
@@ -50,42 +31,26 @@ h3
 	line-height 1.5em
 	letter-spacing 1px
 
-small
-	font-size 70%
-
-table
-	float left
-
-tr
-	border-bottom-width 1px
-	border-bottom-style solid
-	border-bottom-color rgba(255, 255, 255, 0.05)
-
-	&:last-child
-		border none
-
-td
-	padding 0.3em 0.5em
-	text-align left
-	vertical-align top
-
-iframe
-	padding 0.5em
-	float left
-	display block
-	margin 0 auto
-
 pre, blockquote
 	padding 1rem
 	color text-color
 	background-color hsla(0, 0%, 0%, 0.03)
-	// box-shadow 0 4px 8px hsla(0, 0%, 0%, 0.05)
 	border-radius 3px
 	overflow-x auto
 	overflow-y hidden
 
 blockquote
 	border-left 3px solid text-color
+
+p, ul, ol, blockquote, pre
+	line-height line-height
+	width 100%
+
+strong
+	font-weight bold
+
+em
+	font-style italic
 
 pre, code
 	font-family monospace-font
@@ -101,18 +66,10 @@ ul, ol
 	list-style-position outside
 	padding 0
 	margin-left 1.7em
-	width calc(100% - 1.7em)
 
-strong
-	font-weight bold
-
-em
-	font-style italic
-
-th
-	font-size 120%
-	padding 5px 0
-	text-align left
+li
+	margin-top 0.1rem
+	margin-bottom 0.1rem
 
 hr
 	clear both
@@ -121,3 +78,12 @@ hr
 	border-left none
 	border-right none
 	border-top none
+
+p, h1, h2, h3, h4, h5, h6, ul, ol, pre, blockquote
+	margin-bottom typography-margin
+
+	:first-child
+		margin-top 0 !important
+
+	:last-child
+		margin-bottom 0 !important
