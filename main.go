@@ -45,7 +45,7 @@ func configure(app *aero.Application) *aero.Application {
 		return !strings.HasPrefix(ctx.Path(), "/_")
 	})
 
-	// // Send "Link" header for Cloudflare on HTML responses
+	// Send "Link" header for Cloudflare on HTML responses
 	app.Use(func(next aero.Handler) aero.Handler {
 		return func(ctx aero.Context) error {
 			if !strings.HasPrefix(ctx.Path(), "/_/") && strings.Contains(ctx.Request().Header("Accept"), "text/html") {
