@@ -13,7 +13,14 @@ func Get(ctx aero.Context) error {
 	projects := eu.PublishedProjects()
 
 	sort.Slice(projects, func(i, j int) bool {
-		return projects[i].Created > projects[j].Created
+		a := projects[i]
+		b := projects[j]
+
+		if a.Created == b.Created {
+			return a.Title < b.Title
+		}
+
+		return a.Created > b.Created
 	})
 
 	return ctx.HTML(components.Projects(projects))
