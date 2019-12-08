@@ -10,7 +10,7 @@ import (
 
 // Get overview of all projects.
 func Get(ctx aero.Context) error {
-	projects := eu.AllProjects()
+	projects := eu.PublishedProjects()
 
 	sort.Slice(projects, func(i, j int) bool {
 		return projects[i].Created > projects[j].Created

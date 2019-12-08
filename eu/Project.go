@@ -6,12 +6,13 @@ import (
 
 // Project represents a single project.
 type Project struct {
-	ID      string
-	Title   string
-	Text    string
-	GitHub  string
-	Domain  string
-	Created string
+	ID        string
+	Title     string
+	Text      string
+	GitHub    string
+	Domain    string
+	Created   string
+	Published bool
 }
 
 // Link returns the path to the project.
@@ -60,6 +61,19 @@ func AllProjects() []*Project {
 
 	for obj := range StreamProjects() {
 		all = append(all, obj)
+	}
+
+	return all
+}
+
+// PublishedProjects returns a slice of all published projects.
+func PublishedProjects() []*Project {
+	var all []*Project
+
+	for obj := range StreamProjects() {
+		if obj.Published {
+			all = append(all, obj)
+		}
 	}
 
 	return all

@@ -1,10 +1,10 @@
 aero
-{"ID":"aero","Title":"aero","GitHub":"aerogo/aero","Created":"2016"}
-konnakanji
-{"ID":"konnakanji","Title":"konnakanji","GitHub":"konnakanji/konnakanji","Domain":"konnakanji.app","Created":"2018"}
+{"ID":"aero","Title":"aero","GitHub":"aerogo/aero","Created":"2016","Published":true}
+konnakanji.app
+{"ID":"konnakanji.app","Title":"konnakanji.app","GitHub":"konnakanji/konnakanji.app","Domain":"konnakanji.app","Created":"2018","Published":true}
 notify.moe
-{"ID":"notify.moe","Title":"notify.moe","GitHub":"animenotifier/notify.moe","Domain":"notify.moe","Created":"2016"}
+{"ID":"notify.moe","Title":"notify.moe","GitHub":"animenotifier/notify.moe","Domain":"notify.moe","Created":"2016","Published":true}
 q
-{"ID":"q","Title":"q","GitHub":"akyoto/q","Created":"2019"}
+{"ID":"q","Title":"q","GitHub":"akyoto/q","Created":"2019","Published":true}
 flua
-{"ID":"flua","Title":"flua","GitHub":"akyoto/flua","Created":"2012"}
+{"ID":"flua","Title":"flua","GitHub":"akyoto/flua","Created":"2012","Published":false}
